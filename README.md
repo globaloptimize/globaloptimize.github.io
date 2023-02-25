@@ -1,5 +1,5 @@
 # **Ming Shi**
-![Ming Shi](/globaloptimize.github.io/assets/Ming Shi.JPG)
+![Ming Shi](/assets/Ming Shi.JPG)
 # About me
 
 - I am a Post-Doctoral Scholar, advised by Prof. [Ness Shroff](http://newslab.ece.ohio-state.edu/home/) and Prof. [Yingbin Liang](https://sites.google.com/view/yingbinliang/home), of the [AI-EDGE Institute](https://aiedge.osu.edu) and [Department of Electrical and Computer Engineering](https://ece.osu.edu) at [The Ohio State University](https://www.osu.edu), Columbus, OH, USA. 

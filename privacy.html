@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+      document.documentElement.classList.add('js');
+      try {
+        const saved = localStorage.getItem('ming-shi-site-theme');
+        const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
+      } catch (_) {}
+    </script>
+  <title>Privacy | Ming Shi</title>
+  <meta name="description" content="Privacy and analytics information for Ming Shi’s academic homepage.">
+  <meta name="author" content="Ming Shi">
+  <meta name="theme-color" content="#005bbb">
+  <link rel="canonical" href="https://mingshihomepage.com/privacy.html">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ming Shi — Academic Homepage">
+  <meta property="og:title" content="Privacy | Ming Shi">
+  <meta property="og:description" content="Privacy and analytics information for Ming Shi’s academic homepage.">
+  <meta property="og:url" content="https://mingshihomepage.com/privacy.html">
+  <meta property="og:image" content="https://mingshihomepage.com/assets/images/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy | Ming Shi">
+  <meta name="twitter:description" content="Privacy and analytics information for Ming Shi’s academic homepage.">
+  
+</head>
+<body data-page="privacy">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="Ming Shi home">
+      <span class="brand-mark" aria-hidden="true">MS</span>
+      <span class="brand-text">
+        <span class="brand-name">Ming Shi</span>
+        <span class="brand-role">Safe Learning · Online Optimization · Networked Systems</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" data-site-nav aria-label="Primary navigation">
+      <a class="nav-link" data-nav="home" href="/">Home</a>
+      <a class="nav-link" data-nav="research" href="research.html">Research</a>
+      <a class="nav-link" data-nav="publications" href="publications.html">Publications</a>
+      <a class="nav-link" data-nav="people" href="studentsandteaching.html">Students &amp; Teaching</a>
+      <a class="nav-link" data-nav="service" href="service.html">Service</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="icon-button header-scholar" href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar" data-track="scholar_click">G</a>
+      <button class="icon-button" type="button" data-theme-toggle aria-label="Switch color theme" title="Switch color theme"><span class="theme-glyph" aria-hidden="true">◐</span></button>
+      <button class="menu-button" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false"><span class="menu-lines" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+
+<section class="page-hero research-hero"><div class="container narrow reveal"><span class="eyebrow">Website privacy</span><h1>Analytics and visitor privacy.</h1><p class="lede">The site can optionally collect aggregate traffic and engagement data; analytics remain disabled until a provider identifier is added.</p></div></section>
+<section class="section-compact"><div class="container prose">
+  <h2>Analytics are disabled by default</h2><p>The delivered code does not collect analytics until an analytics token or measurement ID is added to <code>assets/js/analytics-config.js</code>.</p>
+  <h2>Cloudflare Web Analytics</h2><p>When a Cloudflare token is configured, the site loads Cloudflare’s lightweight analytics beacon. It is intended for aggregate measurements such as page views, referral sources, and site performance without relying on cookies or local storage for visitor tracking.</p>
+  <h2>Google Analytics 4</h2><p>When a GA4 measurement ID is configured, the default code asks visitors to opt in before loading Google Analytics. The configuration disables Google Signals and advertising personalization. GA4 can report aggregate geographic dimensions and engagement events, including supported file downloads and outbound links.</p>
+  <h2>What analytics cannot identify</h2><p>Aggregate analytics cannot tell the site owner the real-world identity of a typical visitor. Geographic estimates may be imprecise because of VPNs, institutional networks, mobile carriers, privacy tools, and IP-based approximation.</p>
+  <h2>Privacy contact</h2><p>Questions about this website can be sent to <a href="mailto:mshi24@buffalo.edu">mshi24@buffalo.edu</a>.</p>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">MS</span>
+          <span class="brand-text"><span class="brand-name">Ming Shi</span><span class="brand-role">University at Buffalo</span></span>
+        </a>
+        <p>Safe learning and resource-aware optimization for networked autonomous systems.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="studentsandteaching.html">Students &amp; Teaching</a>
+        <a href="service.html">Service</a>
+        <a href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/ming-shi-1b12a1159/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="footer-time">
+        <span class="footer-time-label">Buffalo local time</span>
+        <time data-buffalo-time>Loading…</time>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-current-year></span> Ming Shi. All rights reserved.</span>
+      <span>Buffalo, New York · Eastern Time</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/analytics-config.js"></script>
+<script src="assets/js/analytics.js"></script>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Ming Shi — Academic Homepage",
+  "short_name": "Ming Shi",
+  "description": "Research in safe learning and resource-aware optimization for networked autonomous systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#005bbb",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

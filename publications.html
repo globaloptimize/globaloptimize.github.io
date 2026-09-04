@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+      document.documentElement.classList.add('js');
+      try {
+        const saved = localStorage.getItem('ming-shi-site-theme');
+        const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
+      } catch (_) {}
+    </script>
+  <title>Publications | Ming Shi</title>
+  <meta name="description" content="Search publications by Ming Shi in reinforcement learning, online optimization, bandit learning, safe learning, and networked systems.">
+  <meta name="author" content="Ming Shi">
+  <meta name="theme-color" content="#005bbb">
+  <link rel="canonical" href="https://mingshihomepage.com/publications.html">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ming Shi — Academic Homepage">
+  <meta property="og:title" content="Publications | Ming Shi">
+  <meta property="og:description" content="Search publications by Ming Shi in reinforcement learning, online optimization, bandit learning, safe learning, and networked systems.">
+  <meta property="og:url" content="https://mingshihomepage.com/publications.html">
+  <meta property="og:image" content="https://mingshihomepage.com/assets/images/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Publications | Ming Shi">
+  <meta name="twitter:description" content="Search publications by Ming Shi in reinforcement learning, online optimization, bandit learning, safe learning, and networked systems.">
+  
+</head>
+<body data-page="publications">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="Ming Shi home">
+      <span class="brand-mark" aria-hidden="true">MS</span>
+      <span class="brand-text">
+        <span class="brand-name">Ming Shi</span>
+        <span class="brand-role">Safe Learning · Online Optimization · Networked Systems</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" data-site-nav aria-label="Primary navigation">
+      <a class="nav-link" data-nav="home" href="/">Home</a>
+      <a class="nav-link" data-nav="research" href="research.html">Research</a>
+      <a class="nav-link" data-nav="publications" href="publications.html">Publications</a>
+      <a class="nav-link" data-nav="people" href="studentsandteaching.html">Students &amp; Teaching</a>
+      <a class="nav-link" data-nav="service" href="service.html">Service</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="icon-button header-scholar" href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar" data-track="scholar_click">G</a>
+      <button class="icon-button" type="button" data-theme-toggle aria-label="Switch color theme" title="Switch color theme"><span class="theme-glyph" aria-hidden="true">◐</span></button>
+      <button class="menu-button" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false"><span class="menu-lines" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+
+<section class="page-hero research-hero">
+  <div class="container narrow reveal">
+    <span class="eyebrow">Publication record</span>
+    <h1>Publications in <span class="display-accent">learning, optimization, and networked systems.</span></h1>
+    <p class="lede">Search and filter the complete record by type, topic, year, or status. Student authors are underlined, Ming Shi is bolded, and available paper and DOI links are included.</p>
+    <div class="button-row"><a class="button button-primary" href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a><a class="button button-secondary" href="https://www.linkedin.com/in/ming-shi-1b12a1159/" target="_blank" rel="noopener">LinkedIn ↗</a><button class="button button-secondary" type="button" onclick="window.print()">Print / save PDF</button></div>
+  </div>
+</section>
+
+<section class="section-compact">
+  <div class="container publications-layout">
+    <aside class="publication-filters" aria-label="Publication filters">
+      <div class="filter-group"><label class="filter-label" for="publication-search">Search</label><div class="search-box"><input id="publication-search" type="search" placeholder="Title, author, venue…" autocomplete="off" data-publication-search></div></div>
+      <div class="filter-group"><span class="filter-label">Publication type</span><div class="type-filter-list">
+        <button class="type-filter" type="button" data-type-filter="all" aria-pressed="true"><span>All works</span><span class="filter-count">32</span></button>
+        <button class="type-filter" type="button" data-type-filter="journal" aria-pressed="false"><span>Journal papers</span><span class="filter-count">7</span></button>
+        <button class="type-filter" type="button" data-type-filter="conference" aria-pressed="false"><span>Conference papers</span><span class="filter-count">20</span></button>
+        <button class="type-filter" type="button" data-type-filter="book" aria-pressed="false"><span>Book chapter</span><span class="filter-count">1</span></button>
+        <button class="type-filter" type="button" data-type-filter="dissertation" aria-pressed="false"><span>Dissertation</span><span class="filter-count">1</span></button>
+        <button class="type-filter" type="button" data-type-filter="report" aria-pressed="false"><span>Technical reports</span><span class="filter-count">3</span></button>
+      </div></div>
+      <div class="filter-group"><label class="filter-label" for="topic-filter">Topic</label><select class="filter-select" id="topic-filter" data-topic-filter><option value="all">All topics</option></select></div>
+      <div class="filter-group"><label class="filter-label" for="year-filter">Year</label><select class="filter-select" id="year-filter" data-year-filter><option value="all">All years</option></select></div>
+      <div class="filter-group"><label class="filter-label" for="status-filter">Status</label><select class="filter-select" id="status-filter" data-status-filter><option value="all">All statuses</option><option value="published">Published / accepted</option><option value="submitted">Submitted</option></select></div>
+      <div class="filter-group"><button class="button button-secondary" style="width:100%" type="button" data-reset-publications>Reset filters</button></div>
+    </aside>
+
+    <div>
+      <div class="publication-toolbar"><p class="publication-result-count" data-publication-count>32 works shown</p><label><span class="sr-only">Sort publications</span><select class="filter-select" data-sort-publications><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label></div>
+      <p class="no-js-note">JavaScript adds search, filtering, and citation-copying. The full publication list remains visible without it.</p>
+      <div class="sr-only" aria-live="polite" data-publication-live></div>
+      <div class="publication-list" data-publication-list><article class="publication-card is-featured" data-publication-id="p03">
+      <div class="publication-topline"><span class="publication-type">Journal paper</span><span class="publication-year">2026</span><span class="tag tag-blue">IEEE TIT</span></div>
+      <h2><a href="./papers/First-POMDP-POSI_TIT2026.pdf" target="_blank" rel="noopener">Reinforcement Learning with Partial Online State Information in POMDPs: Regret Bounds and Limits</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Yingbin Liang, and Ness B. Shroff</p>
+      <p class="paper-venue">IEEE Transactions on Information Theory, May 2026, DOI: 10.1109/TIT.2026.3694700. [IEEE TIT]</p>
+      <div class="tag-row"><span class="tag">Partial information</span><span class="tag">Reinforcement learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/First-POMDP-POSI_TIT2026.pdf" target="_blank" rel="noopener">↗ PDF</a><a class="paper-action" href="https://doi.org/10.1109/TIT.2026.3694700" target="_blank" rel="noopener">DOI</a><button class="paper-action copy-citation" type="button" data-copy-citation="p03">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p07">
+      <div class="publication-topline"><span class="publication-type">Journal paper</span><span class="publication-year">2026</span><span class="tag tag-blue">JMLR</span><span class="tag">Submitted</span></div>
+      <h2><a href="https://arxiv.org/pdf/2603.20453" target="_blank" rel="noopener">Regret Bounds for Reinforcement Learning from Multi-Source Imperfect Preferences</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Yingbin Liang, Ness B. Shroff, and Ananthram Swami</p>
+      <p class="paper-venue">submitted to Journal of Machine Learning Research, March 2026. [JMLR]</p>
+      <div class="tag-row"><span class="tag">Partial information</span><span class="tag">Preferences &amp; multi-objective</span><span class="tag">Reinforcement learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="https://arxiv.org/pdf/2603.20453" target="_blank" rel="noopener">↗ Source</a><button class="paper-action copy-citation" type="button" data-copy-citation="p07">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p08">
+      <div class="publication-topline"><span class="publication-type">Journal paper</span><span class="publication-year">2026</span><span class="tag tag-blue">IEEE TIFS</span><span class="tag">Submitted</span></div>
+      <h2><a href="./papers/Security-Queueing-AI_TIFS2026.pdf" target="_blank" rel="noopener">A Queueing-Theoretic Framework for Dynamic Attack Surfaces: Data-Integrated Risk Analysis and Adaptive Defense</a></h2>
+      <p class="paper-authors">Jihyeon Yun, Abdullah Etcibasi, <strong class="current-author">Ming Shi</strong> , and C. Emre Koksal</p>
+      <p class="paper-venue">submitted to IEEE Transactions on Information Forensics and Security, March 2026. [IEEE TIFS]</p>
+      <div class="tag-row"><span class="tag">Safety &amp; reliability</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Security-Queueing-AI_TIFS2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p08">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p09">
+      <div class="publication-topline"><span class="publication-type">Journal paper</span><span class="publication-year">2026</span><span class="tag tag-blue">IEEE JSAS</span><span class="tag">Submitted</span></div>
+      <h2><a href="./papers/PDS-RL-Sensor_JSAS2026.pdf" target="_blank" rel="noopener">Physics-Informed Stochastic Post-Decision State Reinforcement Learning for Computationally-Efficient IoT Sensor Scheduling</a></h2>
+      <p class="paper-authors">Alireza Mohammadhosseini, Andrew Corra, <strong class="current-author">Ming Shi</strong> , Nicholas Mastronarde, and Jacob Chakareski</p>
+      <p class="paper-venue">submitted to IEEE Journal of Selected Areas in Sensors, February 2026. [IEEE JSAS]</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Reinforcement learning</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/PDS-RL-Sensor_JSAS2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p09">Copy citation</button></div>
+    </article>
+<article class="publication-card is-featured" data-publication-id="p10">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-gold">WiOPT Best Paper Award Runner-Up</span></div>
+      <h2><a href="./papers/Bi-Level Opt-Lrn_WiOPT2026.pdf" target="_blank" rel="noopener">Bi-Level Online Provisioning and Scheduling with Switching Costs and Cross-Level Constraints</a></h2>
+      <p class="paper-authors"><span class="student-author">Jialei Liu</span>, C. Emre Koksal, and <strong class="current-author">Ming Shi</strong></p>
+      <p class="paper-venue">24th International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks, Columbus, Ohio, USA, June 2026. [WiOPT Best Paper Award Runner-Up]</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Bi-Level Opt-Lrn_WiOPT2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p10">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p11">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">WiOPT</span></div>
+      <h2><a href="./papers/PtC-Multi-Arm-Feedback_WiOPT2026.pdf" target="_blank" rel="noopener">Probe-then-Commit Multi-Objective Bandits: Theoretical Benefits of Limited Multi-Arm Feedback</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong></p>
+      <p class="paper-venue">24th International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks, Columbus, Ohio, USA, June 2026. [WiOPT]</p>
+      <div class="tag-row"><span class="tag">Partial information</span><span class="tag">Preferences &amp; multi-objective</span><span class="tag">Bandit learning</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/PtC-Multi-Arm-Feedback_WiOPT2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p11">Copy citation</button></div>
+    </article>
+<article class="publication-card is-featured" data-publication-id="p12">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">UAI (Acceptance rate: 30.5%.)</span></div>
+      <h2><a href="./papers/Person-MOB-Query_UAI2026.pdf" target="_blank" rel="noopener">Provably Efficient Personalized Multi-Objective Bandits with Proactive Conversational Queries</a></h2>
+      <p class="paper-authors">Linfeng Cao, <strong class="current-author">Ming Shi</strong> , and Ness B. Shroff</p>
+      <p class="paper-venue">42nd Conference on Uncertainty in Artificial Intelligence, Amsterdam, the Netherlands, August 2026. [UAI] (Acceptance rate: 30.5%.)</p>
+      <div class="tag-row"><span class="tag">Preferences &amp; multi-objective</span><span class="tag">Bandit learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Person-MOB-Query_UAI2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p12">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p13">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">COLT</span><span class="tag">Submitted</span></div>
+      <h2><a href="./papers/robust-diffusion_COLT2026.pdf" target="_blank" rel="noopener">Stability Limits of Diffusion Robustness Under Reverse-Process Errors</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong></p>
+      <p class="paper-venue">submitted to 39th Annual Conference on Learning Theory. [COLT]</p>
+      <div class="tag-row"><span class="tag">Safety &amp; reliability</span><span class="tag">Generative AI</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/robust-diffusion_COLT2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p13">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p14">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">ICML</span><span class="tag">Submitted</span></div>
+      <h2><a href="./papers/Meridian_ICML2026.pdf" target="_blank" rel="noopener">One Model for All Preferences: Meta-Learning for Multi-Objective LLM Alignment</a></h2>
+      <p class="paper-authors">Fatemeh Nourzad, Daouda Sow, Yingbin Liang, <strong class="current-author">Ming Shi</strong> , Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff</p>
+      <p class="paper-venue">submitted to 43rd International Conference on Machine Learning. [ICML]</p>
+      <div class="tag-row"><span class="tag">Preferences &amp; multi-objective</span><span class="tag">Generative AI</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Meridian_ICML2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p14">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p15">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">ICLR</span></div>
+      <h2><a href="./papers/ParetoSteerabilityLLM_ICLR-ICBINB2026.pdf" target="_blank" rel="noopener">Barriers to Pareto Steerability in Preference-Conditioned LLM Alignment</a></h2>
+      <p class="paper-authors">Fatemeh Nourzad, Daouda Sow, Yingbin Liang, <strong class="current-author">Ming Shi</strong> , Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff</p>
+      <p class="paper-venue">14th International Conference on Learning Representations (I Can&#x27;t Believe It&#x27;s Not Better: Challenges in Applied Deep Learning), Rio de Janeiro, Brazil, April 2026. [ICLR]</p>
+      <div class="tag-row"><span class="tag">Preferences &amp; multi-objective</span><span class="tag">Generative AI</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/ParetoSteerabilityLLM_ICLR-ICBINB2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p15">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p16">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">ICLR</span></div>
+      <h2><a href="./papers/MetaPreferenceLLM_ICLR-LLA2026.pdf" target="_blank" rel="noopener">One Model, Many Goals: Meta-Learning Preference-Conditioned Alignment for Lifelong LLM Agents</a></h2>
+      <p class="paper-authors">Fatemeh Nourzad, Daouda Sow, Yingbin Liang, <strong class="current-author">Ming Shi</strong> , Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff</p>
+      <p class="paper-venue">14th International Conference on Learning Representations (Lifelong Agents: Learning, Aligning, Evolving), Rio de Janeiro, Brazil, April 2026. [ICLR]</p>
+      <div class="tag-row"><span class="tag">Preferences &amp; multi-objective</span><span class="tag">Generative AI</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/MetaPreferenceLLM_ICLR-LLA2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p16">Copy citation</button></div>
+    </article>
+<article class="publication-card is-featured" data-publication-id="p17">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">ICLR (Acceptance rate: 28%.)</span></div>
+      <h2><a href="./papers/RL-AdversarialTransition_ICLR2026.pdf" target="_blank" rel="noopener">Minimax Optimal Adversarial Reinforcement Learning</a></h2>
+      <p class="paper-authors">Yudan Wang, Kaiyi Ji, <strong class="current-author">Ming Shi</strong> , Shaofeng Zou</p>
+      <p class="paper-venue">14th International Conference on Learning Representations, Rio de Janeiro, Brazil, April 2026. [ICLR] (Acceptance rate: 28%.)</p>
+      <div class="tag-row"><span class="tag">Safety &amp; reliability</span><span class="tag">Reinforcement learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/RL-AdversarialTransition_ICLR2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p17">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p18">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">IEEE ISIT</span><span class="tag">Submitted</span></div>
+      <h2><a href="./papers/Communication–Corruption Coupling and Verification in Cooperative MOB_ISIT2026.pdf" target="_blank" rel="noopener">Communication–Corruption Coupling and Verification in Cooperative Multi-Objective Bandits</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong></p>
+      <p class="paper-venue">submitted to IEEE International Symposium on Information Theory, January 2026. [IEEE ISIT]</p>
+      <div class="tag-row"><span class="tag">Preferences &amp; multi-objective</span><span class="tag">Bandit learning</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Communication–Corruption Coupling and Verification in Cooperative MOB_ISIT2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p18">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p19">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">ACM SIGMETRICS</span><span class="tag">Submitted</span></div>
+      <h2><a href="./papers/MoE_AC_for_Regime_Switching_SIGMETRICS2026.pdf" target="_blank" rel="noopener">Mixture-of-Experts Actor-Critic for Regime-Switching MDPs: Impossibility Results and Performance Guarantees</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong></p>
+      <p class="paper-venue">submitted to ACM SIGMETRICS, January 2026. [ACM SIGMETRICS]</p>
+      <div class="tag-row"><span class="tag">Reinforcement learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/MoE_AC_for_Regime_Switching_SIGMETRICS2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p19">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p20">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2026</span><span class="tag tag-blue">AAAI (Acceptance rate: 17.6%.)</span></div>
+      <h2><a href="./papers/MOB-PreferenceCustomization_AAAI2026.pdf" target="_blank" rel="noopener">Provably Efficient Multi-Objective Bandit Algorithms under Preference-Centric Customization</a></h2>
+      <p class="paper-authors">Linfeng Cao, <strong class="current-author">Ming Shi</strong> , and Ness B. Shroff</p>
+      <p class="paper-venue">The 40th Annual AAAI Conference on Artificial Intelligence, Singapore, January 2026. [AAAI] (Acceptance rate: 17.6%.)</p>
+      <div class="tag-row"><span class="tag">Preferences &amp; multi-objective</span><span class="tag">Bandit learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/MOB-PreferenceCustomization_AAAI2026.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p20">Copy citation</button></div>
+    </article>
+<article class="publication-card is-featured" data-publication-id="p04">
+      <div class="publication-topline"><span class="publication-type">Journal paper</span><span class="publication-year">2025</span><span class="tag tag-blue">IEEE/ACM ToN</span></div>
+      <h2><a href="./papers/Power-of-2-learning_ToN2025.pdf" target="_blank" rel="noopener">Power-of-2-Arms for Adversarial Bandit Learning with Switching Costs</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, and Lei Jiao</p>
+      <p class="paper-venue">IEEE/ACM Transactions on Networking, vol. 33, no. 3, pp. 1112-1127, June 2025, DOI: 10.1109/TON.2024.3522073. [IEEE/ACM ToN]</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Bandit learning</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Power-of-2-learning_ToN2025.pdf" target="_blank" rel="noopener">↗ PDF</a><a class="paper-action" href="https://doi.org/10.1109/TON.2024.3522073" target="_blank" rel="noopener">DOI</a><button class="paper-action copy-citation" type="button" data-copy-citation="p04">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p21">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2025</span><span class="tag tag-blue">ACM MobiHoc (Acceptance rate: 23%.)</span></div>
+      <h2><a href="./papers/AoI_MobiHoc2025.pdf" target="_blank" rel="noopener">Online Learning for Optimizing AoI-Energy Tradeoff under Unknown Channel Statistics</a></h2>
+      <p class="paper-authors">Mohamed A. Abd-Elmagid, <strong class="current-author">Ming Shi</strong> , Eylem Ekici, and Ness B. Shroff</p>
+      <p class="paper-venue">26th International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing, October 2025. [ACM MobiHoc] (Acceptance rate: 23%.)</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/AoI_MobiHoc2025.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p21">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p22">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2025</span><span class="tag tag-blue">ICML (Acceptance rate: 26.9%.)</span></div>
+      <h2><a href="./papers/SafeRL-NonConvex_ICML2025.pdf" target="_blank" rel="noopener">Provably Efficient Reinforcement Learning for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces</a></h2>
+      <p class="paper-authors">Amirhossein Roknilamouki, Arnob Ghosh, <strong class="current-author">Ming Shi</strong> , Fatemeh Nourzad, Eylem Ekici, and Ness B. Shroff</p>
+      <p class="paper-venue">42nd International Conference on Machine Learning, Vancouver, Canada, July 2025. [ICML] (Acceptance rate: 26.9%.)</p>
+      <div class="tag-row"><span class="tag">Safety &amp; reliability</span><span class="tag">Reinforcement learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/SafeRL-NonConvex_ICML2025.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p22">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p02">
+      <div class="publication-topline"><span class="publication-type">Book chapter</span><span class="publication-year">2024</span></div>
+      <h2><a href="https://link.springer.com/chapter/10.1007/978-3-031-53510-9_10" target="_blank" rel="noopener">Adversarial Online Reinforcement Learning Under Limited Defender Resources</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Yingbin Liang, and Ness B. Shroff</p>
+      <p class="paper-venue">Network Security Empowered by Artificial Intelligence, Springer, Series ISSN 1568-2633, April 2024.</p>
+      <div class="tag-row"><span class="tag">Safety &amp; reliability</span><span class="tag">Reinforcement learning</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="https://link.springer.com/chapter/10.1007/978-3-031-53510-9_10" target="_blank" rel="noopener">↗ Source</a><button class="paper-action copy-citation" type="button" data-copy-citation="p02">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p05">
+      <div class="publication-topline"><span class="publication-type">Journal paper</span><span class="publication-year">2024</span><span class="tag tag-blue">IEEE/ACM ToN</span></div>
+      <h2><a href="./papers/Regularization-lookahead-OCO_ToN2024.pdf" target="_blank" rel="noopener">Combining Regularization With Look-Ahead for Competitive Online Convex Optimization</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, and Lei Jiao</p>
+      <p class="paper-venue">IEEE/ACM Transactions on Networking, vol. 32, no. 3, pp. 2391-2405, June 2024, DOI: 10.1109/TNET.2024.3350990. [IEEE/ACM ToN]</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Regularization-lookahead-OCO_ToN2024.pdf" target="_blank" rel="noopener">↗ PDF</a><a class="paper-action" href="https://doi.org/10.1109/TNET.2024.3350990" target="_blank" rel="noopener">DOI</a><button class="paper-action copy-citation" type="button" data-copy-citation="p05">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p23">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2024</span><span class="tag tag-blue">IEEE MILCOM</span></div>
+      <h2><a href="./papers/POMDP-POSI_MILCOM2024.pdf" target="_blank" rel="noopener">Designing Near-Optimal Partially Observable Reinforcement Learning</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Yingbin Liang, and Ness Shroff</p>
+      <p class="paper-venue">IEEE Military Communications Conference, Washington DC, October 2024. [IEEE MILCOM]</p>
+      <div class="tag-row"><span class="tag">Partial information</span><span class="tag">Reinforcement learning</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/POMDP-POSI_MILCOM2024.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p23">Copy citation</button></div>
+    </article>
+<article class="publication-card is-featured" data-publication-id="p24">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2023</span><span class="tag tag-blue">ICML (Acceptance rate: 27.96%.)</span></div>
+      <h2><a href="./papers/First-SafeRL-Work_ICML2023.pdf" target="_blank" rel="noopener">A Near-Optimal Algorithm for Safe Reinforcement Learning Under Instantaneous Hard Constraints</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Yingbin Liang, and Ness Shroff</p>
+      <p class="paper-venue">40th International Conference on Machine Learning, Hawaii, USA, July 2023. [ICML] (Acceptance rate: 27.96%.)</p>
+      <div class="tag-row"><span class="tag">Safety &amp; reliability</span><span class="tag">Reinforcement learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/First-SafeRL-Work_ICML2023.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p24">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p25">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2023</span><span class="tag tag-gold">ICLR (Spotlight, with acceptance rate 8.0%.)</span></div>
+      <h2><a href="./papers/Spotlight-First-AdversarialRL-work-Switchingcost_ICLR2023.pdf" target="_blank" rel="noopener">Near-Optimal Adversarial Reinforcement Learning with Switching Costs</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Yingbin Liang, and Ness Shroff</p>
+      <p class="paper-venue">11th International Conference on Learning Representations, Kigali, Rwanda, May 2023. [ICLR] (Spotlight, with acceptance rate 8.0%.)</p>
+      <div class="tag-row"><span class="tag">Safety &amp; reliability</span><span class="tag">Resource adaptation</span><span class="tag">Reinforcement learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Spotlight-First-AdversarialRL-work-Switchingcost_ICLR2023.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p25">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p01">
+      <div class="publication-topline"><span class="publication-type">Dissertation</span><span class="publication-year">2022</span></div>
+      <h2><a href="https://hammer.purdue.edu/articles/thesis/On_the_Value_of_Prediction_and_Feedback_for_Online_Decision_Making_With_Switching_Costs/19949975" target="_blank" rel="noopener">On the Value of Prediction and Feedback for Online Decision Making With Switching Costs</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong></p>
+      <p class="paper-venue">Purdue University Doctoral Dissertation, June 2022.</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Partial information</span></div>
+      <div class="publication-actions"><a class="paper-action" href="https://hammer.purdue.edu/articles/thesis/On_the_Value_of_Prediction_and_Feedback_for_Online_Decision_Making_With_Switching_Costs/19949975" target="_blank" rel="noopener">↗ Source</a><button class="paper-action copy-citation" type="button" data-copy-citation="p01">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p26">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2022</span><span class="tag tag-blue">IEEE CIC</span></div>
+      <h2><a href="./papers/AI-Networking_CIC2022.pdf" target="_blank" rel="noopener">Leveraging Synergies Between AI and Networking to Build Next Generation Edge Networks</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Sen Lin (co-first author), Yingbin Liang, Ness Shroff, et al.</p>
+      <p class="paper-venue">8th IEEE International Conference on Collaboration and Internet Computing, virtual conference, December 2022. [IEEE CIC]</p>
+      <div class="tag-row"><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/AI-Networking_CIC2022.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p26">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p27">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2022</span><span class="tag tag-blue">ACM MobiHoc (Acceptance rate: 19.8%.)</span></div>
+      <h2><a href="./papers/Power-of-2-learning_MobiHoc2022.pdf" target="_blank" rel="noopener">Power-of-2-Arms for Bandit Learning with Switching Costs</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, and Lei Jiao</p>
+      <p class="paper-venue">23rd International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing, Seoul, South Korea, October 2022. [ACM MobiHoc] (Acceptance rate: 19.8%.)</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Bandit learning</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Power-of-2-learning_MobiHoc2022.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p27">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p30">
+      <div class="publication-topline"><span class="publication-type">Technical report</span><span class="publication-year">2022</span></div>
+      <h2><a href="./papers/Power-of-2-learning_2022technicalreport.pdf" target="_blank" rel="noopener">Power-of-2-Arms for Bandit Learning with Switching Costs</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, and Lei Jiao</p>
+      <p class="paper-venue">Technical report, October 2022.</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Bandit learning</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Power-of-2-learning_2022technicalreport.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p30">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p06">
+      <div class="publication-topline"><span class="publication-type">Journal paper</span><span class="publication-year">2021</span><span class="tag tag-blue">IEEE/ACM ToN</span></div>
+      <h2><a href="./papers/OCO-switching-ramp_ToN2021.pdf" target="_blank" rel="noopener">Competitive Online Convex Optimization with Switching Costs and Ramp Constraints</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, and Sonia Fahmy</p>
+      <p class="paper-venue">IEEE/ACM Transactions on Networking, vol. 29, no. 2, pp. 876-889, April 2021, DOI: 10.1109/TNET.2021.3053910. [IEEE/ACM ToN]</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/OCO-switching-ramp_ToN2021.pdf" target="_blank" rel="noopener">↗ PDF</a><a class="paper-action" href="https://doi.org/10.1109/TNET.2021.3053910" target="_blank" rel="noopener">DOI</a><button class="paper-action copy-citation" type="button" data-copy-citation="p06">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p28">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2021</span><span class="tag tag-blue">IEEE INFOCOM (Acceptance rate: 19.9%.)</span></div>
+      <h2><a href="./papers/Regularization-lookahead-OCO_INFOCOM2021.pdf" target="_blank" rel="noopener">Combining Regularization with Look-Ahead for Competitive Online Convex Optimization</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, and Lei Jiao</p>
+      <p class="paper-venue">IEEE Conference on Computer Communications, virtual conference, May 2021. [IEEE INFOCOM] (Acceptance rate: 19.9%.)</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Regularization-lookahead-OCO_INFOCOM2021.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p28">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p31">
+      <div class="publication-topline"><span class="publication-type">Technical report</span><span class="publication-year">2021</span></div>
+      <h2><a href="./papers/Regularization-lookahead-OCO_2021technicalreport.pdf" target="_blank" rel="noopener">Combining Regularization with Look-Ahead for Competitive Online Convex Optimization</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, and Lei Jiao</p>
+      <p class="paper-venue">Technical report, May 2021.</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/Regularization-lookahead-OCO_2021technicalreport.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p31">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p32">
+      <div class="publication-topline"><span class="publication-type">Technical report</span><span class="publication-year">2021</span></div>
+      <h2><a href="./papers/OCO-switching-ramp_2018technicalreport.pdf" target="_blank" rel="noopener">Competitive Online Convex Optimization with Switching Costs and Ramp Constraints</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin and Sonia Fahmy</p>
+      <p class="paper-venue">Technical report, April 2021.</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/OCO-switching-ramp_2018technicalreport.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p32">Copy citation</button></div>
+    </article>
+<article class="publication-card " data-publication-id="p29">
+      <div class="publication-topline"><span class="publication-type">Conference paper</span><span class="publication-year">2018</span><span class="tag tag-blue">IEEE INFOCOM (Acceptance rate: 19.2%.)</span></div>
+      <h2><a href="./papers/OCO-switching-ramp_INFOCOM2018.pdf" target="_blank" rel="noopener">Competitive Online Convex Optimization with Switching Costs and Ramp Constraints</a></h2>
+      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, Sonia Fahmy, and DongHoon Shin</p>
+      <p class="paper-venue">IEEE Conference on Computer Communications, Honolulu, Hawaii, USA, April 2018. [IEEE INFOCOM] (Acceptance rate: 19.2%.)</p>
+      <div class="tag-row"><span class="tag">Resource adaptation</span><span class="tag">Networked systems</span></div>
+      <div class="publication-actions"><a class="paper-action" href="./papers/OCO-switching-ramp_INFOCOM2018.pdf" target="_blank" rel="noopener">↗ PDF</a><button class="paper-action copy-citation" type="button" data-copy-citation="p29">Copy citation</button></div>
+    </article></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-compact section-muted">
+  <div class="container"><p class="muted text-small"><strong>Student authors:</strong> student names from the existing publication page are underlined. <strong>Status note:</strong> entries labeled “submitted” are retained exactly as provided; review those statuses before deployment because several refer to 2026 venues.</p></div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">MS</span>
+          <span class="brand-text"><span class="brand-name">Ming Shi</span><span class="brand-role">University at Buffalo</span></span>
+        </a>
+        <p>Safe learning and resource-aware optimization for networked autonomous systems.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="studentsandteaching.html">Students &amp; Teaching</a>
+        <a href="service.html">Service</a>
+        <a href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/ming-shi-1b12a1159/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="footer-time">
+        <span class="footer-time-label">Buffalo local time</span>
+        <time data-buffalo-time>Loading…</time>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-current-year></span> Ming Shi. All rights reserved.</span>
+      <span>Buffalo, New York · Eastern Time</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/analytics-config.js"></script>
+<script src="assets/js/analytics.js"></script>
+<script src="assets/data/publications.js"></script>
+<script src="assets/js/publications.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ming Shi academic homepage</title>
+  <desc id="desc">Safe learning and online optimization limited information, and costly adaptation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="40" x2="1110" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06172a"/>
+      <stop offset=".58" stop-color="#083564"/>
+      <stop offset="1" stop-color="#006570"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="180" x2="810" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#65b4ff"/>
+      <stop offset="1" stop-color="#7ad8b5"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="34"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="100" r="250" fill="#2f9fd0" opacity=".22" filter="url(#blur)"/>
+  <circle cx="1020" cy="580" r="260" fill="#38a3a5" opacity=".2" filter="url(#blur)"/>
+  <g opacity=".22" stroke="#fff" stroke-width="2">
+    <path d="M760 125 895 210l137-64 105 116-74 126 61 107" fill="none"/>
+    <path d="M782 422 901 352l128 65 108-67" fill="none"/>
+    <circle cx="760" cy="125" r="10" fill="#65b4ff"/><circle cx="895" cy="210" r="10" fill="#65b4ff"/><circle cx="1032" cy="146" r="10" fill="#65b4ff"/><circle cx="1137" cy="262" r="10" fill="#65b4ff"/><circle cx="1063" cy="388" r="10" fill="#65b4ff"/><circle cx="1124" cy="495" r="10" fill="#65b4ff"/>
+  </g>
+  <rect x="83" y="79" width="88" height="88" rx="25" fill="#005bbb"/>
+  <text x="127" y="135" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" fill="#fff">MS</text>
+  <text x="83" y="248" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#fff">Ming Shi</text>
+  <text x="83" y="305" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="url(#accent)">Safe Learning × Online Optimization × Networked Systems</text>
+  <text x="83" y="390" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#fff">Learning and optimization under hard constraints,</text>
+  <text x="83" y="438" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#fff">limited information, and costly adaptation.</text>
+  <text x="83" y="535" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#d7eaff">Assistant Professor · University at Buffalo · Electrical &amp; Computer Engineering</text>
+</svg>

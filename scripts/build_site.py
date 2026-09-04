@@ -220,7 +220,11 @@ home_content = f"""
   <div class="container hero-grid">
     <div class="hero-copy reveal">
       <span class="eyebrow">Assistant Professor · Electrical and Computer Engineering · University at Buffalo</span>
-      <h1><span class="hero-title-line">Ming Shi</span>Safe learning and online optimization for <span class="display-accent">networked autonomous systems.</span></h1>
+      <h1>
+        <span class="hero-title-line">Ming Shi</span>
+        <span class="hero-headline-main">Safe learning and online optimization</span>
+        <span class="hero-headline-domain">for networked autonomous systems.</span>
+      </h1>
       <p class="hero-thesis">Reinforcement learning, online optimization, and bandits under hard constraints, limited information, and costly adaptation.</p>
       <p class="hero-description">I develop algorithms and fundamental performance guarantees for systems that must learn and adapt without compromising safety, reliability, or resource efficiency.</p>
       <div class="button-row hero-actions">
@@ -235,15 +239,20 @@ home_content = f"""
       </div>
     </div>
 
-    <aside class="hero-card reveal" aria-label="Ming Shi profile">
+    <aside class="hero-profile reveal" aria-label="Ming Shi profile">
+      <figure class="hero-card">
+        <div class="portrait-wrap">
+          <img src="ming_shi_69.jpg" width="800" height="1100" alt="Portrait of Ming Shi" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.svg';">
+        </div>
+        <figcaption class="portrait-caption">
+          <div>
+            <strong>Ming Shi, Ph.D.</strong>
+            <span>Assistant Professor · Electrical and Computer Engineering</span>
+          </div>
+          <a href="https://engineering.buffalo.edu/ee/faculty/faculty_directory.host.html/content/shared/engineering/ee/profiles/shi-ming.html" target="_blank" rel="noopener">University at Buffalo ↗</a>
+        </figcaption>
+      </figure>
       <div class="availability-chip"><span class="availability-dot" aria-hidden="true"></span><span>Buffalo · <time data-buffalo-time>local time</time></span></div>
-      <div class="portrait-wrap">
-        <picture>
-          <source srcset="assets/images/ming-shi.webp" type="image/webp">
-          <img src="ming_shi_69.jpg" width="800" height="1000" alt="Portrait of Ming Shi" fetchpriority="high" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.svg';">
-        </picture>
-        <div class="portrait-label"><strong>Ming Shi, Ph.D.</strong><span>University at Buffalo · 228 Davis Hall</span></div>
-      </div>
     </aside>
   </div>
 </section>
@@ -658,3 +667,5 @@ not_found = f"""{head('Page not found | Ming Shi', 'The requested page could not
 (ROOT / '404.html').write_text(not_found, encoding='utf-8')
 
 print('Built HTML pages:', ', '.join(p.name for p in ROOT.glob('*.html')))
+if not (ROOT / 'ming_shi_69.jpg').exists():
+    print('Portrait reminder: place ming_shi_69.jpg in the website root beside index.html.')

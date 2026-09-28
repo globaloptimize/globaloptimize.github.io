@@ -1,5 +1,26 @@
 window.HIGHLIGHTS = [
   {
+    "id": "h00a",
+    "text": "“Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints” accepted at NeurIPS 2026.",
+    "year": 2026,
+    "type": "honor",
+    "link": ""
+  },
+  {
+    "id": "h00b",
+    "text": "“Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems” accepted at the ACM MobiHoc AIoT 2026 workshop in Tokyo.",
+    "year": 2026,
+    "type": "honor",
+    "link": "./papers/Fresh-Enough-to-Decide_AIoT2026.pdf"
+  },
+  {
+    "id": "h00c",
+    "text": "Member, University at Buffalo ECE Tenure and Promotion Committee, 2026–present.",
+    "year": 2026,
+    "type": "leadership",
+    "link": ""
+  },
+  {
     "id": "h01",
     "text": "“Bi-Level Online Provisioning and Scheduling with Switching Costs and Cross-Level Constraints” — Best Paper Award Runner-Up, IEEE/IFIP WiOpt, Columbus, OH, June 2026.",
     "year": 2026,

@@ -1,5 +1,65 @@
 window.PUBLICATIONS = [
   {
+    "id": "p34",
+    "type": "conference",
+    "title": "Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints",
+    "authors": "Ming Shi and collaborators",
+    "studentAuthors": [],
+    "venue": "40th Conference on Neural Information Processing Systems (NeurIPS), 2026. Accepted.",
+    "year": 2026,
+    "link": "",
+    "doi": "",
+    "badge": "NeurIPS 2026 · Accepted",
+    "status": "accepted",
+    "sourceOrder": 0,
+    "topics": [
+      "Safe reinforcement learning",
+      "Multi-agent learning",
+      "Instantaneous hard constraints"
+    ],
+    "directions": [
+      "Safe & verifiable learning",
+      "Distributed & multi-agent intelligence"
+    ],
+    "featured": true,
+    "award": false,
+    "spotlight": false,
+    "summary": "Studies cooperative Markov games in which every joint action must satisfy coupled hard constraints, combining conservative graph-structured safety certification with optimistic learning.",
+    "publicNote": "Public camera-ready link and complete citation forthcoming.",
+    "citationEnabled": false
+  },
+  {
+    "id": "p33",
+    "type": "conference",
+    "title": "Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems",
+    "authors": "Hui Wan, Seyyedali Hosseinalipour, Jacob Chakareski, and Ming Shi",
+    "studentAuthors": [
+      "Hui Wan"
+    ],
+    "venue": "The Third International Workshop on the Integration between Distributed Machine Learning and the Internet of Things (AIoT ’26), Tokyo, Japan, November 2026. Accepted.",
+    "year": 2026,
+    "link": "./papers/Fresh-Enough-to-Decide_AIoT2026.pdf",
+    "doi": "",
+    "badge": "AIoT 2026 · Accepted",
+    "status": "accepted",
+    "sourceOrder": 1,
+    "topics": [
+      "Age of Intelligence",
+      "Resource adaptation",
+      "Edge AI",
+      "Nonstationary learning"
+    ],
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence",
+      "Dynamic, secure & robust AI"
+    ],
+    "featured": true,
+    "award": false,
+    "spotlight": false,
+    "summary": "Defines decision-aware model freshness and certificate-based synchronization policies that balance stale-decision regret against communication and refresh cost."
+  },
+  {
     "id": "p01",
     "type": "dissertation",
     "title": "On the Value of Prediction and Feedback for Online Decision Making With Switching Costs",
@@ -18,13 +78,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Partial & human information"
+    ]
   },
   {
     "id": "p02",
     "type": "book",
     "title": "Adversarial Online Reinforcement Learning Under Limited Defender Resources",
-    "authors": "Ming Shi , Yingbin Liang, and Ness B. Shroff",
+    "authors": "Ming Shi, Yingbin Liang, and Ness B. Shroff",
     "studentAuthors": [],
     "venue": "Network Security Empowered by Artificial Intelligence, Springer, Series ISSN 1568-2633, April 2024.",
     "year": 2024,
@@ -40,13 +104,18 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Safe & verifiable learning",
+      "Distributed & multi-agent intelligence",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p03",
     "type": "journal",
     "title": "Reinforcement Learning with Partial Online State Information in POMDPs: Regret Bounds and Limits",
-    "authors": "Ming Shi , Yingbin Liang, and Ness B. Shroff",
+    "authors": "Ming Shi, Yingbin Liang, and Ness B. Shroff",
     "studentAuthors": [],
     "venue": "IEEE Transactions on Information Theory, May 2026, DOI: 10.1109/TIT.2026.3694700. [IEEE TIT]",
     "year": 2026,
@@ -61,13 +130,16 @@ window.PUBLICATIONS = [
     ],
     "featured": true,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information"
+    ]
   },
   {
     "id": "p04",
     "type": "journal",
     "title": "Power-of-2-Arms for Adversarial Bandit Learning with Switching Costs",
-    "authors": "Ming Shi , Xiaojun Lin, and Lei Jiao",
+    "authors": "Ming Shi, Xiaojun Lin, and Lei Jiao",
     "studentAuthors": [],
     "venue": "IEEE/ACM Transactions on Networking, vol. 33, no. 3, pp. 1112-1127, June 2025, DOI: 10.1109/TON.2024.3522073. [IEEE/ACM ToN]",
     "year": 2025,
@@ -83,13 +155,18 @@ window.PUBLICATIONS = [
     ],
     "featured": true,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p05",
     "type": "journal",
     "title": "Combining Regularization With Look-Ahead for Competitive Online Convex Optimization",
-    "authors": "Ming Shi , Xiaojun Lin, and Lei Jiao",
+    "authors": "Ming Shi, Xiaojun Lin, and Lei Jiao",
     "studentAuthors": [],
     "venue": "IEEE/ACM Transactions on Networking, vol. 32, no. 3, pp. 2391-2405, June 2024, DOI: 10.1109/TNET.2024.3350990. [IEEE/ACM ToN]",
     "year": 2024,
@@ -104,13 +181,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p06",
     "type": "journal",
     "title": "Competitive Online Convex Optimization with Switching Costs and Ramp Constraints",
-    "authors": "Ming Shi , Xiaojun Lin, and Sonia Fahmy",
+    "authors": "Ming Shi, Xiaojun Lin, and Sonia Fahmy",
     "studentAuthors": [],
     "venue": "IEEE/ACM Transactions on Networking, vol. 29, no. 2, pp. 876-889, April 2021, DOI: 10.1109/TNET.2021.3053910. [IEEE/ACM ToN]",
     "year": 2021,
@@ -125,13 +206,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p07",
     "type": "journal",
     "title": "Regret Bounds for Reinforcement Learning from Multi-Source Imperfect Preferences",
-    "authors": "Ming Shi , Yingbin Liang, Ness B. Shroff, and Ananthram Swami",
+    "authors": "Ming Shi, Yingbin Liang, Ness B. Shroff, and Ananthram Swami",
     "studentAuthors": [],
     "venue": "submitted to Journal of Machine Learning Research, March 2026. [JMLR]",
     "year": 2026,
@@ -147,13 +232,16 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information"
+    ]
   },
   {
     "id": "p08",
     "type": "journal",
     "title": "A Queueing-Theoretic Framework for Dynamic Attack Surfaces: Data-Integrated Risk Analysis and Adaptive Defense",
-    "authors": "Jihyeon Yun, Abdullah Etcibasi, Ming Shi , and C. Emre Koksal",
+    "authors": "Jihyeon Yun, Abdullah Etcibasi, Ming Shi, and C. Emre Koksal",
     "studentAuthors": [],
     "venue": "submitted to IEEE Transactions on Information Forensics and Security, March 2026. [IEEE TIFS]",
     "year": 2026,
@@ -168,13 +256,18 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Safe & verifiable learning",
+      "Distributed & multi-agent intelligence",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p09",
     "type": "journal",
     "title": "Physics-Informed Stochastic Post-Decision State Reinforcement Learning for Computationally-Efficient IoT Sensor Scheduling",
-    "authors": "Alireza Mohammadhosseini, Andrew Corra, Ming Shi , Nicholas Mastronarde, and Jacob Chakareski",
+    "authors": "Alireza Mohammadhosseini, Andrew Corra, Ming Shi, Nicholas Mastronarde, and Jacob Chakareski",
     "studentAuthors": [],
     "venue": "submitted to IEEE Journal of Selected Areas in Sensors, February 2026. [IEEE JSAS]",
     "year": 2026,
@@ -190,7 +283,11 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p10",
@@ -213,7 +310,11 @@ window.PUBLICATIONS = [
     ],
     "featured": true,
     "award": true,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p11",
@@ -236,13 +337,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p12",
     "type": "conference",
     "title": "Provably Efficient Personalized Multi-Objective Bandits with Proactive Conversational Queries",
-    "authors": "Linfeng Cao, Ming Shi , and Ness B. Shroff",
+    "authors": "Linfeng Cao, Ming Shi, and Ness B. Shroff",
     "studentAuthors": [],
     "venue": "42nd Conference on Uncertainty in Artificial Intelligence, Amsterdam, the Netherlands, August 2026. [UAI] (Acceptance rate: 30.5%.)",
     "year": 2026,
@@ -257,7 +362,10 @@ window.PUBLICATIONS = [
     ],
     "featured": true,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information"
+    ]
   },
   {
     "id": "p13",
@@ -278,13 +386,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Safe & verifiable learning",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p14",
     "type": "conference",
     "title": "One Model for All Preferences: Meta-Learning for Multi-Objective LLM Alignment",
-    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi , Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
+    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
     "studentAuthors": [],
     "venue": "submitted to 43rd International Conference on Machine Learning. [ICML]",
     "year": 2026,
@@ -299,13 +411,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p15",
     "type": "conference",
     "title": "Barriers to Pareto Steerability in Preference-Conditioned LLM Alignment",
-    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi , Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
+    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
     "studentAuthors": [],
     "venue": "14th International Conference on Learning Representations (I Can't Believe It's Not Better: Challenges in Applied Deep Learning), Rio de Janeiro, Brazil, April 2026. [ICLR]",
     "year": 2026,
@@ -320,13 +436,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p16",
     "type": "conference",
     "title": "One Model, Many Goals: Meta-Learning Preference-Conditioned Alignment for Lifelong LLM Agents",
-    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi , Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
+    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
     "studentAuthors": [],
     "venue": "14th International Conference on Learning Representations (Lifelong Agents: Learning, Aligning, Evolving), Rio de Janeiro, Brazil, April 2026. [ICLR]",
     "year": 2026,
@@ -341,13 +461,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p17",
     "type": "conference",
     "title": "Minimax Optimal Adversarial Reinforcement Learning",
-    "authors": "Yudan Wang, Kaiyi Ji, Ming Shi , Shaofeng Zou",
+    "authors": "Yudan Wang, Kaiyi Ji, Ming Shi, Shaofeng Zou",
     "studentAuthors": [],
     "venue": "14th International Conference on Learning Representations, Rio de Janeiro, Brazil, April 2026. [ICLR] (Acceptance rate: 28%.)",
     "year": 2026,
@@ -362,7 +486,11 @@ window.PUBLICATIONS = [
     ],
     "featured": true,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Safe & verifiable learning",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p18",
@@ -372,7 +500,7 @@ window.PUBLICATIONS = [
     "studentAuthors": [],
     "venue": "submitted to IEEE International Symposium on Information Theory, January 2026. [IEEE ISIT]",
     "year": 2026,
-    "link": "./papers/Communication–Corruption Coupling and Verification in Cooperative MOB_ISIT2026.pdf",
+    "link": "./papers/Communication-Corruption-Cooperative-MOB_ISIT2026.pdf",
     "doi": "",
     "badge": "IEEE ISIT",
     "status": "submitted",
@@ -384,7 +512,11 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p19",
@@ -404,13 +536,16 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p20",
     "type": "conference",
     "title": "Provably Efficient Multi-Objective Bandit Algorithms under Preference-Centric Customization",
-    "authors": "Linfeng Cao, Ming Shi , and Ness B. Shroff",
+    "authors": "Linfeng Cao, Ming Shi, and Ness B. Shroff",
     "studentAuthors": [],
     "venue": "The 40th Annual AAAI Conference on Artificial Intelligence, Singapore, January 2026. [AAAI] (Acceptance rate: 17.6%.)",
     "year": 2026,
@@ -425,13 +560,16 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information"
+    ]
   },
   {
     "id": "p21",
     "type": "conference",
     "title": "Online Learning for Optimizing AoI-Energy Tradeoff under Unknown Channel Statistics",
-    "authors": "Mohamed A. Abd-Elmagid, Ming Shi , Eylem Ekici, and Ness B. Shroff",
+    "authors": "Mohamed A. Abd-Elmagid, Ming Shi, Eylem Ekici, and Ness B. Shroff",
     "studentAuthors": [],
     "venue": "26th International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing, October 2025. [ACM MobiHoc] (Acceptance rate: 23%.)",
     "year": 2025,
@@ -446,13 +584,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p22",
     "type": "conference",
     "title": "Provably Efficient Reinforcement Learning for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces",
-    "authors": "Amirhossein Roknilamouki, Arnob Ghosh, Ming Shi , Fatemeh Nourzad, Eylem Ekici, and Ness B. Shroff",
+    "authors": "Amirhossein Roknilamouki, Arnob Ghosh, Ming Shi, Fatemeh Nourzad, Eylem Ekici, and Ness B. Shroff",
     "studentAuthors": [],
     "venue": "42nd International Conference on Machine Learning, Vancouver, Canada, July 2025. [ICML] (Acceptance rate: 26.9%.)",
     "year": 2025,
@@ -467,13 +609,16 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Safe & verifiable learning"
+    ]
   },
   {
     "id": "p23",
     "type": "conference",
     "title": "Designing Near-Optimal Partially Observable Reinforcement Learning",
-    "authors": "Ming Shi , Yingbin Liang, and Ness Shroff",
+    "authors": "Ming Shi, Yingbin Liang, and Ness Shroff",
     "studentAuthors": [],
     "venue": "IEEE Military Communications Conference, Washington DC, October 2024. [IEEE MILCOM]",
     "year": 2024,
@@ -489,13 +634,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Partial & human information",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p24",
     "type": "conference",
     "title": "A Near-Optimal Algorithm for Safe Reinforcement Learning Under Instantaneous Hard Constraints",
-    "authors": "Ming Shi , Yingbin Liang, and Ness Shroff",
+    "authors": "Ming Shi, Yingbin Liang, and Ness Shroff",
     "studentAuthors": [],
     "venue": "40th International Conference on Machine Learning, Hawaii, USA, July 2023. [ICML] (Acceptance rate: 27.96%.)",
     "year": 2023,
@@ -510,13 +659,16 @@ window.PUBLICATIONS = [
     ],
     "featured": true,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Safe & verifiable learning"
+    ]
   },
   {
     "id": "p25",
     "type": "conference",
     "title": "Near-Optimal Adversarial Reinforcement Learning with Switching Costs",
-    "authors": "Ming Shi , Yingbin Liang, and Ness Shroff",
+    "authors": "Ming Shi, Yingbin Liang, and Ness Shroff",
     "studentAuthors": [],
     "venue": "11th International Conference on Learning Representations, Kigali, Rwanda, May 2023. [ICLR] (Spotlight, with acceptance rate 8.0%.)",
     "year": 2023,
@@ -532,13 +684,18 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": true
+    "spotlight": true,
+    "directions": [
+      "Safe & verifiable learning",
+      "Prediction & costly adaptation",
+      "Dynamic, secure & robust AI"
+    ]
   },
   {
     "id": "p26",
     "type": "conference",
     "title": "Leveraging Synergies Between AI and Networking to Build Next Generation Edge Networks",
-    "authors": "Ming Shi , Sen Lin (co-first author), Yingbin Liang, Ness Shroff, et al.",
+    "authors": "Ming Shi, Sen Lin (co-first author), Yingbin Liang, Ness Shroff, et al.",
     "studentAuthors": [],
     "venue": "8th IEEE International Conference on Collaboration and Internet Computing, virtual conference, December 2022. [IEEE CIC]",
     "year": 2022,
@@ -552,13 +709,16 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p27",
     "type": "conference",
     "title": "Power-of-2-Arms for Bandit Learning with Switching Costs",
-    "authors": "Ming Shi , Xiaojun Lin, and Lei Jiao",
+    "authors": "Ming Shi, Xiaojun Lin, and Lei Jiao",
     "studentAuthors": [],
     "venue": "23rd International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing, Seoul, South Korea, October 2022. [ACM MobiHoc] (Acceptance rate: 19.8%.)",
     "year": 2022,
@@ -574,13 +734,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p28",
     "type": "conference",
     "title": "Combining Regularization with Look-Ahead for Competitive Online Convex Optimization",
-    "authors": "Ming Shi , Xiaojun Lin, and Lei Jiao",
+    "authors": "Ming Shi, Xiaojun Lin, and Lei Jiao",
     "studentAuthors": [],
     "venue": "IEEE Conference on Computer Communications, virtual conference, May 2021. [IEEE INFOCOM] (Acceptance rate: 19.9%.)",
     "year": 2021,
@@ -595,13 +759,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p29",
     "type": "conference",
     "title": "Competitive Online Convex Optimization with Switching Costs and Ramp Constraints",
-    "authors": "Ming Shi , Xiaojun Lin, Sonia Fahmy, and DongHoon Shin",
+    "authors": "Ming Shi, Xiaojun Lin, Sonia Fahmy, and DongHoon Shin",
     "studentAuthors": [],
     "venue": "IEEE Conference on Computer Communications, Honolulu, Hawaii, USA, April 2018. [IEEE INFOCOM] (Acceptance rate: 19.2%.)",
     "year": 2018,
@@ -616,13 +784,17 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation",
+      "Distributed & multi-agent intelligence"
+    ]
   },
   {
     "id": "p30",
     "type": "report",
     "title": "Power-of-2-Arms for Bandit Learning with Switching Costs",
-    "authors": "Ming Shi , Xiaojun Lin, and Lei Jiao",
+    "authors": "Ming Shi, Xiaojun Lin, and Lei Jiao",
     "studentAuthors": [],
     "venue": "Technical report, October 2022.",
     "year": 2022,
@@ -637,13 +809,16 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation"
+    ]
   },
   {
     "id": "p31",
     "type": "report",
     "title": "Combining Regularization with Look-Ahead for Competitive Online Convex Optimization",
-    "authors": "Ming Shi , Xiaojun Lin, and Lei Jiao",
+    "authors": "Ming Shi, Xiaojun Lin, and Lei Jiao",
     "studentAuthors": [],
     "venue": "Technical report, May 2021.",
     "year": 2021,
@@ -657,13 +832,16 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation"
+    ]
   },
   {
     "id": "p32",
     "type": "report",
     "title": "Competitive Online Convex Optimization with Switching Costs and Ramp Constraints",
-    "authors": "Ming Shi , Xiaojun Lin and Sonia Fahmy",
+    "authors": "Ming Shi, Xiaojun Lin and Sonia Fahmy",
     "studentAuthors": [],
     "venue": "Technical report, April 2021.",
     "year": 2021,
@@ -677,6 +855,9 @@ window.PUBLICATIONS = [
     ],
     "featured": false,
     "award": false,
-    "spotlight": false
+    "spotlight": false,
+    "directions": [
+      "Prediction & costly adaptation"
+    ]
   }
 ];

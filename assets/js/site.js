@@ -170,15 +170,20 @@
       if (publication.status === 'published') {
         acc.published[publication.type] = (acc.published[publication.type] || 0) + 1;
       }
+      if (publication.status === 'accepted') {
+        acc.accepted[publication.type] = (acc.accepted[publication.type] || 0) + 1;
+      }
       if (publication.award || publication.spotlight) acc.recognitions += 1;
       return acc;
-    }, { total: 0, recognitions: 0, published: {} });
+    }, { total: 0, recognitions: 0, published: {}, accepted: {} });
 
     document.querySelectorAll('[data-stat]').forEach((target) => {
       const key = target.dataset.stat;
       let value = counts[key];
       if (key === 'published-peer-reviewed') {
         value = (counts.published.journal || 0) + (counts.published.conference || 0);
+      } else if (key === 'accepted-published-peer-reviewed') {
+        value = (counts.published.journal || 0) + (counts.published.conference || 0) + (counts.accepted.journal || 0) + (counts.accepted.conference || 0);
       } else if (key.endsWith('-published')) {
         value = counts.published[key.replace('-published', '')] || 0;
       }
@@ -197,13 +202,15 @@
     featuredContainer.innerHTML = selected.map((paper) => {
       const tags = (paper.topics || []).slice(0, 3).map((topic) => `<span class="tag">${escapeHTML(topic)}</span>`).join('');
       const badge = paper.badge ? `<span class="tag ${paper.award || paper.spotlight ? 'tag-gold' : 'tag-blue'}">${escapeHTML(paper.badge)}</span>` : '';
-      const href = escapeHTML(paper.link || 'publications.html');
+      const href = escapeHTML(paper.link || `publications.html?q=${encodeURIComponent(paper.title)}`);
       return `
         <article class="featured-paper reveal">
           <span class="card-kicker">${escapeHTML(typeLabels[paper.type] || paper.type)} · ${escapeHTML(paper.year)}</span>
           <h3><a href="${href}" data-track="featured_publication" data-track-label="${escapeHTML(paper.title)}">${escapeHTML(paper.title)}</a></h3>
           <p class="paper-authors">${highlightAuthor(paper.authors)}</p>
           <p class="paper-venue">${escapeHTML(paper.venue)}</p>
+          ${paper.summary ? `<p class="paper-summary">${escapeHTML(paper.summary)}</p>` : ''}
+          ${paper.publicNote ? `<p class="paper-note">${escapeHTML(paper.publicNote)}</p>` : ''}
           <div class="tag-row">${badge}${tags}</div>
         </article>`;
     }).join('');

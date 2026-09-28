@@ -9,9 +9,9 @@
   const topicSelect = document.querySelector('[data-topic-filter]');
   const yearSelect = document.querySelector('[data-year-filter]');
   const statusSelect = document.querySelector('[data-status-filter]');
-  const sortSelect = document.querySelector('[data-sort-publications]');
+  const sortSelect = document.querySelector('[data-sort-publications], [data-sort-filter]');
   const typeButtons = [...document.querySelectorAll('[data-type-filter]')];
-  const resetButton = document.querySelector('[data-reset-publications]');
+  const resetButton = document.querySelector('[data-reset-publications], [data-filter-reset]');
   const countTarget = document.querySelector('[data-publication-count]');
   const liveRegion = document.querySelector('[data-publication-live]');
 
@@ -72,7 +72,8 @@
     const topicTags = (publication.topics || []).map((topic) => `<span class="tag">${escapeHTML(topic)}</span>`).join('');
     const badgeClass = publication.award || publication.spotlight ? 'tag-gold' : 'tag-blue';
     const badge = publication.badge ? `<span class="tag ${badgeClass}">${escapeHTML(publication.badge)}</span>` : '';
-    const status = publication.status === 'submitted' ? '<span class="tag">Submitted</span>' : '';
+    const statusLabels = { accepted: 'Accepted', submitted: 'Submitted', published: '' };
+    const status = statusLabels[publication.status] ? `<span class="tag ${publication.status === 'accepted' ? 'tag-gold' : ''}">${statusLabels[publication.status]}</span>` : '';
     const primaryLink = publication.link || '';
     const title = primaryLink
       ? `<a href="${escapeHTML(primaryLink)}" target="_blank" rel="noopener" data-track="publication_title" data-track-label="${escapeHTML(publication.title)}">${escapeHTML(publication.title)}</a>`
@@ -84,6 +85,10 @@
     const doiAction = publication.doi
       ? `<a class="paper-action" href="https://doi.org/${escapeHTML(publication.doi)}" target="_blank" rel="noopener" data-track="doi_click" data-track-label="${escapeHTML(publication.title)}">DOI</a>`
       : '';
+    const citationAction = publication.citationEnabled === false
+      ? ''
+      : `<button class="paper-action copy-citation" type="button" data-copy-citation="${escapeHTML(publication.id)}">Copy citation</button>`;
+    const directionTags = (publication.directions || []).map((direction) => `<span class="tag tag-direction">${escapeHTML(direction)}</span>`).join('');
 
     return `
       <article class="publication-card ${publication.featured ? 'is-featured' : ''}" data-publication-id="${escapeHTML(publication.id)}">
@@ -95,10 +100,11 @@
         <h2>${title}</h2>
         <p class="paper-authors">${authorsHTML(publication)}</p>
         <p class="paper-venue">${escapeHTML(publication.venue)}</p>
-        <div class="tag-row">${topicTags}</div>
+        ${publication.summary ? `<p class="paper-summary">${escapeHTML(publication.summary)}</p>` : ''}
+        ${publication.publicNote ? `<p class="paper-note">${escapeHTML(publication.publicNote)}</p>` : ''}
+        <div class="tag-row">${directionTags}${topicTags}</div>
         <div class="publication-actions">
-          ${sourceAction}${doiAction}
-          <button class="paper-action copy-citation" type="button" data-copy-citation="${escapeHTML(publication.id)}">Copy citation</button>
+          ${sourceAction}${doiAction}${citationAction}
         </div>
       </article>`;
   }
@@ -116,6 +122,9 @@
           publication.authors,
           publication.venue,
           publication.badge,
+          publication.summary,
+          publication.publicNote,
+          ...(publication.directions || []),
           ...(publication.topics || [])
         ].join(' '));
         if (!terms.every((term) => haystack.includes(term))) return false;
@@ -201,7 +210,7 @@
     if (type && (type === 'all' || data.some((item) => item.type === type))) state.type = type;
     if (topic && data.some((item) => (item.topics || []).includes(topic))) state.topic = topic;
     if (year && data.some((item) => String(item.year) === year)) state.year = year;
-    if (status === 'published' || status === 'submitted') state.status = status;
+    if (['published', 'accepted', 'submitted'].includes(status)) state.status = status;
     if (['newest', 'oldest', 'title'].includes(sort)) state.sort = sort;
   }
 

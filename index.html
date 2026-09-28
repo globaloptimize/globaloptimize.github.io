@@ -4,47 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-      document.documentElement.classList.add('js');
-      try {
-        const saved = localStorage.getItem('ming-shi-site-theme');
-        const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
-      } catch (_) {}
-    </script>
-  <title>Ming Shi | Safe Learning, Online Optimization, and Networked Systems</title>
-  <meta name="description" content="Ming Shi is an Assistant Professor at the University at Buffalo developing theoretical foundations of safe and resource-adaptive decision-making for practical networked autonomous systems.">
+    document.documentElement.classList.add('js');
+    try {
+      const saved = localStorage.getItem('ming-shi-site-theme');
+      const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
+    } catch (_) {}
+  </script>
+  <title>Ming Shi | Reliable Learning, Online Optimization, and Networked Intelligence</title>
+  <meta name="description" content="Ming Shi is an Assistant Professor at the University at Buffalo developing mathematical foundations and algorithms for safe, adaptive, and information-efficient networked intelligence.">
   <meta name="author" content="Ming Shi">
   <meta name="theme-color" content="#005bbb">
   <link rel="canonical" href="https://mingshihomepage.com/">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260928-5">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ming Shi — Academic Homepage">
-  <meta property="og:title" content="Ming Shi | Safe Learning, Online Optimization, and Networked Systems">
-  <meta property="og:description" content="Ming Shi is an Assistant Professor at the University at Buffalo developing foundations of safe and resource-adaptive decision-making for networked autonomous systems.">
+  <meta property="og:title" content="Ming Shi | Reliable Learning, Online Optimization, and Networked Intelligence">
+  <meta property="og:description" content="Ming Shi is an Assistant Professor at the University at Buffalo developing mathematical foundations and algorithms for safe, adaptive, and information-efficient networked intelligence.">
   <meta property="og:url" content="https://mingshihomepage.com/">
   <meta property="og:image" content="https://mingshihomepage.com/assets/images/social-card.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ming Shi | Safe Learning, Online Optimization, and Networked Systems">
-  <meta name="twitter:description" content="Ming Shi is an Assistant Professor at the University at Buffalo developing foundations of safe and resource-adaptive decision-making for networked autonomous systems.">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ming Shi",
-  "url": "https://mingshihomepage.com/",
-  "jobTitle": "Assistant Professor",
-  "email": "mailto:mshi24@buffalo.edu",
-  "affiliation": {"@type": "CollegeOrUniversity", "name": "University at Buffalo, The State University of New York"},
-  "alumniOf": {"@type": "CollegeOrUniversity", "name": "Purdue University"},
-  "sameAs": ["https://engineering.buffalo.edu/ee/faculty/faculty_directory.host.html/content/shared/engineering/ee/profiles/shi-ming.html", "https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en", "https://www.linkedin.com/in/ming-shi-1b12a1159/"],
-  "knowsAbout": ["Machine learning theory", "Reinforcement learning", "Online optimization", "Bandit learning", "Network optimization", "Wireless and edge AI", "Networked autonomous systems"]
-}
-</script>
+  <meta name="twitter:title" content="Ming Shi | Reliable Learning, Online Optimization, and Networked Intelligence">
+  <meta name="twitter:description" content="Ming Shi is an Assistant Professor at the University at Buffalo developing mathematical foundations and algorithms for safe, adaptive, and information-efficient networked intelligence.">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ming Shi", "url": "https://mingshihomepage.com/", "jobTitle": "Assistant Professor", "email": "mailto:mshi24@buffalo.edu", "affiliation": {"@type": "CollegeOrUniversity", "name": "University at Buffalo, The State University of New York"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Purdue University"}, "sameAs": ["https://engineering.buffalo.edu/ee/faculty/faculty_directory.host.html/content/shared/engineering/ee/profiles/shi-ming.html", "https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en", "https://www.linkedin.com/in/ming-shi-1b12a1159/"], "knowsAbout": ["Reinforcement learning", "Online convex optimization", "Bandit learning", "Safe reinforcement learning", "Multi-agent learning", "Partial observability", "Network optimization", "Edge intelligence", "Age of Intelligence", "AI security", "Quantum networking", "Foundation models"]}</script>
 </head>
 <body data-page="home">
 <a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header class="site-header">
   <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
   <div class="container nav-wrap">
@@ -52,18 +40,14 @@
       <span class="brand-mark" aria-hidden="true">MS</span>
       <span class="brand-text">
         <span class="brand-name">Ming Shi</span>
-        <span class="brand-role"> Safe Learning · Online Optimization · Networked Systems</span>
+        <span class="brand-role">Reliable Learning · Online Optimization · Networked Intelligence</span>
       </span>
     </a>
-
-    <nav class="site-nav" data-site-nav aria-label="Primary navigation">
-      <a class="nav-link" data-nav="home" href="/">Home</a>
-      <a class="nav-link" data-nav="research" href="research.html">Research</a>
-      <a class="nav-link" data-nav="publications" href="publications.html">Publications</a>
-      <a class="nav-link" data-nav="people" href="studentsandteaching.html">Students &amp; Teaching</a>
-      <a class="nav-link" data-nav="service" href="service.html">Service</a>
-    </nav>
-
+    <nav class="site-nav" data-site-nav aria-label="Primary navigation"><a class="nav-link" data-nav="home" href="/">Home</a>
+<a class="nav-link" data-nav="research" href="research.html">Research</a>
+<a class="nav-link" data-nav="publications" href="publications.html">Publications</a>
+<a class="nav-link" data-nav="people" href="studentsandteaching.html">Mentoring & Teaching</a>
+<a class="nav-link" data-nav="service" href="service.html">Service</a></nav>
     <div class="nav-actions">
       <a class="icon-button header-scholar" href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar" data-track="scholar_click">G</a>
       <button class="icon-button" type="button" data-theme-toggle aria-label="Switch color theme" title="Switch color theme"><span class="theme-glyph" aria-hidden="true">◐</span></button>
@@ -72,279 +56,114 @@
   </div>
 </header>
 <main id="main-content">
-
-<section class="hero">
+<section class="hero hero-v4">
   <div class="container hero-grid">
     <div class="hero-copy reveal">
       <span class="eyebrow">Assistant Professor · Electrical and Computer Engineering · University at Buffalo</span>
       <h1>
         <span class="hero-title-line">Ming Shi</span>
-        <span class="hero-headline-main"> Safe learning and online optimization</span>
-        <span class="hero-headline-domain">for networked autonomous systems.</span>
+        <span class="hero-headline-main">Learning and optimization for</span>
+        <span class="hero-headline-domain">reliable networked intelligence.</span>
       </h1>
-      <p class="hero-thesis">Reinforcement learning, online optimization, and bandits under hard constraints, limited information, and costly adaptation.</p>
-      <p class="hero-description">I develop algorithms and fundamental performance guarantees for systems that must learn and adapt without compromising safety, reliability, or resource efficiency.</p>
+      <p class="hero-thesis">Theory and algorithms for systems that must learn safely, adapt economically, coordinate across components, and remain useful under partial information and change.</p>
+      <p class="hero-description">My group works across reinforcement learning, online optimization, bandits, multi-agent systems, edge AI, security, and autonomous systems. We seek guarantees that connect what can be learned to what can be executed in the real world.</p>
       <div class="button-row hero-actions">
-        <a class="button button-primary" href="research.html">Explore the research program <span aria-hidden="true">→</span></a>
+        <a class="button button-primary" href="research.html">Explore the research agenda <span aria-hidden="true">→</span></a>
         <a class="button button-secondary" href="publications.html">Browse publications</a>
-        <a class="button button-secondary" href="mailto:mshi24@buffalo.edu" data-track="email_click">Email</a>
+        <a class="button button-secondary" href="mailto:mshi24@buffalo.edu" data-track="email_click">Contact</a>
       </div>
       <div class="hero-meta" aria-label="Professional information">
         <span>Assistant Professor · University at Buffalo</span>
-        <span>Electrical &amp; Computer Engineering</span>
+        <span>Institute for Artificial Intelligence and Data Science</span>
         <a href="https://engineering.buffalo.edu/ee/faculty/faculty_directory.host.html/content/shared/engineering/ee/profiles/shi-ming.html" target="_blank" rel="noopener">Official UB profile ↗</a>
       </div>
     </div>
-
     <aside class="hero-profile reveal" aria-label="Ming Shi profile">
       <figure class="hero-card">
-        <div class="portrait-wrap">
-          <img src="ming_shi_69.jpg" width="800" height="1100" alt="Portrait of Ming Shi" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.svg';">
-        </div>
-        <figcaption class="portrait-caption">
-          <div>
-            <strong>Ming Shi, Ph.D.</strong>
-            <span>Assistant Professor · Electrical and Computer Engineering</span>
-          </div>
-          <a href="https://engineering.buffalo.edu/ee/faculty/faculty_directory.host.html/content/shared/engineering/ee/profiles/shi-ming.html" target="_blank" rel="noopener">University at Buffalo ↗</a>
-        </figcaption>
+        <div class="portrait-wrap"><img src="ming_shi_69.jpg" width="800" height="1100" alt="Portrait of Ming Shi" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.svg';"></div>
+        <figcaption class="portrait-caption"><div><strong>Ming Shi, Ph.D.</strong><span>Assistant Professor · Electrical and Computer Engineering</span></div><a href="https://engineering.buffalo.edu/ee/faculty/faculty_directory.host.html/content/shared/engineering/ee/profiles/shi-ming.html" target="_blank" rel="noopener">University at Buffalo ↗</a></figcaption>
       </figure>
       <div class="availability-chip"><span class="availability-dot" aria-hidden="true"></span><span>Buffalo · <time data-buffalo-time>local time</time></span></div>
     </aside>
   </div>
 </section>
 
-<section class="section-compact" aria-label="Research record at a glance">
-  <div class="container stats-grid">
-    <article class="stat-card reveal"><span class="stat-value" data-stat="published-peer-reviewed">20</span><span class="stat-label">published journal and conference papers</span></article>
-    <article class="stat-card reveal"><span class="stat-value" data-stat="journal-published">4</span><span class="stat-label">published journal papers</span></article>
-    <article class="stat-card reveal"><span class="stat-value" data-stat="conference-published">16</span><span class="stat-label">published conference papers</span></article>
-    <article class="stat-card reveal"><span class="stat-value">2</span><span class="stat-label">Ph.D. students at UB</span></article>
-  </div>
-</section>
-
-<section class="section" id="biography">
-  <div class="container research-detail">
-    <div class="research-index reveal"><span class="eyebrow">Academic profile</span><h2>Assistant Professor of Electrical and Computer Engineering at UB</h2><p class="muted">Affiliated with the Institute for Artificial Intelligence and Data Science.</p></div>
-    <div class="research-body reveal">
-      <p class="lede">Ming Shi received his Ph.D. degree in Electrical and Computer Engineering from <a href="https://www.purdue.edu" target="_blank" rel="noopener">Purdue University</a> in 2022, advised by Prof. <a href="https://staff.ie.cuhk.edu.hk/~xjlin/" target="_blank" rel="noopener">Xiaojun Lin</a>.</p>
-      <p>From 2022 to 2024, he was a Post-Doctoral Scholar in Electrical and Computer Engineering at <a href="https://www.osu.edu" target="_blank" rel="noopener">The Ohio State University</a> and was affiliated with the NSF AI-EDGE Institute, advised by Prof. <a href="https://people.engineering.osu.edu/people/shroff.11" target="_blank" rel="noopener">Ness B. Shroff</a> and Prof. <a href="https://sites.google.com/view/yingbinliang/home" target="_blank" rel="noopener">Yingbin Liang</a>.</p>
-      <div class="tag-row"><span class="tag tag-blue">228 Davis Hall</span><span class="tag">mshi24 [at] buffalo [dot] edu</span><span class="tag">University at Buffalo, SUNY</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-blue" id="research-program">
+<section class="section-compact news-section" aria-labelledby="recent-news-title">
   <div class="container">
-    <div class="section-heading reveal">
-      <div><span class="eyebrow">Research directions</span><h2> Safe Learning, resource-aware adaptation, and decision-making with limited information.</h2><p>These directions address how networked and autonomous systems can learn under uncertainty while satisfying safety, information, and resource constraints.</p></div>
-      <a class="section-link" href="research.html">Full research overview</a>
+    <div class="mini-heading reveal"><span class="eyebrow">Recent updates</span><h2 id="recent-news-title">New results, student achievements, and university service.</h2></div>
+    <div class="news-grid">
+      <article class="news-card reveal"><span class="news-date">Accepted · 2026</span><h3>NeurIPS 2026</h3><p><strong>Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints.</strong></p><a href="publications.html?q=Zero-Violation">View publication record →</a></article>
+      <article class="news-card reveal"><span class="news-date">Accepted · 2026</span><h3>ACM MobiHoc AIoT 2026</h3><p><strong>Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems.</strong></p><a href="./papers/Fresh-Enough-to-Decide_AIoT2026.pdf" target="_blank" rel="noopener">Read the paper →</a></article>
+      <article class="news-card reveal"><span class="news-date">Student-led research</span><h3>WiOpt Best Paper Runner-Up</h3><p>Jialei Liu led our work on bi-level provisioning and scheduling with switching costs and cross-level constraints.</p><a href="./papers/Bi-Level Opt-Lrn_WiOPT2026.pdf" target="_blank" rel="noopener">Read the paper →</a></article>
+      <article class="news-card reveal"><span class="news-date">University service</span><h3>ECE Tenure and Promotion Committee</h3><p>Serving as a member of the University at Buffalo ECE Tenure and Promotion Committee.</p><a href="service.html">View professional service →</a></article>
     </div>
-    <div class="card-grid">
-      <article class="card card-hover thrust-card reveal">
-        <span class="thrust-number">01</span><span class="card-kicker">Safe reinforcement learning</span>
-        <h3>Learning under instantaneous hard constraints</h3>
-        <p>Algorithms and limits for reinforcement learning when unsafe exploration is unacceptable and guarantees must hold throughout learning—not only on average or asymptotically.</p>
-        <div class="tag-row"><span class="tag">Safe RL</span><span class="tag">Adversarial RL</span><span class="tag">Robustness</span></div>
-      </article>
-      <article class="card card-hover thrust-card reveal">
-        <span class="thrust-number">02</span><span class="card-kicker">Online optimization and bandits</span>
-        <h3>Adaptation with switching and reconfiguration costs</h3>
-        <p>Learning and optimization for systems where changing actions, models, schedules, or configurations consumes time, energy, bandwidth, or operational capacity.</p>
-        <div class="tag-row"><span class="tag">Online optimization</span><span class="tag">Bandits</span><span class="tag">Scheduling</span></div>
-      </article>
-      <article class="card card-hover thrust-card reveal">
-        <span class="thrust-number">03</span><span class="card-kicker">Partial observability and preferences</span>
-        <h3>Learning from partial state and imperfect feedback</h3>
-        <p>Decision-making with partial state information, imperfect preferences, conversational queries, and heterogeneous feedback across distributed and multi-objective systems.</p>
-        <div class="tag-row"><span class="tag">POMDPs</span><span class="tag">Preferences</span><span class="tag">Multi-objective learning</span></div>
-      </article>
+  </div>
+</section>
+
+<section class="section-compact" aria-label="Academic record at a glance">
+  <div class="container stats-grid stats-grid-v4">
+    <article class="stat-card reveal"><span class="stat-value" data-stat="accepted-published-peer-reviewed">22</span><span class="stat-label">accepted or published journal and conference papers</span></article>
+    <article class="stat-card reveal"><span class="stat-value">5</span><span class="stat-label">connected research directions</span></article>
+    <article class="stat-card reveal"><span class="stat-value">2</span><span class="stat-label">Ph.D. students at UB</span></article>
+    <article class="stat-card reveal"><span class="stat-value">4</span><span class="stat-label">courses taught across UB, Ohio State, and Purdue</span></article>
+  </div>
+</section>
+
+<section class="section section-blue" id="research-agenda">
+  <div class="container">
+    <div class="section-heading reveal"><div><span class="eyebrow">Research agenda</span><h2>Reliable intelligence requires more than accurate prediction.</h2><p>It requires deciding what information to acquire, which uncertainty to trust, when to update or switch, how to coordinate across agents, and how to preserve safety and service while learning.</p></div><a class="section-link" href="research.html">Full research program →</a></div>
+    <div class="agenda-layout">
+      <figure class="agenda-figure reveal"><img src="assets/images/research/research-agenda.svg" alt="Research agenda connecting observation, certification, sequential decisions, guarantees, and real-world deployment." loading="lazy"><figcaption>One mathematical program spanning information, dynamics, coordination, and operational guarantees.</figcaption></figure>
+      <div class="agenda-question reveal"><span class="card-kicker">Central question</span><blockquote>How should an intelligent system learn, communicate, update, and act when information is incomplete, environments change, actions interact, and every adaptation has operational consequences?</blockquote><div class="tag-row"><span class="tag tag-blue">regret</span><span class="tag">competitive ratio</span><span class="tag">zero violation</span><span class="tag">information limits</span><span class="tag">robustness</span></div></div>
+    </div>
+    <div class="direction-grid direction-grid-home">
+      <a class="direction-card direction-safety reveal" href="research.html#safe-verifiable"><span class="direction-number">01</span><h3>Safe &amp; verifiable learning</h3><p>Instantaneous hard constraints, viability, non-convex safety, and coupled multi-agent certification.</p><span class="direction-link">Explore direction →</span></a>
+      <a class="direction-card direction-adaptation reveal" href="research.html#costly-adaptation"><span class="direction-number">02</span><h3>Prediction &amp; costly adaptation</h3><p>Online convex optimization, switching and ramp costs, lookahead, bi-level control, and best-of-both-worlds guarantees.</p><span class="direction-link">Explore direction →</span></a>
+      <a class="direction-card direction-information reveal" href="research.html#partial-information"><span class="direction-number">03</span><h3>Partial &amp; human information</h3><p>POMDPs, active probes, experience sharing, multi-objective learning, and imperfect preferences.</p><span class="direction-link">Explore direction →</span></a>
+      <a class="direction-card direction-distributed reveal" href="research.html#distributed-intelligence"><span class="direction-number">04</span><h3>Distributed &amp; multi-agent intelligence</h3><p>Graph-structured coordination, cloud–edge–device learning, communication, and shared constraints.</p><span class="direction-link">Explore direction →</span></a>
+      <a class="direction-card direction-robust reveal" href="research.html#robust-ai"><span class="direction-number">05</span><h3>Dynamic, secure &amp; robust AI</h3><p>Nonstationarity, adversarial learning, Age of Intelligence, cyber defense, and model robustness.</p><span class="direction-link">Explore direction →</span></a>
     </div>
   </div>
 </section>
 
 <section class="section" id="selected-work">
   <div class="container">
-    <div class="section-heading reveal">
-      <div><span class="eyebrow">Selected publications</span><h2>Results in safe learning, partial observability, and resource-aware decision-making.</h2><p>These papers illustrate the program’s progression from fundamental guarantees to algorithms for networked and autonomous systems.</p></div>
-      <a class="section-link" href="publications.html">Complete publication record</a>
-    </div>
-    <div class="featured-publications" data-featured-publications data-ids="p10,p03,p22,p04"><article class="featured-paper reveal">
-      <span class="card-kicker">Conference · 2026</span>
-      <h3><a href="./papers/Bi-Level Opt-Lrn_WiOPT2026.pdf" target="_blank" rel="noopener">Bi-Level Online Provisioning and Scheduling with Switching Costs and Cross-Level Constraints</a></h3>
-      <p class="paper-authors"><span class="student-author">Jialei Liu</span>, C. Emre Koksal, and <strong class="current-author">Ming Shi</strong></p>
-      <p class="paper-venue">24th International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks, Columbus, Ohio, USA, June 2026. [WiOPT Best Paper Award Runner-Up]</p>
-      <div class="tag-row"><span class="tag tag-gold">WiOPT Best Paper Award Runner-Up</span><span class="tag">Resource adaptation</span><span class="tag">Networked systems</span></div>
-    </article>
-<article class="featured-paper reveal">
-      <span class="card-kicker">Journal · 2026</span>
-      <h3><a href="./papers/First-POMDP-POSI_TIT2026.pdf" target="_blank" rel="noopener">Reinforcement Learning with Partial Online State Information in POMDPs: Regret Bounds and Limits</a></h3>
-      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Yingbin Liang, and Ness B. Shroff</p>
-      <p class="paper-venue">IEEE Transactions on Information Theory, May 2026, DOI: 10.1109/TIT.2026.3694700. [IEEE TIT]</p>
-      <div class="tag-row"><span class="tag tag-blue">IEEE TIT</span><span class="tag">Partial information</span><span class="tag">Reinforcement learning</span></div>
-    </article>
-<article class="featured-paper reveal">
-      <span class="card-kicker">Conference · 2025</span>
-      <h3><a href="./papers/SafeRL-NonConvex_ICML2025.pdf" target="_blank" rel="noopener">Provably Efficient Reinforcement Learning for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces</a></h3>
-      <p class="paper-authors">Amirhossein Roknilamouki, Arnob Ghosh, <strong class="current-author">Ming Shi</strong> , Fatemeh Nourzad, Eylem Ekici, and Ness B. Shroff</p>
-      <p class="paper-venue">42nd International Conference on Machine Learning, Vancouver, Canada, July 2025. [ICML] (Acceptance rate: 26.9%.)</p>
-      <div class="tag-row"><span class="tag tag-blue">ICML (Acceptance rate: 26.9%.)</span><span class="tag">Safety &amp; reliability</span><span class="tag">Reinforcement learning</span></div>
-    </article>
-<article class="featured-paper reveal">
-      <span class="card-kicker">Journal · 2025</span>
-      <h3><a href="./papers/Power-of-2-learning_ToN2025.pdf" target="_blank" rel="noopener">Power-of-2-Arms for Adversarial Bandit Learning with Switching Costs</a></h3>
-      <p class="paper-authors"><strong class="current-author">Ming Shi</strong> , Xiaojun Lin, and Lei Jiao</p>
-      <p class="paper-venue">IEEE/ACM Transactions on Networking, vol. 33, no. 3, pp. 1112-1127, June 2025, DOI: 10.1109/TON.2024.3522073. [IEEE/ACM ToN]</p>
-      <div class="tag-row"><span class="tag tag-blue">IEEE/ACM ToN</span><span class="tag">Resource adaptation</span><span class="tag">Bandit learning</span><span class="tag">Networked systems</span></div>
-    </article></div>
+    <div class="section-heading reveal"><div><span class="eyebrow">Selected recent work</span><h2>Results that connect mathematical structure to operational consequences.</h2><p>Representative publications span safe learning, partial observability, costly adaptation, edge intelligence, and student-led systems research.</p></div><a class="section-link" href="publications.html">All publications →</a></div>
+    <div class="featured-publications featured-publications-3" data-featured-publications data-ids="p34,p33,p10,p03,p22,p04"><noscript><p>Enable JavaScript to view selected publications, or visit the publications page.</p></noscript></div>
   </div>
 </section>
 
-<section class="section section-muted" id="impact">
+<section class="section section-muted" id="theory-practice">
   <div class="container">
-    <div class="section-heading reveal">
-      <div><span class="eyebrow">Research approach and applications</span><h2>Theoretical guarantees for dynamic networked and autonomous systems.</h2><p>The work connects learning-theoretic analysis with operational constraints from wireless, edge-AI, data-center, distributed, and human-in-the-loop systems.</p></div>
+    <div class="section-heading reveal"><div><span class="eyebrow">From theory to practice</span><h2>Four questions organize the path from a mathematical model to a reliable system.</h2></div></div>
+    <div class="impact-path">
+      <article class="impact-step reveal"><span>01</span><h3>What is observable?</h3><p>State information, forecasts, probes, preferences, communication, and their physical or statistical costs.</p></article>
+      <article class="impact-step reveal"><span>02</span><h3>What is admissible?</h3><p>Instantaneous safety, ramp constraints, cross-component coupling, safe continuation, and resource feasibility.</p></article>
+      <article class="impact-step reveal"><span>03</span><h3>What should adapt?</h3><p>Actions, policies, model versions, schedules, communication patterns, and cloud–edge–device placement.</p></article>
+      <article class="impact-step reveal"><span>04</span><h3>What can be guaranteed?</h3><p>Zero violation, regret, competitive ratio, information limits, robustness, and scalable dependence on system structure.</p></article>
     </div>
-    <div class="card-grid card-grid-2">
-      <article class="card project-card reveal"><span class="project-icon" aria-hidden="true">Σ</span><div><h3>Learning-theoretic guarantees</h3><p>Regret, competitive analysis, sample complexity, impossibility results, and performance bounds characterize what is achievable and at what information or resource cost.</p></div></article>
-      <article class="card project-card reveal"><span class="project-icon" aria-hidden="true">↻</span><div><h3>Nonstationary and adversarial environments</h3><p>Models account explicitly for drift, adversarial inputs, partial observability, regime changes, and cross-level constraints.</p></div></article>
-      <article class="card project-card reveal"><span class="project-icon" aria-hidden="true">⌁</span><div><h3>Network resource allocation and coordination</h3><p>Resource allocation, scheduling, communication, sensing, and distributed coordination connect algorithmic choices to system-level reliability and efficiency.</p></div></article>
-      <article class="card project-card reveal"><span class="project-icon" aria-hidden="true">◎</span><div><h3>Preference-aware and human-in-the-loop learning</h3><p>Preference feedback, conversational queries, safety constraints, and multi-objective learning support systems that better reflect human goals and operational requirements.</p></div></article>
-    </div>
+    <div class="application-band reveal"><strong>Application domains</strong><span>robotics and autonomous systems</span><span>wireless and edge AI</span><span>data centers and NFV</span><span>cyber and LLM security</span><span>quantum networking</span><span>foundation models</span></div>
   </div>
 </section>
 
-<section class="section" id="highlights">
+<section class="section" id="mentoring-preview">
+  <div class="container mentoring-preview-grid">
+    <div class="reveal"><span class="eyebrow">Mentoring, teaching, and outreach</span><h2>Build theory deeply, explain it clearly, and connect it to systems people can see.</h2><p class="lede">Students learn to move between real-world questions, mathematical abstractions, proofs, algorithms, experiments, and public communication.</p><div class="button-row"><a class="button button-primary" href="studentsandteaching.html">Mentoring &amp; teaching →</a><a class="button button-secondary" href="studentsandteaching.html#outreach">Outreach impact</a></div></div>
+    <figure class="mini-visual reveal"><img src="assets/images/teaching/mentoring-cycle.svg" alt="Research mentoring cycle from asking a question through modeling, analysis, testing, communication, and reflection." loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="section section-blue" id="highlights">
   <div class="container">
-    <div class="section-heading reveal">
-      <div><span class="eyebrow">Recognition and presentations</span><h2>Awards, invited talks, and conference presentations.</h2><p>Use the filters to view honors, invited talks, research presentations, and professional leadership activities.</p></div>
-    </div>
-    <div class="timeline-controls" aria-label="Filter highlights">
-      <button class="filter-chip" type="button" data-highlight-filter="all" aria-pressed="true">All</button>
-      <button class="filter-chip" type="button" data-highlight-filter="honor" aria-pressed="false">Honors</button>
-      <button class="filter-chip" type="button" data-highlight-filter="invited" aria-pressed="false">Invited talks</button>
-      <button class="filter-chip" type="button" data-highlight-filter="presentation" aria-pressed="false">Presentations</button>
-      <button class="filter-chip" type="button" data-highlight-filter="leadership" aria-pressed="false">Leadership</button>
-    </div>
-    <div class="timeline" data-highlights><article class="timeline-item">
-      <div class="timeline-year">2026</div>
-      <div class="timeline-content"><p><a href="https://engineering.buffalo.edu/home/news/seas.host.html/content/shared/engineering/home/articles/news-articles/2026/ub-researchers-recognized-for-paper-on-preparing-networks-for-6g.detail.html" target="_blank" rel="noopener">“Bi-Level Online Provisioning and Scheduling with Switching Costs and Cross-Level Constraints” — Best Paper Award Runner-Up, IEEE/IFIP WiOpt, Columbus, OH, June 2026.</a></p><span class="tag tag-gold">Honor</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2026</div>
-      <div class="timeline-content"><p>Conference presentation: “Probe-then-Commit Multi-Objective Bandits: Theoretical Benefits of Limited Multi-Arm Feedback” — IEEE/IFIP WiOpt, Columbus, OH, June 2026.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2026</div>
-      <div class="timeline-content"><p>Invited talk: “Reinforcement Learning under Switching Costs, Adversarial Environments, and Multi-Source Imperfect Preference Feedback” — Rochester Institute of Technology (RIT), Rochester, NY, April 2026.</p><span class="tag tag-blue">Invited talk</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2026</div>
-      <div class="timeline-content"><p>Invited talk: “Partially Observable Reinforcement Learning with Partial Online State Information” — University of California San Diego (UCSD), San Diego, CA, February 2026.</p><span class="tag tag-blue">Invited talk</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2025</div>
-      <div class="timeline-content"><p>Session chair: Federated and Distributed Learning — ACM MobiHoc, Houston, TX, October 2025.</p><span class="tag ">Leadership</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2025</div>
-      <div class="timeline-content"><p>Conference presentation: “Online Learning for Optimizing AoI-Energy Tradeoff under Unknown Channel Statistics” — ACM MobiHoc, Houston, TX, October 2025.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2025</div>
-      <div class="timeline-content"><p>Lightning talk: “Power-of-M in Reinforcement Learning for Autonomous Edge-AI Systems” — ACM SIGMETRICS, Stony Brook, NY, June 2025.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2025</div>
-      <div class="timeline-content"><p>Panel talk: “Thriving in Today&#x27;s Job Market: Finding, Excelling, and Evolving in Your Career” — Artificial Intelligence Modeling, Analysis, and Control of Complex Systems Workshop (AIMACCS), Columbus, OH, May 8–9, 2025.</p><span class="tag ">Leadership</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2024</div>
-      <div class="timeline-content"><p>Conference presentation: “Designing Near-Optimal Partially Observable Reinforcement Learning” — IEEE Military Communications Conference, Washington, DC, October 2024.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2024</div>
-      <div class="timeline-content"><p>Invited talk: “RL for Networking: Safety, Adversarial Inputs, Partial Observability, and Human Feedback” — Arizona State University, Tempe, AZ, May 2024.</p><span class="tag tag-blue">Invited talk</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content"><p>Invited talk: “Autonomous Networked Systems: Adversarial Online RL Under Limited Defender Resources” — New York University, New York, NY, November 2023.</p><span class="tag tag-blue">Invited talk</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content"><p>Invited talk: “AI-Powered Autonomous Systems with Switching Costs: Power-of-2-Arms” — Massachusetts Institute of Technology, Cambridge, MA, May 2023.</p><span class="tag tag-blue">Invited talk</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content"><p>Invited talk: “Near-Optimal Adversarial Reinforcement Learning with Switching Costs” — California Institute of Technology, Pasadena, CA, July 2023.</p><span class="tag tag-blue">Invited talk</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content"><p>Invited talk: “RL under Instantaneous Hard Safety Constraints and POMDPs: From Wireless Communications to Smart Health” — Northeastern University, Boston, MA, July 2023.</p><span class="tag tag-blue">Invited talk</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content"><p>Conference presentation: “A Near-Optimal Algorithm for Safe Reinforcement Learning Under Instantaneous Hard Constraints” — International Conference on Machine Learning, Honolulu, HI, July 2023.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content"><p>Conference presentation: “Near-Optimal Adversarial Reinforcement Learning with Switching Costs” — ICLR Spotlight presentation, May 2023.</p><span class="tag tag-gold">Honor</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content"><p>Spotlight paper (notable top 25%), International Conference on Learning Representations, January 2023.</p><span class="tag tag-gold">Honor</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2022</div>
-      <div class="timeline-content"><p>Conference presentation: “Leveraging Synergies Between AI and Networking to Build Next Generation Edge Networks” — IEEE Conference on Collaboration and Internet Computing, December 2022.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2022</div>
-      <div class="timeline-content"><p>Conference presentation: “Power-of-2-Arms for Bandit Learning with Switching Costs” — ACM MobiHoc, Seoul, South Korea, October 2022.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2022</div>
-      <div class="timeline-content"><p>Invited talk: “Power-of-2-Arms for Bandit Learning with Switching Costs” — California Institute of Technology, Pasadena, CA, May 2022.</p><span class="tag tag-blue">Invited talk</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2021</div>
-      <div class="timeline-content"><p>Conference presentation: “Combining Regularization with Look-Ahead for Competitive Online Convex Optimization” — IEEE INFOCOM, May 2021.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2021</div>
-      <div class="timeline-content"><p>Bilsland Dissertation Fellowship, Purdue University, April 2021.</p><span class="tag tag-gold">Honor</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2021</div>
-      <div class="timeline-content"><p>IEEE INFOCOM Student Conference Award, U.S. National Science Foundation, March 2021.</p><span class="tag tag-gold">Honor</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2019</div>
-      <div class="timeline-content"><p>Conference presentation: “On the Value of Look-Ahead in Competitive Online Convex Optimization” — ACM SIGMETRICS / IFIP Performance, Phoenix, AZ, June 2019.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2019</div>
-      <div class="timeline-content"><p>ACM SIGMETRICS Student Travel Grant, U.S. National Science Foundation, May 2019.</p><span class="tag tag-gold">Honor</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2018</div>
-      <div class="timeline-content"><p>Conference presentation: “Competitive Online Convex Optimization with Switching Costs and Ramp Constraints” — IEEE INFOCOM, Honolulu, HI, April 2018.</p><span class="tag ">Presentation</span></div>
-    </article>
-<article class="timeline-item">
-      <div class="timeline-year">2018</div>
-      <div class="timeline-content"><p>IEEE INFOCOM Student Travel Grant, U.S. National Science Foundation, March 2018.</p><span class="tag tag-gold">Honor</span></div>
-    </article></div>
-    <button class="button button-secondary timeline-more" type="button" data-highlights-toggle aria-expanded="false">Show all highlights</button>
+    <div class="section-heading reveal"><div><span class="eyebrow">Honors, talks, and leadership</span><h2>Research recognition and engagement with the broader community.</h2></div></div>
+    <div class="timeline-controls reveal" role="group" aria-label="Filter highlights"><button class="filter-chip" type="button" data-highlight-filter="all" aria-pressed="true">All</button><button class="filter-chip" type="button" data-highlight-filter="honor" aria-pressed="false">Honors &amp; acceptances</button><button class="filter-chip" type="button" data-highlight-filter="invited" aria-pressed="false">Invited talks</button><button class="filter-chip" type="button" data-highlight-filter="presentation" aria-pressed="false">Presentations</button><button class="filter-chip" type="button" data-highlight-filter="leadership" aria-pressed="false">Leadership</button></div>
+    <div class="timeline" data-highlights></div><button class="button button-secondary timeline-more" type="button" data-highlights-toggle aria-expanded="false">Show more</button>
   </div>
 </section>
 
-<section class="section section-compact">
-  <div class="container cta-panel reveal">
-    <div><span class="eyebrow">Contact</span><h2>Prospective students and research collaborators.</h2><p>Research inquiries are most useful when they identify a specific problem, publication, or research direction connected to the program.</p></div>
-    <div class="button-row"><a class="button button-primary" href="mailto:mshi24@buffalo.edu">Contact Ming Shi</a><button class="button button-secondary" type="button" data-copy-email="mshi24@buffalo.edu">Copy email</button></div>
-  </div>
+<section class="section contact-section" id="contact">
+  <div class="container contact-panel reveal"><div><span class="eyebrow">Collaborate or join the group</span><h2>Research at the intersection of learning theory, optimization, and intelligent systems.</h2><p>I welcome conversations with prospective students, collaborators, educators, and partners interested in rigorous and deployable intelligent decision-making.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:mshi24@buffalo.edu">mshi24@buffalo.edu</a><button class="button button-secondary" type="button" data-copy-email="mshi24@buffalo.edu">Copy email</button><a class="button button-secondary" href="studentsandteaching.html#prospective-students">Prospective students</a></div></div>
 </section>
-
 </main>
 <footer class="site-footer">
   <div class="container">
@@ -354,32 +173,26 @@
           <span class="brand-mark" aria-hidden="true">MS</span>
           <span class="brand-text"><span class="brand-name">Ming Shi</span><span class="brand-role">University at Buffalo</span></span>
         </a>
-        <p>Safe learning and resource-aware optimization for networked autonomous systems.</p>
+        <p>Learning and optimization for reliable networked intelligence.</p>
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
-        <a href="studentsandteaching.html">Students &amp; Teaching</a>
+        <a href="studentsandteaching.html">Mentoring &amp; Teaching</a>
         <a href="service.html">Service</a>
         <a href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://www.linkedin.com/in/ming-shi-1b12a1159/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="privacy.html">Privacy</a>
       </nav>
-      <div class="footer-time">
-        <span class="footer-time-label">Buffalo local time</span>
-        <time data-buffalo-time>Loading…</time>
-      </div>
+      <div class="footer-time"><span class="footer-time-label">Buffalo local time</span><time data-buffalo-time>Loading…</time></div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span data-current-year></span> Ming Shi. All rights reserved.</span>
-      <span>Buffalo, New York · Eastern Time</span>
-    </div>
+    <div class="footer-bottom"><span>© <span data-current-year></span> Ming Shi. All rights reserved.</span><span>Buffalo, New York · Eastern Time</span></div>
   </div>
 </footer>
-<script src="assets/js/analytics-config.js"></script>
-<script src="assets/js/analytics.js"></script>
-<script src="assets/data/publications.js"></script>
-<script src="assets/data/highlights.js"></script>
-<script src="assets/js/site.js"></script>
+<script src="assets/js/analytics-config.js?v=20260928-5"></script>
+<script src="assets/js/analytics.js?v=20260928-5"></script>
+<script src="assets/data/publications.js?v=20260928-5"></script>
+<script src="assets/data/highlights.js?v=20260928-5"></script>
+<script src="assets/js/site.js?v=20260928-5"></script>
 </body>
 </html>

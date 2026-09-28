@@ -1,64 +1,67 @@
-# Deployment Checklist
+# Deployment Checklist — Version 4
 
-## Domain and hosting
+## 1. Preserve the public domain
 
-- [ ] Keep the public homepage URL as `https://mingshihomepage.com/`; no new domain is required.
-- [ ] If deploying to the current hosting location, leave the registrar and DNS records unchanged.
-- [ ] Upload the package contents to the publishing root so that `index.html` is at the top level.
-- [ ] For branch-based GitHub Pages, keep the root-level `CNAME` file containing exactly `mingshihomepage.com`.
-- [ ] In GitHub **Settings → Pages**, confirm the custom domain is `mingshihomepage.com` and HTTPS enforcement is enabled.
-- [ ] Confirm that `https://www.mingshihomepage.com/` redirects to the preferred apex address.
-- [ ] Change DNS records only if moving the site to a different hosting provider; the public domain can remain the same.
+- [ ] Keep `https://mingshihomepage.com/` as the public homepage.
+- [ ] Upload the package contents to the current publishing root so `index.html` remains top-level.
+- [ ] Keep the root `CNAME` file containing exactly `mingshihomepage.com` when using branch-based GitHub Pages.
+- [ ] Confirm the GitHub Pages custom domain and **Enforce HTTPS** setting.
+- [ ] Do not change DNS unless moving to a different hosting provider.
 
-## Content accuracy
+## 2. Back up and publish safely
 
-- [ ] Confirm current title, department name, affiliations, office, email, and biography.
-- [ ] Review every 2026 item labeled **Submitted** and change `status`, venue wording, DOI, and PDF link as appropriate.
-- [ ] Confirm the spelling and preferred presentation of every student name.
-- [ ] Confirm service roles and “present” date ranges remain current.
-- [ ] Add any newer awards, invited talks, accepted papers, courses, or outreach activities.
-- [ ] Decide whether to add a current CV; do not publish a broken `cv.pdf` link.
+- [ ] Download a complete backup of the current repository/site.
+- [ ] Preserve any untracked paper PDFs or other assets not present in the package.
+- [ ] Confirm `ming_shi_69.jpg` is beside `index.html`.
+- [ ] Upload folders without flattening their structure.
+- [ ] Do not publish `pdf(1).pdf`, a NeurIPS reviewer copy, or any other confidential submission file.
 
-## Files and links
+## 3. Verify current content
 
-- [ ] Preserve the current `papers/` directory in the web root.
-- [ ] Preserve `ming_shi_69.jpg` or add `assets/images/ming-shi.webp`.
-- [ ] Open every local PDF link, especially filenames containing spaces or punctuation.
-- [ ] Test Google Scholar, LinkedIn, UB profile, DOI, Purdue, Ohio State, advisor, and news links.
-- [ ] Confirm `https://mingshihomepage.com/` is the final canonical domain.
-- [ ] Keep `CNAME` only when the hosting platform uses it (for example, GitHub Pages).
+- [ ] Replace “Ming Shi and collaborators” with the complete NeurIPS 2026 author list when the public citation is available.
+- [ ] Add the public NeurIPS paper/camera-ready link when available.
+- [ ] Confirm the AIoT 2026 final citation, DOI, and camera-ready link when assigned.
+- [ ] Review all records marked **Submitted** and update decisions, venues, links, and dates.
+- [ ] Confirm student dates, course offerings, office, affiliations, committee roles, and service date ranges.
+- [ ] Keep not-yet-delivered outreach explicitly labeled **in development**.
 
-## Visual and accessibility checks
+## 4. Run validation
 
-- [ ] Test widths near 1440 px, 1024 px, 768 px, 390 px, and 320 px.
-- [ ] Test light and dark themes.
-- [ ] Navigate the full site with keyboard only.
-- [ ] Confirm visible focus indicators, menu operation, search/filter labels, and details controls.
-- [ ] Check contrast and legibility on the actual portrait.
-- [ ] Test with reduced-motion enabled.
-- [ ] Confirm that disabling JavaScript still leaves the complete content readable.
+```bash
+python3 scripts/build_site.py
+```
 
-## Analytics and privacy
+- [ ] Resolve every reported error.
+- [ ] Open the homepage, research, publications, mentoring/teaching, service, and privacy pages.
+- [ ] Test publication and research filters.
+- [ ] Test desktop and mobile navigation.
+- [ ] Test light and dark modes.
+- [ ] Open every local PDF link.
 
-- [ ] Choose Cloudflare Web Analytics, GA4, both, or neither.
-- [ ] Paste identifiers only into `assets/js/analytics-config.js`.
-- [ ] Confirm the privacy page matches the selected services.
-- [ ] Verify that GA4 remains unloaded until consent when `requireGoogleConsent` is true.
-- [ ] Verify real-time analytics with your own test visit, then exclude or recognize internal traffic during interpretation.
-- [ ] Do not claim analytics identify specific people; reports are aggregate/approximate.
+## 5. Clear stale browser caches
 
-## Search, social, and performance
+When CSS, JavaScript, or data files change, use:
 
-- [ ] Confirm the social card appears when the homepage is shared.
-- [ ] Validate `sitemap.xml` and submit it through the appropriate webmaster console.
-- [ ] Confirm `robots.txt` is reachable.
-- [ ] Compress the production portrait and keep it reasonably small.
-- [ ] Check that pages load without console errors or mixed HTTP/HTTPS content.
-- [ ] Run a Lighthouse audit after deployment and address any hosting-specific findings.
+```bash
+python3 scripts/build_site.py --version YYYYMMDD-N
+```
 
-## Safe launch
+- [ ] Commit the changed HTML version strings.
+- [ ] After deployment, perform a hard refresh (`Command + Shift + R` on macOS Chrome/Safari where supported).
 
-- [ ] Download a complete backup of the existing site.
-- [ ] Deploy to a temporary/staging directory first when the host supports it.
-- [ ] Verify all pages over HTTPS on the real domain.
-- [ ] Keep the backup until the redesigned site has operated correctly for at least one normal update cycle.
+## 6. Accessibility and performance
+
+- [ ] Navigate with keyboard only and confirm visible focus states.
+- [ ] Check the mobile menu at approximately 390 px and 320 px widths.
+- [ ] Confirm no horizontal scrolling at common widths.
+- [ ] Check the illustrations in dark mode.
+- [ ] Consider compressing `ming_shi_69.jpg` to roughly 900–1200 px wide and under 500 KB while keeping the same filename.
+- [ ] Run Lighthouse after deployment to identify hosting-specific issues.
+
+## 7. Search, sharing, and privacy
+
+- [ ] Confirm `robots.txt`, `sitemap.xml`, and the social card are reachable.
+- [ ] Submit or refresh the sitemap in the webmaster console used for the domain.
+- [ ] Configure analytics only in `assets/js/analytics-config.js`.
+- [ ] Confirm `privacy.html` matches the analytics actually enabled.
+- [ ] Do not describe analytics as identifying specific people.

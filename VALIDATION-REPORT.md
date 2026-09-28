@@ -1,55 +1,75 @@
-# Validation Report
+# Validation Report — Version 4
 
-Validated on September 4, 2026 after the heading and domain revisions.
+Validated on **September 28, 2026**.
 
-## Automated browser checks
+## Structured content
 
-```json
-{
-  "homepage": {
-    "horizontal_overflow": false,
-    "publication_statistics": ["20", "4", "16", "2"],
-    "featured_publications": 4,
-    "initial_highlights": 7,
-    "expanded_highlights": 27,
-    "javascript_errors": []
-  },
-  "research_page": {
-    "horizontal_overflow": false,
-    "javascript_errors": []
-  },
-  "publications_page": {
-    "initial_records": 32,
-    "search_results_for_switching_costs": 9,
-    "journal_filter_results": 7,
-    "horizontal_overflow": false,
-    "javascript_errors": []
-  },
-  "mobile_navigation": {
-    "horizontal_overflow": false,
-    "closed_visibility": "hidden",
-    "closed_aria_expanded": "false",
-    "open_visibility": "visible",
-    "open_aria_expanded": "true",
-    "open_button_label": "Close navigation",
-    "javascript_errors": []
-  }
-}
-```
+- 34 publication/manuscript records
+  - 25 published
+  - 2 accepted
+  - 7 submitted
+- 16 cross-cutting research projects/research lines
+- 30 honors, talks, presentations, and leadership entries
+- Unique IDs verified for all three structured data sets
 
-All seven HTML pages were also checked at desktop width. No page produced horizontal overflow or a JavaScript error. The Buffalo clock rendered with the `America/New_York` time zone and updated automatically.
+## Static validation
 
-## Static and build checks
+`python3 scripts/build_site.py` completed successfully.
 
-- Every HTML page contains exactly one `h1` and no duplicate element IDs.
-- Every canonical URL uses `https://mingshihomepage.com/`.
-- The root `CNAME` contains only `mingshihomepage.com`.
-- All bundled internal assets and internal HTML destinations resolve.
-- The retired vague headings and subtitles are absent from both generated HTML and the build script.
-- The structured data files contain 32 publication records and 27 honor/talk records.
-- Python compilation, JavaScript syntax checks, the site build, and web-manifest JSON parsing all pass.
-- The social-sharing card is 1200 × 630 pixels.
+Checks passed for:
 
-## Deployment assets retained outside this package
+- required publication fields;
+- unique publication, project, and highlight IDs;
+- local HTML, image, script, stylesheet, and paper links;
+- one principal `h1` per main page;
+- duplicate element IDs;
+- required portrait and illustration assets;
+- sitemap generation;
+- exclusion of the confidential NeurIPS reviewer-copy PDF.
 
-The production upload should retain the existing `papers/` directory and the current `ming_shi_69.jpg` portrait. The HTML also supports an optional optimized portrait at `assets/images/ming-shi.webp`; when it is absent, the current JPEG is used, and a bundled illustration is available as the final fallback.
+JavaScript syntax checks passed for the publication, research, highlight, and shared-site scripts.
+
+## Browser-render validation
+
+The HTML, CSS, JavaScript, data, SVG illustrations, and portrait were rendered in headless Chromium through a self-contained local test harness. No page-level JavaScript errors were observed.
+
+### Research atlas
+
+- Initial projects: 16
+- Safe-and-verifiable filter: 3
+- Search for `quantum`: 1
+- Safety filter combined with `quantum`: 0, as expected
+
+### Publication explorer
+
+- Initial records: 34
+- Accepted filter: 2
+- Accepted plus `Age of Intelligence` search: 1
+- Journal filter: 7
+
+### Responsive interaction
+
+- Mobile menu hidden before activation
+- Mobile menu visible after activation
+- `aria-expanded` changes to `true`
+- No horizontal overflow at 1440 px or 390 px in the tested pages
+- Portrait loaded at its natural dimensions
+- Light/dark theme toggle changed the document theme successfully
+- Buffalo time rendered using `America/New_York`
+
+## Visual review
+
+Desktop previews were reviewed for:
+
+- homepage hero and portrait balance;
+- research-program hero and agenda illustration;
+- mentoring/teaching hero and mentoring-cycle illustration;
+- professional-service hierarchy;
+- publication-page hierarchy;
+- mobile homepage typography and navigation.
+
+Full-page review confirmed that the five research directions, project atlas, teaching illustrations, mentoring sections, outreach sections, and service records render in the intended order.
+
+## Known maintenance item
+
+The accepted NeurIPS 2026 manuscript supplied for this update is anonymous. The public record therefore uses the temporary author text **“Ming Shi and collaborators”**, disables citation copying for that entry, and provides no reviewer-copy PDF. Replace the temporary text and add the public link after the camera-ready citation is available.

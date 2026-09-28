@@ -4,34 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-      document.documentElement.classList.add('js');
-      try {
-        const saved = localStorage.getItem('ming-shi-site-theme');
-        const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
-      } catch (_) {}
-    </script>
-  <title>Research | Safe Learning and Networked Systems | Ming Shi</title>
-  <meta name="description" content="Research program of Ming Shi: safe learning, resource-adaptive online decision-making, and learning from partial and preference feedback for networked autonomous systems.">
+    document.documentElement.classList.add('js');
+    try {
+      const saved = localStorage.getItem('ming-shi-site-theme');
+      const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
+    } catch (_) {}
+  </script>
+  <title>Research | Ming Shi</title>
+  <meta name="description" content="Research by Ming Shi on safe and verifiable learning, online optimization with costly adaptation, partial information, distributed intelligence, and robust AI systems.">
   <meta name="author" content="Ming Shi">
   <meta name="theme-color" content="#005bbb">
   <link rel="canonical" href="https://mingshihomepage.com/research.html">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260928-5">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ming Shi — Academic Homepage">
-  <meta property="og:title" content="Research | Safe Learning and Networked Systems | Ming Shi">
-  <meta property="og:description" content="Research program of Ming Shi: safe learning, resource-adaptive online decision-making, and learning from partial and preference feedback for networked autonomous systems.">
+  <meta property="og:title" content="Research | Ming Shi">
+  <meta property="og:description" content="Research by Ming Shi on safe and verifiable learning, online optimization with costly adaptation, partial information, distributed intelligence, and robust AI systems.">
   <meta property="og:url" content="https://mingshihomepage.com/research.html">
   <meta property="og:image" content="https://mingshihomepage.com/assets/images/social-card.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Research | Safe Learning and Networked Systems | Ming Shi">
-  <meta name="twitter:description" content="Research program of Ming Shi: safe learning, resource-adaptive online decision-making, and learning from partial and preference feedback for networked autonomous systems.">
+  <meta name="twitter:title" content="Research | Ming Shi">
+  <meta name="twitter:description" content="Research by Ming Shi on safe and verifiable learning, online optimization with costly adaptation, partial information, distributed intelligence, and robust AI systems.">
   
 </head>
 <body data-page="research">
 <a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header class="site-header">
   <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
   <div class="container nav-wrap">
@@ -39,18 +40,14 @@
       <span class="brand-mark" aria-hidden="true">MS</span>
       <span class="brand-text">
         <span class="brand-name">Ming Shi</span>
-        <span class="brand-role">Safe Learning · Online Optimization · Networked Systems</span>
+        <span class="brand-role">Reliable Learning · Online Optimization · Networked Intelligence</span>
       </span>
     </a>
-
-    <nav class="site-nav" data-site-nav aria-label="Primary navigation">
-      <a class="nav-link" data-nav="home" href="/">Home</a>
-      <a class="nav-link" data-nav="research" href="research.html">Research</a>
-      <a class="nav-link" data-nav="publications" href="publications.html">Publications</a>
-      <a class="nav-link" data-nav="people" href="studentsandteaching.html">Students &amp; Teaching</a>
-      <a class="nav-link" data-nav="service" href="service.html">Service</a>
-    </nav>
-
+    <nav class="site-nav" data-site-nav aria-label="Primary navigation"><a class="nav-link" data-nav="home" href="/">Home</a>
+<a class="nav-link" data-nav="research" href="research.html">Research</a>
+<a class="nav-link" data-nav="publications" href="publications.html">Publications</a>
+<a class="nav-link" data-nav="people" href="studentsandteaching.html">Mentoring & Teaching</a>
+<a class="nav-link" data-nav="service" href="service.html">Service</a></nav>
     <div class="nav-actions">
       <a class="icon-button header-scholar" href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar" data-track="scholar_click">G</a>
       <button class="icon-button" type="button" data-theme-toggle aria-label="Switch color theme" title="Switch color theme"><span class="theme-glyph" aria-hidden="true">◐</span></button>
@@ -59,98 +56,111 @@
   </div>
 </header>
 <main id="main-content">
-
-<section class="page-hero research-hero">
+<section class="page-hero research-hero research-hero-v4">
   <div class="container page-hero-grid">
-    <div class="reveal">
-      <span class="eyebrow">Research overview</span>
-      <h1>Safe learning and resource-adaptive optimization for <span class="display-accent">networked systems.</span></h1>
-      <p class="lede">I study algorithms and fundamental limits for sequential decisions under uncertainty, hard constraints, limited information, and costly adaptation.</p>
-      <div class="pill-list" aria-label="Research areas"><span class="pill">Reinforcement learning</span><span class="pill">Online optimization</span><span class="pill">Bandit learning</span><span class="pill">Network optimization</span><span class="pill">Distributed systems</span></div>
-      <div class="button-row" style="margin-top:1.5rem"><a class="button button-primary" href="publications.html">Explore publications</a><a class="button button-secondary" href="mailto:mshi24@buffalo.edu">Discuss collaboration</a></div>
-    </div>
-    <figure class="research-visual reveal"><img src="assets/images/research-constellation.svg" width="920" height="690" alt="Diagram connecting uncertainty, safe decisions, resource adaptation, learning feedback, and networked autonomous systems"></figure>
+    <div class="reveal"><span class="eyebrow">Research program</span><h1>Mathematical foundations for <span class="display-accent">reliable networked intelligence.</span></h1><p class="lede">My research studies how intelligent systems can learn and coordinate under uncertainty while respecting safety, communication, computation, and reconfiguration realities.</p><div class="tag-row"><span class="tag tag-blue">reinforcement learning</span><span class="tag">online optimization</span><span class="tag">bandits</span><span class="tag">multi-agent systems</span><span class="tag">network optimization</span></div></div>
+    <figure class="research-visual reveal"><img src="assets/images/research/research-agenda.svg" alt="Diagram of the research agenda connecting information acquisition, certification, sequential decisions, guarantees, and deployment."><figcaption>Evidence → certificates and models → sequential decisions → guarantees → networked and autonomous systems.</figcaption></figure>
   </div>
 </section>
 
-<section class="section-compact section-muted">
-  <div class="container">
-    <div class="research-flow" aria-label="Research pathway">
-      <div class="flow-step reveal"><strong>Observe</strong><span>partial, delayed, noisy, or strategic information</span></div>
-      <div class="flow-step reveal"><strong>Learn</strong><span>models, policies, preferences, and uncertainty sets</span></div>
-      <div class="flow-step reveal"><strong>Decide</strong><span>online under safety, resource, and coupling constraints</span></div>
-      <div class="flow-step reveal"><strong>Adapt</strong><span>to drift, adversaries, switching costs, and regimes</span></div>
-      <div class="flow-step reveal"><strong>Guarantee</strong><span>reliability, efficiency, regret, and system performance</span></div>
-    </div>
+<section class="section-compact">
+  <div class="container research-premise-grid">
+    <div class="premise-card reveal"><span class="premise-label">Information</span><h2>What can the learner know?</h2><p>Partial state, delayed feedback, predictions, active probes, human preferences, shared experience, and their costs.</p></div>
+    <div class="premise-card reveal"><span class="premise-label">Dynamics</span><h2>What changes over time?</h2><p>Environments, workloads, threats, model versions, resource availability, and the value of information itself.</p></div>
+    <div class="premise-card reveal"><span class="premise-label">Coordination</span><h2>What must work together?</h2><p>Agents, actions, constraints, cloud–edge–device tiers, communication graphs, and coupled operational decisions.</p></div>
+    <div class="premise-card premise-card-emphasis reveal"><span class="premise-label">Guarantees</span><h2>What should remain true?</h2><p>Safety at every step, low regret, bounded competitive loss, robust service, and scalable dependence on local structure.</p></div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <article class="research-detail" id="safe-learning">
-      <div class="research-index reveal"><span class="research-index-number">01</span><span class="eyebrow">Safe reinforcement learning</span><h2>Learning under instantaneous hard constraints</h2><p class="muted">Safety guarantees must hold throughout learning—not only after convergence.</p></div>
-      <div class="research-body reveal">
-        <p class="lede">Many autonomous systems cannot afford unsafe exploration. The goal is to learn effectively while respecting instantaneous constraints in uncertain, partially observed, non-convex, or adversarial environments.</p>
-        <h3>Research questions</h3>
-        <ul class="question-list"><li>How can a learner explore without violating hard constraints?</li><li>Which safety guarantees are achievable under limited information?</li><li>How do adversarial transitions, modeling errors, and non-convex feature spaces alter the fundamental limits?</li></ul>
-        <h3>Selected publications</h3>
-        <div class="paper-link-list">
-          <a class="paper-link" href="./papers/SafeRL-NonConvex_ICML2025.pdf"><span class="paper-year">2025</span><span class="paper-link-title">Provably Efficient Reinforcement Learning for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces</span><span class="paper-link-arrow">↗</span></a>
-          <a class="paper-link" href="./papers/First-SafeRL-Work_ICML2023.pdf"><span class="paper-year">2023</span><span class="paper-link-title">A Near-Optimal Algorithm for Safe Reinforcement Learning Under Instantaneous Hard Constraints</span><span class="paper-link-arrow">↗</span></a>
-          <a class="paper-link" href="./papers/RL-AdversarialTransition_ICLR2026.pdf"><span class="paper-year">2026</span><span class="paper-link-title">Minimax Optimal Adversarial Reinforcement Learning</span><span class="paper-link-arrow">↗</span></a>
-        </div>
-      </div>
-    </article>
-
-    <article class="research-detail" id="resource-adaptation">
-      <div class="research-index reveal"><span class="research-index-number">02</span><span class="eyebrow">Online optimization and bandits</span><h2>Adaptation with switching, reconfiguration, and coupling costs</h2><p class="muted">Changing actions, schedules, models, or configurations consumes resources.</p></div>
-      <div class="research-body reveal">
-        <p class="lede">Networked systems continuously reconfigure schedules, models, routes, sensing modes, and computing resources. This thrust studies how to balance immediate performance against the operational cost and cross-layer consequences of change.</p>
-        <h3>Research questions</h3>
-        <ul class="question-list"><li>When is additional prediction, feedback, or limited multi-arm information worth its cost?</li><li>How should provisioning and scheduling be coordinated across time scales?</li><li>What competitive or regret guarantees remain possible with ramp and coupling constraints?</li></ul>
-        <h3>Selected publications</h3>
-        <div class="paper-link-list">
-          <a class="paper-link" href="./papers/Bi-Level Opt-Lrn_WiOPT2026.pdf"><span class="paper-year">2026</span><span class="paper-link-title">Bi-Level Online Provisioning and Scheduling with Switching Costs and Cross-Level Constraints</span><span class="paper-link-arrow">↗</span></a>
-          <a class="paper-link" href="./papers/Power-of-2-learning_ToN2025.pdf"><span class="paper-year">2025</span><span class="paper-link-title">Power-of-2-Arms for Adversarial Bandit Learning with Switching Costs</span><span class="paper-link-arrow">↗</span></a>
-          <a class="paper-link" href="./papers/Regularization-lookahead-OCO_ToN2024.pdf"><span class="paper-year">2024</span><span class="paper-link-title">Combining Regularization With Look-Ahead for Competitive Online Convex Optimization</span><span class="paper-link-arrow">↗</span></a>
-          <a class="paper-link" href="./papers/OCO-switching-ramp_ToN2021.pdf"><span class="paper-year">2021</span><span class="paper-link-title">Competitive Online Convex Optimization with Switching Costs and Ramp Constraints</span><span class="paper-link-arrow">↗</span></a>
-        </div>
-      </div>
-    </article>
-
-    <article class="research-detail" id="limited-information">
-      <div class="research-index reveal"><span class="research-index-number">03</span><span class="eyebrow">Partial observability and preference learning</span><h2>Learning from partial state and imperfect feedback</h2><p class="muted">The learner may not observe the full state or know the objective exactly.</p></div>
-      <div class="research-body reveal">
-        <p class="lede">This thrust develops learning methods for partially observable systems and settings where preferences, objectives, or feedback sources are imperfect, heterogeneous, personalized, or costly to query.</p>
-        <h3>Research questions</h3>
-        <ul class="question-list"><li>How much online state information is necessary in a POMDP?</li><li>How should imperfect preference sources be combined without losing statistical efficiency?</li><li>When do proactive conversational queries improve personalized multi-objective learning?</li></ul>
-        <h3>Selected publications</h3>
-        <div class="paper-link-list">
-          <a class="paper-link" href="./papers/First-POMDP-POSI_TIT2026.pdf"><span class="paper-year">2026</span><span class="paper-link-title">Reinforcement Learning with Partial Online State Information in POMDPs: Regret Bounds and Limits</span><span class="paper-link-arrow">↗</span></a>
-          <a class="paper-link" href="https://arxiv.org/pdf/2603.20453"><span class="paper-year">2026</span><span class="paper-link-title">Regret Bounds for Reinforcement Learning from Multi-Source Imperfect Preferences</span><span class="paper-link-arrow">↗</span></a>
-          <a class="paper-link" href="./papers/Person-MOB-Query_UAI2026.pdf"><span class="paper-year">2026</span><span class="paper-link-title">Provably Efficient Personalized Multi-Objective Bandits with Proactive Conversational Queries</span><span class="paper-link-arrow">↗</span></a>
-          <a class="paper-link" href="./papers/PtC-Multi-Arm-Feedback_WiOPT2026.pdf"><span class="paper-year">2026</span><span class="paper-link-title">Probe-then-Commit Multi-Objective Bandits: Theoretical Benefits of Limited Multi-Arm Feedback</span><span class="paper-link-arrow">↗</span></a>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="section section-blue">
-  <div class="container">
-    <div class="section-heading reveal"><div><span class="eyebrow">Application domains</span><h2>Wireless, edge-AI, distributed, and autonomous systems.</h2><p>These domains motivate the safety, information, communication, and resource constraints studied in the theoretical models.</p></div></div>
-    <div class="card-grid">
-      <article class="card reveal"><span class="card-kicker">Networks and computing</span><h3>Wireless, edge-AI, and data-center systems</h3><p>Resource allocation, age of information, sensing, communication, scheduling, and adaptive computing under uncertain demand and channel conditions.</p></article>
-      <article class="card reveal"><span class="card-kicker">Distributed autonomy</span><h3>Multi-agent and networked decision systems</h3><p>Coordination with limited communication, partial observability, dynamic constraints, strategic corruption, and changing operational regimes.</p></article>
-      <article class="card reveal"><span class="card-kicker">Emerging AI systems</span><h3>AI-enabled cyber-physical and computing platforms</h3><p>Extensions to secure systems, recommendation and preference learning, large language models, quantum networking, and quantum machine learning.</p></article>
+<section class="section section-blue direction-section" id="safe-verifiable">
+  <div class="container direction-detail direction-detail-image-left">
+    <figure class="direction-visual reveal"><img src="assets/images/research/safe-verifiable.svg" alt="Illustration of coupled safety certification, safe exploration, graph structure, and zero-violation guarantees." loading="lazy"><figcaption>Safety is a learning problem, an information-access problem, and a coordination problem—not only a constraint added after training.</figcaption></figure>
+    <div class="direction-copy reveal"><span class="direction-eyebrow direction-safety-text">01 · Safe &amp; verifiable learning</span><h2>Useful learning without a single unsafe action.</h2><p class="lede">In safety-critical systems, average feasibility is not enough: a robot cannot collide once and compensate later, and jointly chosen actions may be unsafe even when every local action looks feasible.</p>
+      <div class="direction-columns"><div><h3>Questions</h3><ul class="question-list"><li>What can be learned from an initially certified safe seed?</li><li>How do temporal viability and cross-component coupling change safe exploration?</li><li>How can safety evidence be composed and returned before it becomes stale?</li></ul></div><div><h3>Ideas and techniques</h3><ul class="question-list"><li>Conservative confidence certificates and robust predecessor operators.</li><li>Optimism restricted to certified safe actions and protocols.</li><li>Backward safe-set propagation, factor graphs, and composition-aware certification.</li></ul></div></div>
+      <div class="guarantee-strip"><strong>Target guarantees</strong><span>zero instantaneous violation</span><span>sublinear regret</span><span>certification complexity</span><span>local-graph scalability</span></div>
+      <h3>Representative work</h3><div class="paper-link-list"><a class="paper-link" href="publications.html?q=Zero-Violation"><span class="paper-year">2026</span><span class="paper-link-title">Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints</span><span class="paper-link-arrow">→</span></a><a class="paper-link" href="./papers/SafeRL-NonConvex_ICML2025.pdf" target="_blank" rel="noopener"><span class="paper-year">2025</span><span class="paper-link-title">Safe RL under instantaneous constraints in non-convex feature spaces</span><span class="paper-link-arrow">↗</span></a><a class="paper-link" href="./papers/First-SafeRL-Work_ICML2023.pdf" target="_blank" rel="noopener"><span class="paper-year">2023</span><span class="paper-link-title">A near-optimal algorithm for safe RL under instantaneous hard constraints</span><span class="paper-link-arrow">↗</span></a></div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container cta-panel reveal"><div><span class="eyebrow">Publication record</span><h2>Browse all publications and technical reports.</h2><p>Search by topic, year, publication type, or status; open available papers; and copy formatted citations.</p></div><div class="button-row"><a class="button button-primary" href="publications.html">Open publication explorer</a><a class="button button-secondary" href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a></div></div>
+<section class="section direction-section" id="costly-adaptation">
+  <div class="container direction-detail">
+    <div class="direction-copy reveal"><span class="direction-eyebrow direction-adaptation-text">02 · Prediction &amp; costly adaptation</span><h2>Adapt when change is valuable—not merely because change is possible.</h2><p class="lede">Online decisions often have memory: moving a data-center workload, changing a traffic or NFV route, switching an antenna port, or refreshing a model consumes time, energy, bandwidth, and service continuity.</p>
+      <div class="direction-columns"><div><h3>Questions</h3><ul class="question-list"><li>How much can lookahead or prediction improve online performance?</li><li>How should slow provisioning and fast scheduling be coupled?</li><li>Can a method exploit good forecasts while remaining protected against bad ones?</li></ul></div><div><h3>Ideas and techniques</h3><ul class="question-list"><li>Regularization with lookahead and competitive analysis.</li><li>Switching, ramp, path-length, and reconfiguration cost models.</li><li>Power-of-2, probe-then-commit, threshold control, and best-of-both-worlds learning.</li></ul></div></div>
+      <div class="guarantee-strip"><strong>Target guarantees</strong><span>competitive ratio</span><span>dynamic regret</span><span>forecast robustness</span><span>switching-cost bounds</span></div>
+      <h3>Representative work</h3><div class="paper-link-list"><a class="paper-link" href="./papers/Bi-Level Opt-Lrn_WiOPT2026.pdf" target="_blank" rel="noopener"><span class="paper-year">2026</span><span class="paper-link-title">Bi-Level Online Provisioning and Scheduling with Switching Costs and Cross-Level Constraints</span><span class="paper-link-arrow">↗</span></a><a class="paper-link" href="./papers/Power-of-2-learning_ToN2025.pdf" target="_blank" rel="noopener"><span class="paper-year">2025</span><span class="paper-link-title">Power-of-2-Arms for adversarial bandit learning with switching costs</span><span class="paper-link-arrow">↗</span></a><a class="paper-link" href="./papers/Regularization-lookahead-OCO_ToN2024.pdf" target="_blank" rel="noopener"><span class="paper-year">2024</span><span class="paper-link-title">Combining regularization with look-ahead for competitive online convex optimization</span><span class="paper-link-arrow">↗</span></a></div>
+    </div>
+    <figure class="direction-visual reveal"><img src="assets/images/research/costly-adaptation.svg" alt="Illustration of forecasts, switching and ramp costs, schedules, competitive analysis, and regret guarantees." loading="lazy"><figcaption>Prediction helps only when its value exceeds the cost and risk of acting on it.</figcaption></figure>
+  </div>
 </section>
 
+<section class="section section-blue direction-section" id="partial-information">
+  <div class="container direction-detail direction-detail-image-left">
+    <figure class="direction-visual reveal"><img src="assets/images/research/partial-information.svg" alt="Illustration of hidden state, active probes, preference queries, information-aware decisions, and information limits." loading="lazy"><figcaption>The learner must decide not only what action to take, but what evidence to obtain and whether it can be trusted or shared.</figcaption></figure>
+    <div class="direction-copy reveal"><span class="direction-eyebrow direction-information-text">03 · Partial &amp; human information</span><h2>Learn the state, the objective, and the value of asking.</h2><p class="lede">In many systems neither the environment nor the objective is fully observed. State information may arrive selectively, feedback may be delayed, and human preferences may be multi-source, imperfect, or costly to query.</p>
+      <div class="direction-columns"><div><h3>Questions</h3><ul class="question-list"><li>When does partial online state revelation change POMDP learnability?</li><li>What is the value of one extra probe, query, or shared trajectory?</li><li>How can preference feedback support personalized and multi-objective decisions?</li></ul></div><div><h3>Ideas and techniques</h3><ul class="question-list"><li>Belief/value decompositions and partial online state information.</li><li>Active probing, proactive conversational queries, and probe-then-commit.</li><li>Certified experience pooling, cross-action/state response sharing, information lower bounds, and RLHF models.</li></ul></div></div>
+      <div class="guarantee-strip"><strong>Target guarantees</strong><span>regret &amp; sample complexity</span><span>information limits</span><span>best-of-both-worlds sharing</span><span>query efficiency</span></div>
+      <h3>Representative work</h3><div class="paper-link-list"><a class="paper-link" href="./papers/First-POMDP-POSI_TIT2026.pdf" target="_blank" rel="noopener"><span class="paper-year">2026</span><span class="paper-link-title">RL with Partial Online State Information in POMDPs: Regret Bounds and Limits</span><span class="paper-link-arrow">↗</span></a><a class="paper-link" href="./papers/PtC-Multi-Arm-Feedback_WiOPT2026.pdf" target="_blank" rel="noopener"><span class="paper-year">2026</span><span class="paper-link-title">Probe-then-Commit Multi-Objective Bandits</span><span class="paper-link-arrow">↗</span></a><a class="paper-link" href="./papers/Person-MOB-Query_UAI2026.pdf" target="_blank" rel="noopener"><span class="paper-year">2026</span><span class="paper-link-title">Personalized Multi-Objective Bandits with Proactive Conversational Queries</span><span class="paper-link-arrow">↗</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section direction-section" id="distributed-intelligence">
+  <div class="container direction-detail">
+    <div class="direction-copy reveal"><span class="direction-eyebrow direction-distributed-text">04 · Distributed &amp; multi-agent intelligence</span><h2>Use local structure to produce globally coherent intelligence.</h2><p class="lede">Networked intelligence spans interacting agents and cloud, edge, and device tiers. The challenge is to coordinate learning and control without requiring full information, unlimited communication, or centralized execution.</p>
+      <div class="direction-columns"><div><h3>Questions</h3><ul class="question-list"><li>How can coupled agents coordinate safely using local observations and communication?</li><li>When should experience, models, or model components be trained, tested, updated, or shared across tasks and tiers?</li><li>How should communication, computation, memory, and control be co-designed?</li></ul></div><div><h3>Ideas and techniques</h3><ul class="question-list"><li>Centralized training with communication-compatible decentralized execution.</li><li>Local interaction graphs, message passing, and structured confidence sets.</li><li>Certified pooling, task-aware memory, model partitioning, and Age-of-Intelligence signals.</li></ul></div></div>
+      <div class="guarantee-strip"><strong>Target guarantees</strong><span>local-structure complexity</span><span>communication efficiency</span><span>coordination safety</span><span>task-aware freshness</span></div>
+      <h3>Representative work</h3><div class="paper-link-list"><a class="paper-link" href="publications.html?q=Zero-Violation"><span class="paper-year">2026</span><span class="paper-link-title">Graph-structured safe cooperative Markov games</span><span class="paper-link-arrow">→</span></a><a class="paper-link" href="./papers/Fresh-Enough-to-Decide_AIoT2026.pdf" target="_blank" rel="noopener"><span class="paper-year">2026</span><span class="paper-link-title">Age of Intelligence for Cost-Aware Model Synchronization</span><span class="paper-link-arrow">↗</span></a><a class="paper-link" href="./papers/AI-Networking_CIC2022.pdf" target="_blank" rel="noopener"><span class="paper-year">2022</span><span class="paper-link-title">AI and networking synergies for next-generation edge networks</span><span class="paper-link-arrow">↗</span></a></div>
+    </div>
+    <figure class="direction-visual reveal"><img src="assets/images/research/distributed-intelligence.svg" alt="Illustration of cloud, edge, devices, local interaction graphs, communication, and multi-agent coordination." loading="lazy"><figcaption>Scalability comes from exploiting who interacts with whom, what must be shared, and which decisions truly need coordination.</figcaption></figure>
+  </div>
+</section>
+
+<section class="section section-blue direction-section" id="robust-ai">
+  <div class="container direction-detail direction-detail-image-left">
+    <figure class="direction-visual reveal"><img src="assets/images/research/robust-ai.svg" alt="Illustration of model drift, attacks, refresh and defense decisions, Age of Intelligence, and robust guarantees." loading="lazy"><figcaption>Robustness is a sequential allocation problem: detect consequential change, decide whether to respond, and bound what happens when detection is imperfect.</figcaption></figure>
+    <div class="direction-copy reveal"><span class="direction-eyebrow direction-robust-text">05 · Dynamic, secure &amp; robust AI</span><h2>Preserve decision quality as the world—and the model—changes.</h2><p class="lede">Nonstationary workloads, adversarial transitions, concept drift, stale models, LLM-security threats, and evolving attack surfaces make a one-time trained policy or static defense insufficient.</p>
+      <div class="direction-columns"><div><h3>Questions</h3><ul class="question-list"><li>Which changes are operationally consequential rather than merely statistically visible?</li><li>When should an edge device refresh, a defender reallocate, or a learner switch regimes?</li><li>What robustness is impossible without stronger feedback, structure, or assumptions?</li></ul></div><div><h3>Ideas and techniques</h3><ul class="question-list"><li>Variation budgets, pathwise analysis, minimax RL, and regime-switching models.</li><li>Age of Intelligence, KL and parameter certificates, and threshold synchronization.</li><li>Queueing/risk dynamics, adaptive defense, and robustness lower bounds.</li></ul></div></div>
+      <div class="guarantee-strip"><strong>Target guarantees</strong><span>minimax regret</span><span>stale-decision / refresh tradeoff</span><span>robustness limits</span><span>risk-aware defense</span></div>
+      <h3>Representative work</h3><div class="paper-link-list"><a class="paper-link" href="./papers/Fresh-Enough-to-Decide_AIoT2026.pdf" target="_blank" rel="noopener"><span class="paper-year">2026</span><span class="paper-link-title">Age of Intelligence for cost-aware model synchronization</span><span class="paper-link-arrow">↗</span></a><a class="paper-link" href="./papers/RL-AdversarialTransition_ICLR2026.pdf" target="_blank" rel="noopener"><span class="paper-year">2026</span><span class="paper-link-title">Minimax Optimal Adversarial Reinforcement Learning</span><span class="paper-link-arrow">↗</span></a><a class="paper-link" href="./papers/Security-Queueing-AI_TIFS2026.pdf" target="_blank" rel="noopener"><span class="paper-year">2026</span><span class="paper-link-title">Dynamic attack surfaces: risk analysis and adaptive defense</span><span class="paper-link-arrow">↗</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="research-atlas">
+  <div class="container">
+    <div class="section-heading reveal"><div><span class="eyebrow">Interactive research atlas</span><h2>One project can contribute to several research directions.</h2><p>Filter the portfolio to see how papers and current projects connect safety, information, adaptation, coordination, and robustness.</p></div></div>
+    <div class="research-atlas-controls reveal">
+      <div class="research-filter-row" role="group" aria-label="Filter research projects">
+        <button class="research-filter" type="button" data-research-filter="all" aria-pressed="true">All <span data-filter-count></span></button>
+        <button class="research-filter direction-safety-chip" type="button" data-research-filter="safety" aria-pressed="false">Safe &amp; verifiable <span data-filter-count></span></button>
+        <button class="research-filter direction-adaptation-chip" type="button" data-research-filter="adaptation" aria-pressed="false">Costly adaptation <span data-filter-count></span></button>
+        <button class="research-filter direction-information-chip" type="button" data-research-filter="information" aria-pressed="false">Partial information <span data-filter-count></span></button>
+        <button class="research-filter direction-distributed-chip" type="button" data-research-filter="distributed" aria-pressed="false">Distributed intelligence <span data-filter-count></span></button>
+        <button class="research-filter direction-robust-chip" type="button" data-research-filter="robust" aria-pressed="false">Robust AI <span data-filter-count></span></button>
+      </div>
+      <label class="research-search"><span class="sr-only">Search research projects</span><input type="search" data-research-search placeholder="Search methods, systems, or topics…"></label>
+      <div class="research-result-count" data-research-count></div><div class="sr-only" aria-live="polite" data-research-live></div>
+    </div>
+    <div class="research-project-grid" data-research-projects></div>
+  </div>
+</section>
+
+<section class="section section-muted" id="mathematical-toolkit">
+  <div class="container">
+    <div class="section-heading reveal"><div><span class="eyebrow">Mathematical toolkit</span><h2>Different applications, recurring technical ideas.</h2></div></div>
+    <div class="toolkit-grid">
+      <article class="toolkit-card reveal"><h3>Performance measures</h3><p>Regret, dynamic regret, competitive ratio, violation, refresh cost, information gain, and decision-aware freshness.</p></article>
+      <article class="toolkit-card reveal"><h3>Uncertainty control</h3><p>Confidence sets, self-normalized concentration, martingales, robust optimization, and pessimistic certification.</p></article>
+      <article class="toolkit-card reveal"><h3>Sequential structure</h3><p>Bellman recursion, safe predecessor operators, post-decision states, variation budgets, and switching dynamics.</p></article>
+      <article class="toolkit-card reveal"><h3>Information structure</h3><p>POMDPs, active probing, preference queries, certified sharing, lower bounds, and measurement–disturbance tradeoffs.</p></article>
+      <article class="toolkit-card reveal"><h3>Coordination structure</h3><p>Factor graphs, local scopes, centralized training/decentralized execution, message passing, and cross-level optimization.</p></article>
+      <article class="toolkit-card reveal"><h3>Impossibility and limits</h3><p>Information-theoretic lower bounds, safety margins, exponential joint spaces, robustness barriers, and non-identifiability.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section"><div class="container contact-panel reveal"><div><span class="eyebrow">Research collaboration</span><h2>Interested in a shared problem across theory and intelligent systems?</h2><p>Potential collaborations include safe and multi-agent learning, online optimization, edge and wireless intelligence, AI security, foundation models, robotics, and quantum networking.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:mshi24@buffalo.edu">Start a conversation</a><a class="button button-secondary" href="publications.html">Publication record</a></div></div></section>
 </main>
 <footer class="site-footer">
   <div class="container">
@@ -160,31 +170,26 @@
           <span class="brand-mark" aria-hidden="true">MS</span>
           <span class="brand-text"><span class="brand-name">Ming Shi</span><span class="brand-role">University at Buffalo</span></span>
         </a>
-        <p>Safe learning and resource-aware optimization for networked autonomous systems.</p>
+        <p>Learning and optimization for reliable networked intelligence.</p>
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
-        <a href="studentsandteaching.html">Students &amp; Teaching</a>
+        <a href="studentsandteaching.html">Mentoring &amp; Teaching</a>
         <a href="service.html">Service</a>
         <a href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://www.linkedin.com/in/ming-shi-1b12a1159/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="privacy.html">Privacy</a>
       </nav>
-      <div class="footer-time">
-        <span class="footer-time-label">Buffalo local time</span>
-        <time data-buffalo-time>Loading…</time>
-      </div>
+      <div class="footer-time"><span class="footer-time-label">Buffalo local time</span><time data-buffalo-time>Loading…</time></div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span data-current-year></span> Ming Shi. All rights reserved.</span>
-      <span>Buffalo, New York · Eastern Time</span>
-    </div>
+    <div class="footer-bottom"><span>© <span data-current-year></span> Ming Shi. All rights reserved.</span><span>Buffalo, New York · Eastern Time</span></div>
   </div>
 </footer>
-<script src="assets/js/analytics-config.js"></script>
-<script src="assets/js/analytics.js"></script>
-
-<script src="assets/js/site.js"></script>
+<script src="assets/js/analytics-config.js?v=20260928-5"></script>
+<script src="assets/js/analytics.js?v=20260928-5"></script>
+<script src="assets/data/research-projects.js?v=20260928-5"></script>
+<script src="assets/js/research.js?v=20260928-5"></script>
+<script src="assets/js/site.js?v=20260928-5"></script>
 </body>
 </html>

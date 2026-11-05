@@ -8,4 +8,5 @@
   <symbol id="people" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="10" r="5"/><path d="M7 29v-3a9 9 0 0 1 18 0v3M5 6a4 4 0 0 0 0 8m22-8a4 4 0 0 1 0 8M2 24v-2a6 6 0 0 1 5-6m23 8v-2a6 6 0 0 0-5-6"/></g></symbol>
   <symbol id="book" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8c-4-3-9-3-13-2v20c5-1 9-1 13 2 4-3 8-3 13-2V6c-4-1-9-1-13 2Zm0 0v20M7 11l5 1m-5 4 5 1m8-5 5-1m-5 6 5-1"/></g></symbol>
   <symbol id="service" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 13-7 13 7ZM5 12v13m7-13v13m8-13v13m7-13v13M2 29h28M3 25h26"/></g></symbol>
+  <symbol id="award" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="12" r="8"/><path d="m10 18-3 11 7-3 2-6m6-2 3 11-7-3-2-6m0-12 1.2 2.4 2.7.4-1.9 1.9.4 2.7-2.4-1.3-2.4 1.3.4-2.7-1.9-1.9 2.7-.4Z"/></g></symbol>
 </svg>

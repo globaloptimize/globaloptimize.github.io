@@ -10,7 +10,7 @@ The site connects theory, algorithms, systems, teaching, mentoring, service, and
 
 ## Main pages
 
-- **`index.html`** — concise research identity, three contribution summaries with expandable paper evidence, academic background, vision, and contact.
+- **`index.html`** — research identity, four visible news/recognition highlights, three contribution summaries with expandable paper evidence, a compact background list, vision, and contact.
 - **`research.html`** — a visual research overview, five expandable directions, a searchable project atlas, and a compact mathematical toolkit.
 - **`publications.html`** — compact searchable publication records; full citations and research details expand on click, with advanced filters available separately.
 - **`studentsandteaching.html`** — Ph.D. students, mentoring philosophy, illustrated courses, undergraduate/graduate learning pathways, completed outreach, and outreach in development.
@@ -48,7 +48,8 @@ assets/js/research.js             research-atlas search and filters
 assets/js/publications.js         publication search, filters, and citations
 assets/css/styles.css             full visual system and responsive layout
 assets/css/experience.css         shared visual design and disclosure layouts
-assets/js/experience.js           deep links that open enclosing disclosures
+assets/js/experience.js           deep links and progressive motion enhancement
+assets/css/motion.css             subtle motion with reduced-motion support
 assets/icons/research-icons.svg   original research/teaching/service line icons
 assets/images/research/           five research-direction illustrations
 assets/images/teaching/           course, mentoring, and outreach illustrations
@@ -59,9 +60,9 @@ The site has no framework, database, package manager, or external font dependenc
 
 ## Homepage editorial approach
 
-The homepage presents three questions before offering supporting detail. Purdue doctoral study with Xiaojun Lin, postdoctoral research at Ohio State ECE and the NSF AI-EDGE Institute with Ness B. Shroff and Yingbin Liang, and the current UB appointment are visible in a short background timeline.
+The homepage leads with learning and optimization for autonomous networked systems. Four visible highlights link to the NeurIPS and AoInt papers, ICLR Spotlight, and WiOpt Best Paper Award Runner-Up; dates and acceptance/recognition labels remain explicit. Three research questions offer supporting evidence on click. Academic background is a compact list retaining Purdue and Ohio State mentors and the current UB appointment.
 
-Native HTML `details`/`summary` controls keep technical evidence, full publication citations, teaching history, and review records available without overwhelming the initial view. They support mouse, keyboard, and touch; core content and disclosures work without JavaScript. `experience.js` opens enclosing disclosures for fragment links, including existing research and prospective-student anchors.
+Native HTML `details`/`summary` controls keep technical evidence, full publication citations, teaching history, and review records available without overwhelming the initial view. They support mouse, keyboard, and touch; core content and disclosures work without JavaScript. `experience.js` opens enclosing disclosures for fragment links, including existing research and prospective-student anchors. Gentle one-time entrance animations and hover/focus feedback respect reduced-motion preferences; content remains visible when JavaScript or motion APIs are unavailable.
 
 Keep claims tied to their setting. Safety guarantees depend on model assumptions and probability statements. The Power-of-2-Arms result concerns the paper's adversarial bandit model with switching costs. Describe application relevance separately from demonstrated deployment. Planned outreach must remain explicitly labeled “In development.”
 

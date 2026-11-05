@@ -35,7 +35,7 @@ window.RESEARCH_PROJECTS = [
     ],
     "methods": [
       "Decision-aware freshness",
-      "KL certificates",
+      "Kullback–Leibler (KL) divergence certificates",
       "Variation budgets"
     ],
     "systems": [
@@ -67,8 +67,8 @@ window.RESEARCH_PROJECTS = [
       "Human–robot collaboration",
       "Autonomous systems"
     ],
-    "summary": "Learns useful capabilities from an initially certified seed while preserving instantaneous, transition-wide, and recursive safety under unknown dynamics.",
-    "insight": "Acquire only information that is safely reachable and that can enlarge a conservative viability certificate before evidence becomes stale.",
+    "summary": "Investigates safe capability expansion from an initially certified set under unknown dynamics, including safety during actions and transitions and the ability to continue operating safely.",
+    "insight": "Investigate which safely reachable experiments can expand conservative viability certificates before the evidence becomes stale.",
     "link": "research.html#safe-verifiable"
   },
   {
@@ -114,7 +114,7 @@ window.RESEARCH_PROJECTS = [
       "Network function virtualization"
     ],
     "summary": "Coordinates operational decisions whose current benefits must be weighed against migration, reconfiguration, ramp, and cross-layer feasibility costs.",
-    "insight": "Use prediction selectively, regularize abrupt movement, and couple slow provisioning with fast scheduling to obtain competitive and regret guarantees.",
+    "insight": "Use prediction selectively, regularize abrupt movement, and couple slow provisioning with fast scheduling to obtain competitive-ratio and regret guarantees.",
     "link": "publications.html?q=switching"
   },
   {
@@ -228,8 +228,8 @@ window.RESEARCH_PROJECTS = [
       "Reconfigurable wireless systems",
       "Mobility-aware control"
     ],
-    "summary": "Uses forecasts when they are valuable while remaining protected against misspecification, delayed feedback, nonstationarity, and adversarial prediction error.",
-    "insight": "Blend prediction-dependent and prediction-free policies through confidence tests so good forecasts improve performance without making bad forecasts catastrophic.",
+    "summary": "Studies how to use forecasts when they are valuable while controlling the effects of model misspecification, delayed feedback, nonstationarity, and prediction errors.",
+    "insight": "Investigate confidence tests that combine prediction-dependent and prediction-free policies, aiming to benefit from accurate forecasts while retaining guarantees when forecasts are inaccurate.",
     "link": "research.html#costly-adaptation"
   },
   {
@@ -252,7 +252,7 @@ window.RESEARCH_PROJECTS = [
       "Cloud–edge–device learning",
       "Foundation models"
     ],
-    "summary": "Decides when, where, and which model components to train, test, update, or communicate as tasks and data distributions drift across cloud, edge, and local-device tiers.",
+    "summary": "Studies when, where, and which model components to train, test, update, or communicate as tasks and data distributions drift across cloud platforms, edge servers, and end devices.",
     "insight": "Treat freshness, model specialization, communication, and compute as one sequential decision problem rather than separate systems knobs.",
     "link": "research.html#distributed-intelligence"
   },
@@ -322,7 +322,7 @@ window.RESEARCH_PROJECTS = [
     ],
     "systems": [
       "Fluid antennas",
-      "Integrated sensing and communication"
+      "Integrated sensing and communication (ISAC)"
     ],
     "summary": "Co-designs sensing, communication, antenna position, and port switching when reconfiguration consumes delay and energy.",
     "insight": "Plan only executable switch schedules, learn under mobility and localization uncertainty, and quantify the value of reconfiguration against its physical cost.",
@@ -346,9 +346,9 @@ window.RESEARCH_PROJECTS = [
     ],
     "systems": [
       "Video understanding",
-      "XR and spatial intelligence"
+      "Extended reality (XR) and spatial intelligence"
     ],
-    "summary": "Allocates memory, communication, and model-update resources according to their effect on downstream decisions rather than raw data volume alone.",
+    "summary": "Studies how to allocate memory, communication, and model-update resources according to their effect on downstream decisions rather than raw data volume alone.",
     "insight": "Prioritize information by task value and freshness so devices retain and communicate what changes the decision, not simply what is newest.",
     "link": "research.html#distributed-intelligence"
   }  ,

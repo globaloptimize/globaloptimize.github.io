@@ -53,26 +53,28 @@
 
   function card(project) {
     const directionTags = (project.directions || [])
-      .map((key) => `<span class="project-direction project-direction-${escapeHTML(key)}">${escapeHTML(labels[key] || key)}</span>`)
+      .map((key) => `<span class="tag">${escapeHTML(labels[key] || key)}</span>`)
       .join('');
     const methodTags = (project.methods || []).map((item) => `<span class="tag">${escapeHTML(item)}</span>`).join('');
-    const systemTags = (project.systems || []).map((item) => `<span class="system-pill">${escapeHTML(item)}</span>`).join('');
+    const systemTags = (project.systems || []).map((item) => `<span class="tag">${escapeHTML(item)}</span>`).join('');
     const link = project.link
-      ? `<a class="project-link" href="${escapeHTML(project.link)}" ${project.link.startsWith('http') || project.link.endsWith('.pdf') ? 'target="_blank" rel="noopener"' : ''}>Open related work <span aria-hidden="true">→</span></a>`
+      ? `<a class="project-link" href="${escapeHTML(project.link)}" ${project.link.startsWith('http') || project.link.endsWith('.pdf') ? 'target="_blank" rel="noopener"' : ''}>Related work <span aria-hidden="true">→</span></a>`
       : '';
     return `
-      <article class="research-project-card reveal is-visible" data-project-id="${escapeHTML(project.id)}">
-        <div class="project-card-topline">
-          <span class="project-kind">${escapeHTML(project.kind)}</span>
-          <span class="project-status">${escapeHTML(project.status)}</span>
-        </div>
-        <h3>${escapeHTML(project.title)}</h3>
-        <div class="project-directions">${directionTags}</div>
-        <p>${escapeHTML(project.summary)}</p>
-        <div class="project-insight"><strong>Core idea</strong><span>${escapeHTML(project.insight)}</span></div>
-        <div class="project-meta-block"><strong>Methods</strong><div class="tag-row">${methodTags}</div></div>
-        <div class="project-meta-block"><strong>Systems</strong><div class="system-row">${systemTags}</div></div>
-        ${link}
+      <article class="project-record-v5" data-project-id="${escapeHTML(project.id)}">
+        <details class="disclosure-v5">
+          <summary><span class="disclosure-label-v5"><strong>${escapeHTML(project.title)}</strong><small>${escapeHTML(project.status)} · ${escapeHTML(project.kind)}</small></span></summary>
+          <div class="detail-body-v5">
+            <p>${escapeHTML(project.summary)}</p>
+            <p><strong>Core idea.</strong> ${escapeHTML(project.insight)}</p>
+            <div class="tag-row">${directionTags}</div>
+            <div class="split-v5">
+              <div><h4>Methods</h4><div class="tag-row">${methodTags}</div></div>
+              <div><h4>Application context</h4><div class="tag-row">${systemTags}</div></div>
+            </div>
+            ${link}
+          </div>
+        </details>
       </article>`;
   }
 

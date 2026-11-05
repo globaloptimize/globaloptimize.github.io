@@ -19,6 +19,7 @@
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/css/styles.css?v=20260928-5">
+  <link rel="stylesheet" href="assets/css/experience.css?v=20261105-2">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ming Shi — Academic Homepage">
   <meta property="og:title" content="Publications | Ming Shi">
@@ -30,7 +31,7 @@
   <meta name="twitter:description" content="Searchable publication record of Ming Shi across reinforcement learning, online optimization, bandits, networked systems, safe learning, edge AI, and robust intelligence.">
   
 </head>
-<body data-page="publications">
+<body class="refined-page" data-page="publications">
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header class="site-header">
@@ -40,7 +41,7 @@
       <span class="brand-mark" aria-hidden="true">MS</span>
       <span class="brand-text">
         <span class="brand-name">Ming Shi</span>
-        <span class="brand-role">Reliable Learning · Online Optimization · Networked Intelligence</span>
+        <span class="brand-role">Learning · Optimization · Reliable Intelligence</span>
       </span>
     </a>
     <nav class="site-nav" data-site-nav aria-label="Primary navigation"><a class="nav-link" data-nav="home" href="/">Home</a>
@@ -56,22 +57,37 @@
   </div>
 </header>
 <main id="main-content">
-<section class="page-hero publications-hero-v4">
-  <div class="container narrow reveal"><span class="eyebrow">Publications and manuscripts</span><h1>Learning, optimization, and <span class="display-accent">networked intelligence.</span></h1><p class="lede">A searchable record spanning safe reinforcement learning, online optimization, switching costs, partial observability, bandits, multi-agent systems, edge AI, security, and foundation models.</p><div class="button-row"><a class="button button-primary" href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a><a class="button button-secondary" href="research.html">Research directions</a></div></div>
+<section class="page-intro-v5">
+  <div class="container intro-copy-v5">
+    <span class="eyebrow">Research record</span>
+    <h1>Publications.</h1>
+    <p class="lede">Theory, algorithms, and evidence for learning under real-world constraints.</p>
+    <a class="section-link" href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+  </div>
 </section>
-<section class="section-compact acceptance-banner-section"><div class="container acceptance-banner reveal"><div><span class="card-kicker">Recent acceptances</span><h2>NeurIPS 2026 and ACM MobiHoc AIoT 2026</h2><p>New work on zero-violation cooperative Markov games and decision-aware model freshness.</p></div><div class="tag-row"><span class="tag tag-gold">NeurIPS 2026</span><span class="tag tag-blue">AIoT 2026</span></div></div></section>
-<section class="section publications-section">
-  <div class="container publications-layout">
-    <aside class="publication-filters" aria-label="Publication filters">
-      <div class="filter-group"><label class="filter-label" for="publication-search">Search</label><div class="search-box"><input id="publication-search" type="search" placeholder="Title, author, venue, topic…" data-publication-search></div></div>
-      <div class="filter-group"><span class="filter-label">Type</span><div class="type-filter-list"><button type="button" data-type-filter="all" aria-pressed="true">All <span class="filter-count"></span></button><button type="button" data-type-filter="journal" aria-pressed="false">Journals <span class="filter-count"></span></button><button type="button" data-type-filter="conference" aria-pressed="false">Conferences <span class="filter-count"></span></button><button type="button" data-type-filter="book" aria-pressed="false">Book chapters <span class="filter-count"></span></button><button type="button" data-type-filter="dissertation" aria-pressed="false">Dissertation <span class="filter-count"></span></button><button type="button" data-type-filter="report" aria-pressed="false">Reports <span class="filter-count"></span></button></div></div>
-      <div class="filter-group"><label class="filter-label" for="publication-topic">Topic</label><select id="publication-topic" class="filter-select" data-topic-filter><option value="all">All topics</option></select></div>
-      <div class="filter-group"><label class="filter-label" for="publication-year">Year</label><select id="publication-year" class="filter-select" data-year-filter><option value="all">All years</option></select></div>
-      <div class="filter-group"><label class="filter-label" for="publication-status">Status</label><select id="publication-status" class="filter-select" data-status-filter><option value="all">All statuses</option><option value="accepted">Accepted</option><option value="published">Published</option><option value="submitted">Submitted</option></select></div>
-      <div class="filter-group"><label class="filter-label" for="publication-sort">Sort</label><select id="publication-sort" class="filter-select" data-sort-filter><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title</option></select></div>
-      <button class="button button-secondary filter-reset" type="button" data-filter-reset>Reset filters</button>
-    </aside>
-    <div class="publication-results"><div class="publication-results-head"><p data-publication-count>Loading publications…</p><p class="student-note"><span class="student-author">Student authors</span> are highlighted.</p></div><div class="sr-only" aria-live="polite" data-publication-live></div><div class="publication-list" data-publication-list><noscript><p>JavaScript is required for filtering. The complete record is also available on Google Scholar.</p></noscript></div></div>
+<section class="section-v5 publications-section-v5" aria-labelledby="publication-explorer-title">
+  <div class="container">
+    <h2 class="sr-only" id="publication-explorer-title">Explore the publication record</h2>
+    <div class="publication-starting-points-v5" aria-label="Suggested starting points"><span>Explore a contribution</span><a class="pill-v5" href="publications.html?q=instantaneous">Safe learning</a><a class="pill-v5" href="publications.html?q=switching">Costly adaptation</a><a class="pill-v5" href="publications.html?q=partial">Partial information</a></div>
+    <div class="publication-tools-v5" aria-label="Publication filters">
+      <div class="publication-controls-v5">
+        <div class="publication-search-v5"><label class="filter-label" for="publication-search">Search the record</label><input id="publication-search" type="search" placeholder="Title, author, venue, or topic…" data-publication-search></div>
+        <div><label class="filter-label" for="publication-status">Status</label><select id="publication-status" class="filter-select" data-status-filter><option value="all">All statuses</option><option value="published">Published</option><option value="accepted">Accepted</option><option value="submitted">Submitted</option></select></div>
+        <button class="button button-secondary" type="button" data-filter-reset>Reset</button>
+      </div>
+      <div class="publication-types-v5" role="group" aria-label="Filter publication type"><button type="button" data-type-filter="all" aria-pressed="true">All <span class="filter-count"></span></button><button type="button" data-type-filter="journal" aria-pressed="false">Journals <span class="filter-count"></span></button><button type="button" data-type-filter="conference" aria-pressed="false">Conferences <span class="filter-count"></span></button><button type="button" data-type-filter="book" aria-pressed="false">Chapters <span class="filter-count"></span></button><button type="button" data-type-filter="dissertation" aria-pressed="false">Dissertation <span class="filter-count"></span></button><button type="button" data-type-filter="report" aria-pressed="false">Reports <span class="filter-count"></span></button></div>
+      <details class="disclosure-v5 publication-advanced-v5" data-advanced-filters>
+        <summary><span>More filters</span><small data-advanced-filter-state>Topic, year, and sort order</small></summary>
+        <div class="detail-body-v5 advanced-filter-grid-v5">
+          <div><label class="filter-label" for="publication-topic">Topic</label><select id="publication-topic" class="filter-select" data-topic-filter><option value="all">All topics</option></select></div>
+          <div><label class="filter-label" for="publication-year">Year</label><select id="publication-year" class="filter-select" data-year-filter><option value="all">All years</option></select></div>
+          <div><label class="filter-label" for="publication-sort">Sort</label><select id="publication-sort" class="filter-select" data-sort-filter><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title</option></select></div>
+        </div>
+      </details>
+    </div>
+    <div class="publication-results-head"><p data-publication-count>Loading publications…</p><p class="student-note">Open an entry’s details for its full citation and topics.</p></div>
+    <div class="sr-only" aria-live="polite" data-publication-live></div>
+    <div class="publication-list-v5" data-publication-list><noscript><p>JavaScript enables the searchable record. Read representative papers on the <a href="research.html">Research page</a> or browse the complete record on <a href="https://scholar.google.com/citations?user=GDiJkA0AAAAJ&amp;hl=en">Google Scholar</a>.</p></noscript></div>
   </div>
 </section>
 </main>
@@ -102,7 +118,8 @@
 <script src="assets/js/analytics-config.js?v=20260928-5"></script>
 <script src="assets/js/analytics.js?v=20260928-5"></script>
 <script src="assets/data/publications.js?v=20261105-1"></script>
-<script src="assets/js/publications.js?v=20260928-5"></script>
+<script src="assets/js/publications.js?v=20261105-2"></script>
 <script src="assets/js/site.js?v=20260928-5"></script>
+<script src="assets/js/experience.js?v=20261105-2"></script>
 </body>
 </html>

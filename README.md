@@ -1,8 +1,8 @@
-# Ming Shi Academic Homepage — Version 4
+# Ming Shi Academic Homepage
 
 A responsive, static academic website for **Ming Shi**, Assistant Professor of Electrical and Computer Engineering at the University at Buffalo.
 
-Version 4 reorganizes the site around one coherent research program:
+The site is organized around one coherent research program:
 
 > **Mathematical foundations for reliable networked intelligence.**
 
@@ -10,9 +10,9 @@ The site connects theory, algorithms, systems, teaching, mentoring, service, and
 
 ## Main pages
 
-- **`index.html`** — research identity, four scientific contributions with paper evidence, future vision, societal relevance, completed educational outreach, selected papers, recent updates, and contact.
-- **`research.html`** — the main research narrative, five illustrated directions, an interactive cross-cutting research atlas, and a mathematical toolkit.
-- **`publications.html`** — searchable publication/manuscript record with filters for type, topic, year, and status.
+- **`index.html`** — concise research identity, three contribution summaries with expandable paper evidence, academic background, vision, and contact.
+- **`research.html`** — a visual research overview, five expandable directions, a searchable project atlas, and a compact mathematical toolkit.
+- **`publications.html`** — compact searchable publication records; full citations and research details expand on click, with advanced filters available separately.
 - **`studentsandteaching.html`** — Ph.D. students, mentoring philosophy, illustrated courses, undergraduate/graduate learning pathways, completed outreach, and outreach in development.
 - **`service.html`** — university governance, conference leadership, technical program committees, and comprehensive review records.
 - **`privacy.html`** — analytics and visitor-privacy disclosure.
@@ -47,7 +47,9 @@ assets/js/site.js                 navigation, theme, clock, shared rendering
 assets/js/research.js             research-atlas search and filters
 assets/js/publications.js         publication search, filters, and citations
 assets/css/styles.css             full visual system and responsive layout
-assets/css/home.css               homepage layout and responsive refinements
+assets/css/experience.css         shared visual design and disclosure layouts
+assets/js/experience.js           deep links that open enclosing disclosures
+assets/icons/research-icons.svg   original research/teaching/service line icons
 assets/images/research/           five research-direction illustrations
 assets/images/teaching/           course, mentoring, and outreach illustrations
 scripts/build_site.py             validation, sitemap update, cache-version bump
@@ -57,13 +59,21 @@ The site has no framework, database, package manager, or external font dependenc
 
 ## Homepage editorial approach
 
-The homepage leads with contributions rather than publication counts or a long news feed. Its four contribution summaries link directly to the underlying papers; the Research page retains the detailed five-direction program. Core contribution, vision, and impact content is static HTML and remains readable without JavaScript.
+The homepage presents three questions before offering supporting detail. Purdue doctoral study with Xiaojun Lin, postdoctoral research at Ohio State ECE and the NSF AI-EDGE Institute with Ness B. Shroff and Yingbin Liang, and the current UB appointment are visible in a short background timeline.
 
-Keep quantitative claims tied to their setting. The Power-of-2-Arms result concerns the paper's adversarial bandit model with switching costs. The 6.15% synchronization-cost reduction comes from Table 1 in the AIoT paper: mean total cost 451.42 versus 481.02 for Instant-Param across 20 validation traces. It is a numerical result, not a deployment result. The abstract's separate 49% claim uses a different baseline absent from the results table; reconcile the manuscript before using that claim publicly. Safety guarantees depend on the assumptions and probability statements in the linked papers. National and societal relevance describes the motivating problems; do not present it as demonstrated adoption or economic impact without supporting evidence.
+Native HTML `details`/`summary` controls keep technical evidence, full publication citations, teaching history, and review records available without overwhelming the initial view. They support mouse, keyboard, and touch; core content and disclosures work without JavaScript. `experience.js` opens enclosing disclosures for fragment links, including existing research and prospective-student anchors.
 
-Student achievements and completed outreach are drawn from `studentsandteaching.html`. Planned activities remain on that page under outreach in development. The NeurIPS entry retains its accepted status and citation-forthcoming note.
+Keep claims tied to their setting. Safety guarantees depend on model assumptions and probability statements. The Power-of-2-Arms result concerns the paper's adversarial bandit model with switching costs. Describe application relevance separately from demonstrated deployment. Planned outreach must remain explicitly labeled “In development.”
 
-Organization was informed by the public homepage sources of [Jon Barron](https://github.com/jonbarron/website/blob/master/index.html) and [Jia-Bin Huang](https://github.com/jbhuang0604/jbhuang0604.github.io/blob/master/index.html): concise positioning, paper-backed contribution summaries, quick section navigation, and clear student/collaborator pathways.
+The AIoT manuscript contains an unresolved numerical inconsistency: its abstract reports 49% versus a tuned periodic policy, while Table 1 gives mean total costs 451.42 versus 481.02 for Instant-Param across 20 validation traces (6.15%). The concise homepage uses a qualitative description; reconcile the manuscript before highlighting the abstract's number.
+
+The organization draws on concise research positioning, evidence links, and clear student/collaborator pathways found in the public homepage sources of [Jon Barron](https://github.com/jonbarron/website/blob/master/index.html) and [Jia-Bin Huang](https://github.com/jbhuang0604/jbhuang0604.github.io/blob/master/index.html).
+
+### Visual asset sources
+
+- `assets/icons/research-icons.svg`, `assets/images/research/decision-loop.svg`, and the service-page inline SVG are original vector drawings created for this site. They do not incorporate third-party images, logos, or artwork.
+- The portrait and existing research/teaching illustrations are retained from this repository. No additional stock photos or external fonts were introduced.
+- Keep descriptive alternative text for figures and treat decorative icons as `aria-hidden="true"`.
 
 ## Deploy without changing the domain
 

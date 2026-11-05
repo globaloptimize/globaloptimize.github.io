@@ -24,14 +24,7 @@
     report: 'Technical report'
   };
 
-  const typePlural = {
-    all: 'works',
-    journal: 'journal papers',
-    conference: 'conference papers',
-    book: 'book chapters',
-    dissertation: 'dissertations',
-    report: 'technical reports'
-  };
+
 
   const state = {
     query: '',
@@ -68,44 +61,62 @@
     return `${publication.authors}. “${publication.title}.”${suffix}`.replace(/\s+/g, ' ').trim();
   }
 
+  function shortVenue(publication) {
+    if (publication.award && /WiOpt/i.test(publication.badge || '')) return 'WiOpt';
+    const badge = String(publication.badge || '')
+      .replace(/\s*\([^)]*\)/g, '')
+      .replace(/\s*·\s*Accepted/gi, '')
+      .replace(/\b(?:19|20)\d{2}\b/g, '')
+      .trim();
+    return badge || typeLabels[publication.type] || publication.type;
+  }
+
+  function conciseAuthorsHTML(publication) {
+    const names = String(publication.authors || '').replace(/,? and /g, ', ').split(', ');
+    if (names.length <= 3) return authorsHTML(publication);
+    const concise = { ...publication, authors: `${names.slice(0, 2).join(', ')}, et al.` };
+    return authorsHTML(concise);
+  }
+
   function publicationHTML(publication) {
     const topicTags = (publication.topics || []).map((topic) => `<span class="tag">${escapeHTML(topic)}</span>`).join('');
-    const badgeClass = publication.award || publication.spotlight ? 'tag-gold' : 'tag-blue';
-    const badge = publication.badge ? `<span class="tag ${badgeClass}">${escapeHTML(publication.badge)}</span>` : '';
-    const statusLabels = { accepted: 'Accepted', submitted: 'Submitted', published: '' };
-    const status = statusLabels[publication.status] ? `<span class="tag ${publication.status === 'accepted' ? 'tag-gold' : ''}">${statusLabels[publication.status]}</span>` : '';
+    const directionTags = (publication.directions || []).map((direction) => `<span class="tag tag-direction">${escapeHTML(direction)}</span>`).join('');
+    const statusLabels = { accepted: 'Accepted', submitted: 'Submitted manuscript', published: 'Published' };
+    const status = `<span class="publication-status-v5 status-${escapeHTML(publication.status)}">${escapeHTML(statusLabels[publication.status] || publication.status)}</span>`;
+    const recognition = publication.award
+      ? '<span class="tag tag-gold">Best Paper Award Runner-Up</span>'
+      : publication.spotlight ? '<span class="tag tag-gold">Spotlight</span>' : '';
     const primaryLink = publication.link || '';
     const title = primaryLink
       ? `<a href="${escapeHTML(primaryLink)}" target="_blank" rel="noopener" data-track="publication_title" data-track-label="${escapeHTML(publication.title)}">${escapeHTML(publication.title)}</a>`
       : escapeHTML(publication.title);
     const linkLabel = primaryLink && /\.pdf(?:$|[?#])/i.test(primaryLink) ? 'PDF' : 'Source';
     const sourceAction = primaryLink
-      ? `<a class="paper-action" href="${escapeHTML(primaryLink)}" target="_blank" rel="noopener" data-track="publication_download" data-track-label="${escapeHTML(publication.title)}">↗ ${linkLabel}</a>`
+      ? `<a class="paper-action" href="${escapeHTML(primaryLink)}" target="_blank" rel="noopener" aria-label="Open ${linkLabel} for ${escapeHTML(publication.title)}" data-track="publication_download" data-track-label="${escapeHTML(publication.title)}">${linkLabel} →</a>`
       : '';
     const doiAction = publication.doi
-      ? `<a class="paper-action" href="https://doi.org/${escapeHTML(publication.doi)}" target="_blank" rel="noopener" data-track="doi_click" data-track-label="${escapeHTML(publication.title)}">DOI</a>`
+      ? `<a class="paper-action" href="https://doi.org/${escapeHTML(publication.doi)}" target="_blank" rel="noopener" aria-label="DOI for ${escapeHTML(publication.title)}" data-track="doi_click" data-track-label="${escapeHTML(publication.title)}">DOI</a>`
       : '';
     const citationAction = publication.citationEnabled === false
-      ? ''
-      : `<button class="paper-action copy-citation" type="button" data-copy-citation="${escapeHTML(publication.id)}">Copy citation</button>`;
-    const directionTags = (publication.directions || []).map((direction) => `<span class="tag tag-direction">${escapeHTML(direction)}</span>`).join('');
+      ? '<span class="publication-citation-note-v5">Complete citation forthcoming</span>'
+      : `<button class="paper-action copy-citation" type="button" data-copy-citation="${escapeHTML(publication.id)}" aria-label="Copy citation for ${escapeHTML(publication.title)}">Copy citation</button>`;
 
     return `
-      <article class="publication-card ${publication.featured ? 'is-featured' : ''}" data-publication-id="${escapeHTML(publication.id)}">
-        <div class="publication-topline">
-          <span class="publication-type">${escapeHTML(typeLabels[publication.type] || publication.type)}</span>
-          <span class="publication-year">${escapeHTML(publication.year)}</span>
-          ${badge}${status}
-        </div>
-        <h2>${title}</h2>
-        <p class="paper-authors">${authorsHTML(publication)}</p>
-        <p class="paper-venue">${escapeHTML(publication.venue)}</p>
-        ${publication.summary ? `<p class="paper-summary">${escapeHTML(publication.summary)}</p>` : ''}
-        ${publication.publicNote ? `<p class="paper-note">${escapeHTML(publication.publicNote)}</p>` : ''}
-        <div class="tag-row">${directionTags}${topicTags}</div>
-        <div class="publication-actions">
-          ${sourceAction}${doiAction}${citationAction}
-        </div>
+      <article class="publication-row-v5" data-publication-id="${escapeHTML(publication.id)}" aria-labelledby="publication-${escapeHTML(publication.id)}-title">
+        <div class="publication-topline-v5"><span>${escapeHTML(publication.year)}</span><span>${escapeHTML(shortVenue(publication))}</span>${status}${recognition}</div>
+        <h3 id="publication-${escapeHTML(publication.id)}-title">${title}</h3>
+        <p class="publication-meta-v5">${conciseAuthorsHTML(publication)}</p>
+        <div class="publication-actions-v5">${sourceAction}${doiAction}${citationAction}</div>
+        <details class="disclosure-v5 publication-details-v5">
+          <summary aria-label="Full citation and research topics for ${escapeHTML(publication.title)}"><span>Citation &amp; research details</span></summary>
+          <div class="detail-body-v5">
+            <p class="paper-authors">${authorsHTML(publication)}</p>
+            <p class="paper-venue">${escapeHTML(publication.venue)}</p>
+            ${publication.summary ? `<p class="paper-summary">${escapeHTML(publication.summary)}</p>` : ''}
+            ${publication.publicNote ? `<p class="paper-note">${escapeHTML(publication.publicNote)}</p>` : ''}
+            <div class="tag-row">${directionTags}${topicTags}</div>
+          </div>
+        </details>
       </article>`;
   }
 
@@ -179,6 +190,9 @@
       });
     });
 
+    const advancedCount = Number(state.topic !== 'all') + Number(state.year !== 'all') + Number(state.sort !== 'newest');
+    const advancedState = document.querySelector('[data-advanced-filter-state]');
+    if (advancedState) advancedState.textContent = advancedCount ? `${advancedCount} active` : 'Topic, year, and sort order';
     updateURL();
   }
 
@@ -256,5 +270,9 @@
   populateControls();
   readURL();
   syncControls();
+  if (state.topic !== 'all' || state.year !== 'all' || state.sort !== 'newest') {
+    const advanced = document.querySelector('[data-advanced-filters]');
+    if (advanced) advanced.open = true;
+  }
   render();
 })();

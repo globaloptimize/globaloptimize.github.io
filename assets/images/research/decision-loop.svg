@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">A research agenda for reliable sequential decisions</title>
+  <desc id="desc">Observation, safety certification, decisions, and adaptation form a feedback loop around mathematical guarantees. Information, safety, and resource constraints shape the loop. Guarantees depend on the model and its assumptions.</desc>
+  <!-- Original conceptual illustration. No third-party artwork. -->
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7" fill="none" stroke="#91d8d0" stroke-width="1.4"/></marker>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#bdd2df" stroke-opacity=".06"/></pattern>
+  </defs>
+  <rect width="640" height="400" rx="22" fill="#102c42"/>
+  <rect width="640" height="400" rx="22" fill="url(#grid)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="32" y="43" fill="#a7e4dc" font-size="19">A reliable decision loop</text>
+    <g fill="none" stroke="#91d8d0" stroke-width="2" marker-end="url(#arrow)"><path d="M227 128h180"/><path d="M510 172v64"/><path d="M415 284H236"/><path d="M130 243v-64"/></g>
+    <g fill="#18394e" stroke="#7198ac" stroke-width="1"><rect x="40" y="87" width="190" height="82" rx="11"/><rect x="410" y="87" width="190" height="82" rx="11"/><rect x="410" y="243" width="190" height="82" rx="11"/><rect x="40" y="243" width="190" height="82" rx="11"/></g>
+    <g fill="#f6f9fa" font-size="28" font-weight="600"><text x="60" y="123">Observe</text><text x="430" y="123">Certify</text><text x="430" y="279">Decide</text><text x="60" y="279">Adapt</text></g>
+    <g fill="#c8d9e2" font-size="16"><text x="60" y="148">State &amp; feedback</text><text x="430" y="148">Safety &amp; feasibility</text><text x="430" y="304">Actions &amp; coordination</text><text x="60" y="304">Models &amp; resources</text></g>
+    <circle cx="320" cy="206" r="52" fill="#102c42" stroke="#91d8d0" stroke-width="1.5"/>
+    <text x="320" y="201" text-anchor="middle" fill="#a7e4dc" font-size="17">Mathematical</text><text x="320" y="224" text-anchor="middle" fill="#a7e4dc" font-size="17">guarantees</text>
+    <text x="320" y="374" text-anchor="middle" fill="#c8d9e2" font-size="15">Information · Safety · Resources · Change</text>
+  </g>
+</svg>

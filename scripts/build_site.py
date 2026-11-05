@@ -119,7 +119,7 @@ def validate() -> list[str]:
         ROOT / "assets/css/styles.css",
         ROOT / "assets/js/site.js",
         ROOT / "assets/images/research/research-agenda.svg",
-        ROOT / "papers/Fresh-Enough-to-Decide_AIoT2026.pdf",
+        ROOT / "Fresh-Enough-to-Decide_AIoT2026.pdf",
     ):
         if not path.exists():
             errors.append(f"Required asset missing: {path.relative_to(ROOT)}")

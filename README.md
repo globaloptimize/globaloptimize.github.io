@@ -10,7 +10,7 @@ The site connects theory, algorithms, systems, teaching, mentoring, service, and
 
 ## Main pages
 
-- **`index.html`** — research identity, recent acceptances and service, five research directions, selected work, mentoring/outreach preview, honors, and contact.
+- **`index.html`** — research identity, four scientific contributions with paper evidence, future vision, societal relevance, completed educational outreach, selected papers, recent updates, and contact.
 - **`research.html`** — the main research narrative, five illustrated directions, an interactive cross-cutting research atlas, and a mathematical toolkit.
 - **`publications.html`** — searchable publication/manuscript record with filters for type, topic, year, and status.
 - **`studentsandteaching.html`** — Ph.D. students, mentoring philosophy, illustrated courses, undergraduate/graduate learning pathways, completed outreach, and outreach in development.
@@ -47,12 +47,23 @@ assets/js/site.js                 navigation, theme, clock, shared rendering
 assets/js/research.js             research-atlas search and filters
 assets/js/publications.js         publication search, filters, and citations
 assets/css/styles.css             full visual system and responsive layout
+assets/css/home.css               homepage layout and responsive refinements
 assets/images/research/           five research-direction illustrations
 assets/images/teaching/           course, mentoring, and outreach illustrations
 scripts/build_site.py             validation, sitemap update, cache-version bump
 ```
 
 The site has no framework, database, package manager, or external font dependency.
+
+## Homepage editorial approach
+
+The homepage leads with contributions rather than publication counts or a long news feed. Its four contribution summaries link directly to the underlying papers; the Research page retains the detailed five-direction program. Core contribution, vision, and impact content is static HTML and remains readable without JavaScript.
+
+Keep quantitative claims tied to their setting. The Power-of-2-Arms result concerns the paper's adversarial bandit model with switching costs. The 6.15% synchronization-cost reduction comes from Table 1 in the AIoT paper: mean total cost 451.42 versus 481.02 for Instant-Param across 20 validation traces. It is a numerical result, not a deployment result. The abstract's separate 49% claim uses a different baseline absent from the results table; reconcile the manuscript before using that claim publicly. Safety guarantees depend on the assumptions and probability statements in the linked papers. National and societal relevance describes the motivating problems; do not present it as demonstrated adoption or economic impact without supporting evidence.
+
+Student achievements and completed outreach are drawn from `studentsandteaching.html`. Planned activities remain on that page under outreach in development. The NeurIPS entry retains its accepted status and citation-forthcoming note.
+
+Organization was informed by the public homepage sources of [Jon Barron](https://github.com/jonbarron/website/blob/master/index.html) and [Jia-Bin Huang](https://github.com/jbhuang0604/jbhuang0604.github.io/blob/master/index.html): concise positioning, paper-backed contribution summaries, quick section navigation, and clear student/collaborator pathways.
 
 ## Deploy without changing the domain
 
@@ -126,7 +137,13 @@ Completed outreach and planned outreach are separated. Keep “in development”
 
 ## Validate before deployment
 
-Run:
+For a read-only validation that preserves the sitemap date:
+
+```bash
+python3 scripts/build_site.py --no-sitemap
+```
+
+To also refresh the sitemap for deployment, run:
 
 ```bash
 python3 scripts/build_site.py

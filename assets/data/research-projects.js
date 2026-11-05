@@ -44,7 +44,7 @@ window.RESEARCH_PROJECTS = [
     ],
     "summary": "Decides when a device should refresh a cached model by measuring the decision consequence of staleness rather than elapsed time alone.",
     "insight": "Accumulate predictive or parameter changes until a client-specific threshold balances stale-decision regret against communication and installation cost.",
-    "link": "./papers/Fresh-Enough-to-Decide_AIoT2026.pdf"
+    "link": "./Fresh-Enough-to-Decide_AIoT2026.pdf"
   },
   {
     "id": "r03",

@@ -1,10 +1,10 @@
 window.HIGHLIGHTS = [
   {
     "id": "h00a",
-    "text": "“Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints” accepted at NeurIPS 2026.",
+    "text": "Accepted at NeurIPS 2026: zero-violation learning in cooperative Markov games with coupled instantaneous hard constraints, connecting local safety certification with distributed coordination.",
     "year": 2026,
     "type": "honor",
-    "link": ""
+    "link": "./papers/MARL-IHC_NeurIPS2026.pdf"
   },
   {
     "id": "h00b",
@@ -15,14 +15,14 @@ window.HIGHLIGHTS = [
   },
   {
     "id": "h00c",
-    "text": "Member, University at Buffalo ECE Tenure and Promotion Committee, 2026–present.",
+    "text": "Member, University at Buffalo ECE Tenure and Promotion Guideline Committee, 2026–present.",
     "year": 2026,
     "type": "leadership",
     "link": ""
   },
   {
     "id": "h01",
-    "text": "“Bi-Level Online Provisioning and Scheduling with Switching Costs and Cross-Level Constraints” — Best Paper Award Runner-Up, IEEE/IFIP WiOpt, Columbus, OH, June 2026.",
+    "text": "Bi-level online provisioning and scheduling connects slow resource allocation with fast queue-aware decisions under switching costs and cross-level constraints — Best Paper Award Runner-Up, IEEE/IFIP WiOpt 2026.",
     "year": 2026,
     "type": "honor",
     "link": "https://engineering.buffalo.edu/home/news/seas.host.html/content/shared/engineering/home/articles/news-articles/2026/ub-researchers-recognized-for-paper-on-preparing-networks-for-6g.detail.html"
@@ -43,7 +43,7 @@ window.HIGHLIGHTS = [
   },
   {
     "id": "h04",
-    "text": "Invited talk: “Partially Observable Reinforcement Learning with Partial Online State Information” — University of California San Diego (UCSD), San Diego, CA, February 2026.",
+    "text": "Invited talk: “Partially Observable Reinforcement Learning with Partial Online State Information” — Information Theory and Applications (ITA) Workshop, San Diego, CA, February 12, 2026.",
     "year": 2026,
     "type": "invited",
     "link": ""
@@ -86,6 +86,13 @@ window.HIGHLIGHTS = [
   {
     "id": "h10",
     "text": "Invited talk: “RL for Networking: Safety, Adversarial Inputs, Partial Observability, and Human Feedback” — Arizona State University, Tempe, AZ, May 2024.",
+    "year": 2024,
+    "type": "invited",
+    "link": ""
+  },
+  {
+    "id": "h28",
+    "text": "Invited talk: “New Results in Reinforcement Learning: Safety and Partial Observability” — NSF AI-EDGE SPARKS, online, February 23, 2024.",
     "year": 2024,
     "type": "invited",
     "link": ""

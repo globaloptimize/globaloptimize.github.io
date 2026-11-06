@@ -19,8 +19,10 @@
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="assets/css/styles.css?v=20260928-5">
-  <link rel="stylesheet" href="assets/css/experience.css?v=20261105-3">
+  <link rel="stylesheet" href="assets/css/experience.css?v=20261105-7">
+  <link rel="stylesheet" href="assets/css/authors.css?v=20261105-7">
   <link rel="stylesheet" href="assets/css/motion.css?v=20261105-3">
+  <link rel="stylesheet" href="assets/css/research-visuals.css?v=20261105-7">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ming Shi — Academic Homepage">
   <meta property="og:title" content="Research | Ming Shi">
@@ -61,7 +63,7 @@
 <section class="page-intro-v5" aria-labelledby="research-title">
   <div class="container intro-grid-v5">
     <div class="intro-copy-v5"><span class="eyebrow">Research vision</span><h1 id="research-title">Intelligence that stays reliable.</h1><p class="lede">How should a system learn, coordinate, and adapt when information is incomplete, actions interact, and change has a cost?</p><p>I connect learning theory, optimization, and intelligent networked systems to answer that question with mathematical guarantees.</p></div>
-    <figure class="intro-figure-v5"><img src="assets/images/research/decision-loop.svg" alt="A decision loop connecting information, safe decisions, adaptation, and operational guarantees."><figcaption>One program: useful decisions under real constraints.</figcaption></figure>
+    <figure class="intro-figure-v5" data-research-visual="vision" aria-label="Conceptual decision loop for intelligent networked systems"><img src="assets/images/research/decision-loop.svg" alt="A decision loop connecting information, safe decisions, adaptation, and operational guarantees."><figcaption>One program: useful decisions under real constraints.</figcaption></figure>
   </div>
 </section>
 <nav class="page-index-v5" aria-label="Research sections"><div class="container"><a href="#research-directions">Directions</a><a href="#research-atlas">Project atlas</a><a href="#mathematical-toolkit">Mathematical toolkit</a><a href="publications.html">Publications →</a></div></nav>
@@ -72,15 +74,17 @@
     <details class="disclosure-v5" id="safe-verifiable">
       <summary><span class="icon-v5" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="assets/icons/research-icons.svg#shield"></use></svg></span><span class="disclosure-label-v5"><strong>Safe &amp; verifiable learning</strong><small>How can a learner improve while respecting safety at every step?</small></span></summary>
       <div class="detail-body-v5">
-        <p>Instantaneous hard constraints change the learning problem: our algorithms certify the safety of an action before execution, including when agents’ actions interact. My work develops near-optimal safe reinforcement learning and extensions to non-convex feature spaces and coupled multi-agent decisions.</p>
+        <figure class="research-diagram-v7" data-research-visual="safety" aria-label="Safety certification and coordinated decisions"><img src="assets/images/research/safe-verifiable.svg" alt="Safety certification and coordinated decisions" loading="lazy"><figcaption>Conceptual illustration: safety certification and coordinated decisions.</figcaption></figure>
+        <p>Instantaneous hard constraints change the learning problem: our algorithms certify the safety of an action before execution, including when agents’ actions interact. My work develops near-optimal safe reinforcement learning and extensions to non-convex feature spaces and coupled multi-agent decisions. The NeurIPS 2026 algorithm separates local safety certification from optimistic value learning and uses a known safe fallback.</p>
         <div class="split-v5"><div><h3>Research questions</h3><ul><li>What can be learned from an initially certified safe seed?</li><li>How do temporal viability and coupled constraints change exploration?</li><li>Can local evidence certify a safe joint action efficiently?</li></ul></div><div><h3>Technical approach</h3><ul><li>Conservative confidence certificates and robust predecessor operators.</li><li>Optimistic value learning inside certified safe action sets.</li><li>Graph structure and compositional safety certification.</li></ul></div></div>
         <p class="muted text-small">Scope: safety and regret guarantees depend on the assumptions of each model; the ICML results establish safety with high probability during learning.</p>
-        <h3>Representative evidence</h3><div class="paper-link-list"><a class="paper-link" href="papers/First-SafeRL-Work_ICML2023.pdf"><span class="paper-year">ICML 2023</span><span class="paper-link-title">Near-optimal safe RL under instantaneous hard constraints</span></a><a class="paper-link" href="papers/SafeRL-NonConvex_ICML2025.pdf"><span class="paper-year">ICML 2025</span><span class="paper-link-title">Safe RL in non-convex feature spaces</span></a><a class="paper-link" href="publications.html?q=Zero-Violation"><span class="paper-year">NeurIPS 2026 · Accepted</span><span class="paper-link-title">Zero-violation regret for cooperative Markov games</span></a></div>
+        <h3>Representative evidence</h3><div class="paper-link-list"><a class="paper-link" href="papers/First-SafeRL-Work_ICML2023.pdf"><span class="paper-year">ICML 2023</span><span class="paper-link-title">Near-optimal safe RL under instantaneous hard constraints</span></a><a class="paper-link" href="papers/SafeRL-NonConvex_ICML2025.pdf"><span class="paper-year">ICML 2025</span><span class="paper-link-title">Safe RL in non-convex feature spaces</span></a><a class="paper-link" href="papers/MARL-IHC_NeurIPS2026.pdf"><span class="paper-year">NeurIPS 2026 · Accepted</span><span class="paper-link-title">Zero-violation regret for cooperative Markov games</span></a></div>
       </div>
     </details>
     <details class="disclosure-v5" id="costly-adaptation">
       <summary><span class="icon-v5" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="assets/icons/research-icons.svg#switch"></use></svg></span><span class="disclosure-label-v5"><strong>Prediction &amp; costly adaptation</strong><small>When is a change worth its operational cost?</small></span></summary>
       <div class="detail-body-v5">
+        <figure class="research-diagram-v7" data-research-visual="adaptation" aria-label="Adaptation decisions and switching costs"><img src="assets/images/research/costly-adaptation.svg" alt="Adaptation decisions and switching costs" loading="lazy"><figcaption>Conceptual illustration: adaptation decisions and switching costs.</figcaption></figure>
         <p>Moving a workload, changing a route, or refreshing a model consumes resources. I study online decisions with switching costs, ramp limits, uncertain forecasts, and coupled provisioning and scheduling.</p>
         <div class="split-v5"><div><h3>Research questions</h3><ul><li>How much can prediction and lookahead improve performance?</li><li>How should slow provisioning and fast scheduling work together?</li><li>Can accurate forecasts improve performance while preserving guarantees when forecasts are inaccurate?</li></ul></div><div><h3>Technical approach</h3><ul><li>Competitive analysis and regularization with lookahead.</li><li>Switching-aware bandits and reinforcement learning.</li><li>Cross-level optimization and prediction-robust decisions.</li></ul></div></div>
         <p class="muted text-small">In the studied adversarial bandit setting with switching costs, allowing two arms to be selected per round improves the achievable dependence of regret on the time horizon <var>T</var> from Θ(<var>T</var><sup>2/3</sup>) to O(√<var>T</var>), without full-information feedback.</p>
@@ -90,6 +94,7 @@
     <details class="disclosure-v5" id="partial-information">
       <summary><span class="icon-v5" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="assets/icons/research-icons.svg#eye"></use></svg></span><span class="disclosure-label-v5"><strong>Partial &amp; human information</strong><small>What information makes efficient learning possible?</small></span></summary>
       <div class="detail-body-v5">
+        <figure class="research-diagram-v7" data-research-visual="information" aria-label="Selective information for sequential decisions"><img src="assets/images/research/partial-information.svg" alt="Selective information for sequential decisions" loading="lazy"><figcaption>Conceptual illustration: selective information for sequential decisions.</figcaption></figure>
         <p>Neither the environment nor a person’s objective is always fully observed. I study the value and limits of selective state revelation, additional feedback, shared experience, and preference queries.</p>
         <div class="split-v5"><div><h3>Research questions</h3><ul><li>When does partial state information make a partially observable Markov decision process (POMDP) easier to learn?</li><li>What is the value of an extra probe or a shared trajectory?</li><li>How can imperfect preferences support personalized decisions?</li></ul></div><div><h3>Technical approach</h3><ul><li>Regret upper and lower bounds under partial observability.</li><li>Active probing and proactive conversational queries.</li><li>Certified experience pooling and information-theoretic limits.</li></ul></div></div>
         <p class="muted text-small">The IEEE TIT result establishes worst-case hardness and identifies structured subclasses that admit efficient learning with partial online state information.</p>
@@ -99,15 +104,17 @@
     <details class="disclosure-v5" id="distributed-intelligence">
       <summary><span class="icon-v5" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="assets/icons/research-icons.svg#network"></use></svg></span><span class="disclosure-label-v5"><strong>Distributed &amp; multi-agent intelligence</strong><small>How can local decisions produce coordinated intelligence?</small></span></summary>
       <div class="detail-body-v5">
+        <figure class="research-diagram-v7" data-research-visual="coordination" aria-label="Coordination across cloud, edge, and end devices"><img src="assets/images/research/distributed-intelligence.svg" alt="Coordination across cloud, edge, and end devices" loading="lazy"><figcaption>Conceptual illustration: coordination across cloud, edge, and end devices.</figcaption></figure>
         <p>Networked intelligence spans interacting agents, cloud platforms, edge servers, and end devices. I study how to coordinate learning and control when communication, computation, and local observations are limited.</p>
         <div class="split-v5"><div><h3>Research questions</h3><ul><li>How can agents coordinate safely using local information?</li><li>Which models or experiences are worth sharing across tasks?</li><li>When and where should a system update its intelligence?</li></ul></div><div><h3>Technical approach</h3><ul><li>Local interaction graphs and structured planning.</li><li>Decision-aware model freshness and synchronization.</li><li>Joint communication, computation, and resource control.</li></ul></div></div>
         <p class="muted text-small">Looking ahead: cloud–edge–device foundation models and selective observation in multi-agent POMDPs are active research directions, rather than demonstrated deployments.</p>
-        <h3>Representative evidence</h3><div class="paper-link-list"><a class="paper-link" href="publications.html?q=Zero-Violation"><span class="paper-year">NeurIPS 2026 · Accepted</span><span class="paper-link-title">Graph-structured safe cooperative learning</span></a><a class="paper-link" href="Fresh-Enough-to-Decide_AIoT2026.pdf"><span class="paper-year">AIoT 2026 · Accepted</span><span class="paper-link-title">Age of Intelligence for model synchronization</span></a><a class="paper-link" href="papers/AI-Networking_CIC2022.pdf"><span class="paper-year">IEEE CIC 2022</span><span class="paper-link-title">AI and networking for next-generation edge networks</span></a></div>
+        <h3>Representative evidence</h3><div class="paper-link-list"><a class="paper-link" href="papers/MARL-IHC_NeurIPS2026.pdf"><span class="paper-year">NeurIPS 2026 · Accepted</span><span class="paper-link-title">Graph-structured safe cooperative learning</span></a><a class="paper-link" href="Fresh-Enough-to-Decide_AIoT2026.pdf"><span class="paper-year">AIoT 2026 · Accepted</span><span class="paper-link-title">Age of Intelligence for model synchronization</span></a><a class="paper-link" href="papers/AI-Networking_CIC2022.pdf"><span class="paper-year">IEEE CIC 2022</span><span class="paper-link-title">AI and networking for next-generation edge networks</span></a></div>
       </div>
     </details>
     <details class="disclosure-v5" id="robust-ai">
       <summary><span class="icon-v5" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="assets/icons/research-icons.svg#spark"></use></svg></span><span class="disclosure-label-v5"><strong>Dynamic, secure &amp; robust AI</strong><small>What stays reliable when conditions and threats change?</small></span></summary>
       <div class="detail-body-v5">
+        <figure class="research-diagram-v7" data-research-visual="robustness" aria-label="Decision-aware freshness under changing conditions"><img src="assets/images/research/robust-ai.svg" alt="Decision-aware freshness under changing conditions" loading="lazy"><figcaption>Conceptual illustration: decision-aware freshness under changing conditions.</figcaption></figure>
         <p>Changing workloads, stale models, adversarial transitions, and evolving attack surfaces require decisions that remain useful after conditions shift.</p>
         <div class="split-v5"><div><h3>Research questions</h3><ul><li>Which changes matter for downstream decisions?</li><li>When should a learner refresh, switch, or reallocate defense?</li><li>Which robustness guarantees require additional information?</li></ul></div><div><h3>Technical approach</h3><ul><li>Variation budgets, minimax regret, and pathwise analysis.</li><li>Certificates based on Kullback–Leibler (KL) divergence and parameter changes for model synchronization.</li><li>Queueing and risk dynamics for adaptive defense.</li></ul></div></div>
         <p class="muted text-small">Evidence spans published/accepted learning results and current manuscripts. The dynamic attack-surface work remains a submission; emerging security applications are research goals.</p>
@@ -175,9 +182,10 @@
 </footer>
 <script src="assets/js/analytics-config.js?v=20260928-5"></script>
 <script src="assets/js/analytics.js?v=20260928-5"></script>
-<script src="assets/data/research-projects.js?v=20261105-4"></script>
-<script src="assets/js/research.js?v=20261105-2"></script>
-<script src="assets/js/site.js?v=20260928-5"></script>
+<script src="assets/data/research-projects.js?v=20261105-7"></script>
+<script src="assets/js/research.js?v=20261105-7"></script>
+<script src="assets/js/site.js?v=20261105-7"></script>
 <script src="assets/js/experience.js?v=20261105-3"></script>
+<script src="assets/js/research-visuals.js?v=20261105-7"></script>
 </body>
 </html>

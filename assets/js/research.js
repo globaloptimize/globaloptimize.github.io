@@ -52,6 +52,8 @@
   }
 
   function card(project) {
+    const visualKeys = { safety: 'safety', adaptation: 'adaptation', information: 'information', distributed: 'coordination', robust: 'robustness' };
+    const visualKind = visualKeys[(project.directions || [])[0]] || 'vision';
     const directionTags = (project.directions || [])
       .map((key) => `<span class="tag">${escapeHTML(labels[key] || key)}</span>`)
       .join('');
@@ -66,6 +68,7 @@
           <summary><span class="disclosure-label-v5"><strong>${escapeHTML(project.title)}</strong><small>${escapeHTML(project.status)} · ${escapeHTML(project.kind)}</small></span></summary>
           <div class="detail-body-v5">
             <p>${escapeHTML(project.summary)}</p>
+            <div class="research-diagram-v7" data-research-visual="${visualKind}" aria-label="Conceptual illustration for ${escapeHTML(project.title)}"><p class="muted text-small">The illustration is conceptual; see the linked work for models, assumptions, and results.</p></div>
             <p><strong>Core idea.</strong> ${escapeHTML(project.insight)}</p>
             <div class="tag-row">${directionTags}</div>
             <div class="split-v5">

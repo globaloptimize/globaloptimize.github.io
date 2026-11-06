@@ -14,12 +14,12 @@
 - [ ] Preserve any untracked paper PDFs or other assets not present in the package.
 - [ ] Confirm `ming_shi_69.jpg` is beside `index.html`.
 - [ ] Upload folders without flattening their structure.
-- [ ] Do not publish `pdf(1).pdf`, a NeurIPS reviewer copy, or any other confidential submission file.
+- [ ] Do not publish `pdf(1).pdf`, a confidential reviewer copy, the source `CV_Ming_Shi.pdf`, or private proposal material.
 
 ## 3. Verify current content
 
-- [ ] Replace “Ming Shi and collaborators” with the complete NeurIPS 2026 author list when the public citation is available.
-- [ ] Add the public NeurIPS paper/camera-ready link when available.
+- [x] Replace the NeurIPS placeholder with the complete author list: Jialei Liu and Ming Shi.
+- [x] Add the user-supplied named NeurIPS paper at `papers/MARL-IHC_NeurIPS2026.pdf`.
 - [ ] Confirm the AIoT 2026 final citation, DOI, and camera-ready link when assigned.
 - [ ] Review all records marked **Submitted** and update decisions, venues, links, and dates.
 - [ ] Confirm student dates, course offerings, office, affiliations, committee roles, and service date ranges.

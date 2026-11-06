@@ -48,12 +48,44 @@
     .toLowerCase();
 
   function authorsHTML(publication) {
-    let output = escapeHTML(publication.authors || '');
-    (publication.studentAuthors || []).forEach((student) => {
-      const escaped = escapeHTML(student);
-      output = output.replaceAll(escaped, `<span class="student-author">${escaped}</span>`);
-    });
-    return output.replaceAll('Ming Shi', '<strong class="current-author">Ming Shi</strong>');
+    const authors = String(publication.authors || '');
+    const roles = new Map();
+    const addNames = (names, role) => {
+      if (!Array.isArray(names)) return;
+      names.filter((name) => typeof name === 'string' && name.trim())
+        .forEach((name) => roles.set(name, role));
+    };
+    addNames(publication.mentoredAuthors, 'mentored');
+    addNames(publication.studentAuthors, 'student');
+    addNames(['Linfeng Cao', 'Amirhossein Roknilamouki', 'Fatemeh Nourzad'], 'mentored');
+    addNames(['Jialei Liu', 'Hui Wan'], 'student');
+    roles.set('Ming Shi', 'self');
+
+    // Match the original text once so highlighted names can never nest or become HTML.
+    const pattern = [...roles.keys()].sort((a, b) => b.length - a.length)
+      .map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+    const matcher = new RegExp(pattern, 'gu');
+    const nameCharacter = /[\p{L}\p{N}_]/u;
+    let output = '';
+    let cursor = 0;
+    for (const match of authors.matchAll(matcher)) {
+      const name = match[0];
+      const start = match.index;
+      const end = start + name.length;
+      if (nameCharacter.test(authors.charAt(start - 1)) || nameCharacter.test(authors.charAt(end))) continue;
+      output += escapeHTML(authors.slice(cursor, start));
+      const escapedName = escapeHTML(name);
+      const role = roles.get(name);
+      if (role === 'self') {
+        output += `<strong class="current-author">${escapedName}</strong>`;
+      } else if (role === 'student') {
+        output += `<span class="student-author student-author--primary" title="Student advised by Ming Shi">${escapedName}</span>`;
+      } else {
+        output += `<span class="mentored-author" title="Student additionally mentored by Ming Shi">${escapedName}</span>`;
+      }
+      cursor = end;
+    }
+    return output + escapeHTML(authors.slice(cursor));
   }
 
   function citationText(publication) {
@@ -69,13 +101,6 @@
       .replace(/\b(?:19|20)\d{2}\b/g, '')
       .trim();
     return badge || typeLabels[publication.type] || publication.type;
-  }
-
-  function conciseAuthorsHTML(publication) {
-    const names = String(publication.authors || '').replace(/,? and /g, ', ').split(', ');
-    if (names.length <= 3) return authorsHTML(publication);
-    const concise = { ...publication, authors: `${names.slice(0, 2).join(', ')}, et al.` };
-    return authorsHTML(concise);
   }
 
   function publicationHTML(publication) {
@@ -105,7 +130,7 @@
       <article class="publication-row-v5" data-publication-id="${escapeHTML(publication.id)}" aria-labelledby="publication-${escapeHTML(publication.id)}-title">
         <div class="publication-topline-v5"><span>${escapeHTML(publication.year)}</span><span>${escapeHTML(shortVenue(publication))}</span>${status}${recognition}</div>
         <h3 id="publication-${escapeHTML(publication.id)}-title">${title}</h3>
-        <p class="publication-meta-v5">${conciseAuthorsHTML(publication)}</p>
+        <p class="publication-meta-v5">${authorsHTML(publication)}</p>
         <div class="publication-actions-v5">${sourceAction}${doiAction}${citationAction}</div>
         <details class="disclosure-v5 publication-details-v5">
           <summary aria-label="Full citation and research topics for ${escapeHTML(publication.title)}"><span>Citation &amp; research details</span></summary>

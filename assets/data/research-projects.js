@@ -10,17 +10,17 @@ window.RESEARCH_PROJECTS = [
       "distributed"
     ],
     "methods": [
-      "Coupled safety certificates",
-      "Optimism over certified actions",
-      "Graph-structured planning"
+      "Composable local safety certificates",
+      "Optimistic value learning",
+      "Communication-compatible planning"
     ],
     "systems": [
       "Multi-robot coordination",
       "Wireless resource allocation"
     ],
-    "summary": "Safe multi-agent learning when locally feasible actions can become unsafe in combination and every executed joint action must satisfy a hard constraint.",
-    "insight": "Exploit local interaction scopes rather than enumerate the full joint action space; separate pessimistic safety certification from optimistic value learning.",
-    "link": "publications.html?q=Zero-Violation"
+    "summary": "Learns cooperative policies under unknown rewards, dynamics, and coupled instantaneous hard constraints, while retaining a known safe fallback and guaranteeing zero violations with high probability.",
+    "insight": "Reusing local safety certificates can certify untried joint actions. Sublinear regret requires informative safe observations, positive certification margins, and exact implementable planning; communication limits can still reduce attainable safe value.",
+    "link": "./papers/MARL-IHC_NeurIPS2026.pdf"
   },
   {
     "id": "r02",
@@ -351,7 +351,7 @@ window.RESEARCH_PROJECTS = [
     "summary": "Studies how to allocate memory, communication, and model-update resources according to their effect on downstream decisions rather than raw data volume alone.",
     "insight": "Prioritize information by task value and freshness so devices retain and communicate what changes the decision, not simply what is newest.",
     "link": "research.html#distributed-intelligence"
-  }  ,
+  },
   {
     "id": "r16",
     "title": "Multi-Agent POMDPs with Selective Observation",

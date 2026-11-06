@@ -35,7 +35,7 @@ A project may belong to several directions. This is implemented through `assets/
 - **NeurIPS 2026:** *Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints*.
 - **ACM MobiHoc AIoT 2026:** *Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems*.
 
-The public site does **not** contain the confidential NeurIPS reviewer-copy PDF. The current publication entry uses “Ming Shi and collaborators” and a “complete citation forthcoming” note because the supplied accepted manuscript is anonymous. Replace that temporary author line and add the public paper link when the camera-ready version is available.
+The named NeurIPS 2026 manuscript by **Jialei Liu and Ming Shi** is available at `papers/MARL-IHC_NeurIPS2026.pdf`. Its public citation and download link replace the earlier anonymous placeholder. Keep confidential reviewer copies and the source CV containing private proposal material outside the deployable repository.
 
 ## Important files
 
@@ -49,6 +49,9 @@ assets/js/publications.js         publication search, filters, and citations
 assets/css/styles.css             full visual system and responsive layout
 assets/css/experience.css         shared visual design and disclosure layouts
 assets/js/experience.js           deep links and progressive motion enhancement
+assets/js/research-visuals.js      original conceptual diagrams with animation controls
+assets/css/research-visuals.css    responsive diagram styling
+assets/css/authors.css            accessible author-role highlighting
 assets/css/motion.css             subtle motion with reduced-motion support
 assets/icons/research-icons.svg   original research/teaching/service line icons
 assets/images/research/           five research-direction illustrations
@@ -62,7 +65,7 @@ The site has no framework, database, package manager, or external font dependenc
 
 The homepage leads with learning and optimization for autonomous intelligent networked systems. Four visible highlights link to the NeurIPS and AoInt papers, ICLR Spotlight, and WiOpt Best Paper Award Runner-Up; dates and acceptance/recognition labels remain explicit. Three research questions offer supporting evidence on click. Academic background is a compact list identifying Xiaojun Lin as the Ph.D. advisor and Ness B. Shroff and Yingbin Liang as postdoctoral hosts, with full department names and links to the institutions and faculty homepages. Advisor URLs are sourced from the original biography in Git history (particularly `index.html` at `4dcd768`); direct live verification of university sites is restricted in the cloud environment.
 
-Native HTML `details`/`summary` controls keep technical evidence, full publication citations, teaching history, and review records available without overwhelming the initial view. They support mouse, keyboard, and touch; core content and disclosures work without JavaScript. `experience.js` opens enclosing disclosures for fragment links, including existing research and prospective-student anchors. Gentle one-time entrance animations and hover/focus feedback respect reduced-motion preferences; content remains visible when JavaScript or motion APIs are unavailable.
+Native HTML `details`/`summary` controls keep technical evidence, research summaries, teaching history, and review records available without overwhelming the initial view. They support mouse, keyboard, and touch; core content and disclosures work without JavaScript. `experience.js` opens enclosing disclosures for fragment links, including existing research and prospective-student anchors. Gentle one-time entrance animations and hover/focus feedback respect reduced-motion preferences; content remains visible when JavaScript or motion APIs are unavailable. Research visualizations use original conceptual diagrams with explicit Play/Pause controls, reduced-motion support, and static fallbacks. Full publication author lists are always shown; bold text identifies Ming Shi, strong solid underlining identifies directly advised students, and subtle dotted underlining identifies additionally mentored students.
 
 Keep claims tied to their setting. Safety guarantees depend on model assumptions and probability statements. The Power-of-2-Arms result concerns the paper's adversarial bandit model with switching costs. Describe application relevance separately from demonstrated deployment. Planned outreach must remain explicitly labeled “In development.”
 
@@ -72,7 +75,7 @@ The organization draws on concise research positioning, evidence links, and clea
 
 ### Visual asset sources
 
-- `assets/icons/research-icons.svg`, `assets/images/research/decision-loop.svg`, and the service-page inline SVG are original vector drawings created for this site. They do not incorporate third-party images, logos, or artwork.
+- `assets/icons/research-icons.svg`, `assets/images/research/decision-loop.svg`, the animated research diagrams, and the service-page inline SVG are original vector drawings created for this site. They do not incorporate third-party images, logos, or artwork.
 - The portrait and existing research/teaching illustrations are retained from this repository. No additional stock photos or external fonts were introduced.
 - Keep descriptive alternative text for figures and treat decorative icons as `aria-hidden="true"`.
 
@@ -205,3 +208,7 @@ See:
 - `HEADINGS-AND-MESSAGING.md`
 - `CONTENT-MIGRATION-NOTES.md`
 - `PORTRAIT-SETUP.md`
+
+## Private source documents
+
+The supplied CV is an editorial source, not a public download. Only confirmed public education, appointments, mentoring, teaching, service, and publication facts are incorporated. Proposal titles, budgets, sponsors, and review details are excluded. The National Grid, Maomi, and landscape photographs were visible inline in chat but their original files were not available to the execution workspace; do not substitute generated approximations or create broken image links. Add the exact originals when supplied as files. Photographs credited to Ming Shi are not freely licensed; reuse terms are stated on the Privacy page.

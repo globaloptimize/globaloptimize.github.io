@@ -150,8 +150,45 @@
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
 
-  function highlightAuthor(authors = '') {
-    return escapeHTML(authors).replaceAll('Ming Shi', '<strong class="current-author">Ming Shi</strong>');
+  function authorsHTML(publication) {
+    const authors = String(publication.authors || '');
+    const roles = new Map();
+    const addNames = (names, role) => {
+      if (!Array.isArray(names)) return;
+      names.filter((name) => typeof name === 'string' && name.trim())
+        .forEach((name) => roles.set(name, role));
+    };
+    addNames(publication.mentoredAuthors, 'mentored');
+    addNames(publication.studentAuthors, 'student');
+    addNames(['Linfeng Cao', 'Amirhossein Roknilamouki', 'Fatemeh Nourzad'], 'mentored');
+    addNames(['Jialei Liu', 'Hui Wan'], 'student');
+    roles.set('Ming Shi', 'self');
+
+    // Match the original text once so highlighted names can never nest or become HTML.
+    const pattern = [...roles.keys()].sort((a, b) => b.length - a.length)
+      .map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+    const matcher = new RegExp(pattern, 'gu');
+    const nameCharacter = /[\p{L}\p{N}_]/u;
+    let output = '';
+    let cursor = 0;
+    for (const match of authors.matchAll(matcher)) {
+      const name = match[0];
+      const start = match.index;
+      const end = start + name.length;
+      if (nameCharacter.test(authors.charAt(start - 1)) || nameCharacter.test(authors.charAt(end))) continue;
+      output += escapeHTML(authors.slice(cursor, start));
+      const escapedName = escapeHTML(name);
+      const role = roles.get(name);
+      if (role === 'self') {
+        output += `<strong class="current-author">${escapedName}</strong>`;
+      } else if (role === 'student') {
+        output += `<span class="student-author student-author--primary" title="Student advised by Ming Shi">${escapedName}</span>`;
+      } else {
+        output += `<span class="mentored-author" title="Student additionally mentored by Ming Shi">${escapedName}</span>`;
+      }
+      cursor = end;
+    }
+    return output + escapeHTML(authors.slice(cursor));
   }
 
   const typeLabels = {
@@ -207,7 +244,7 @@
         <article class="featured-paper reveal">
           <span class="card-kicker">${escapeHTML(typeLabels[paper.type] || paper.type)} · ${escapeHTML(paper.year)}</span>
           <h3><a href="${href}" data-track="featured_publication" data-track-label="${escapeHTML(paper.title)}">${escapeHTML(paper.title)}</a></h3>
-          <p class="paper-authors">${highlightAuthor(paper.authors)}</p>
+          <p class="paper-authors">${authorsHTML(paper)}</p>
           <p class="paper-venue">${escapeHTML(paper.venue)}</p>
           ${paper.summary ? `<p class="paper-summary">${escapeHTML(paper.summary)}</p>` : ''}
           ${paper.publicNote ? `<p class="paper-note">${escapeHTML(paper.publicNote)}</p>` : ''}

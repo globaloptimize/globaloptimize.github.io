@@ -1,0 +1,46 @@
+/* Author roles use weight and underline style as well as color. */
+.current-author {
+  color: var(--navy);
+  font-weight: 850;
+}
+
+.student-author--primary {
+  color: var(--accent-v5, var(--victor-blue));
+  background: color-mix(in srgb, var(--accent-v5, var(--victor-blue)) 11%, transparent);
+  border-radius: 0.18em;
+  padding: 0.02em 0.12em;
+  font-weight: 750;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.18em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.mentored-author {
+  font-weight: 550;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.author-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 1.25rem;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (forced-colors: active) {
+  .student-author--primary {
+    color: CanvasText;
+    background: transparent;
+  }
+}

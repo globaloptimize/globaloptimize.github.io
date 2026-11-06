@@ -536,3 +536,13 @@ html[data-theme="dark"] .refined-page .news-recognition-v6 { color: #f0c36a; bor
   .refined-page .news-item-v6 p { margin-bottom: .7rem; }
   .refined-page .background-list-v6 li { grid-template-columns: minmax(0, 1fr); gap: .15rem; }
 }
+
+/* Academic appointments keep names and institutional phrases together. */
+.refined-page .affiliation-nowrap-v7 { display: inline-block; white-space: nowrap; }
+.refined-page .appointment-years-v7 { display: block; color: var(--ink-soft); font-size: .76rem; font-weight: 500; }
+.refined-page .research-diagram-v7 { max-width: 44rem; margin: 0 auto 1.4rem; }
+.refined-page .research-diagram-v7 > img { width: 100%; height: auto; }
+.refined-page .research-diagram-v7 > figcaption { color: var(--ink-soft); font-size: .8rem; }
+.refined-page .personal-section-v7 { padding-top: 0; padding-bottom: 1.6rem; }
+.refined-page .news-source-v7 { margin: 1.2rem 0 0; color: var(--ink-soft); font-size: .84rem; }
+.refined-page .research-diagram-v7.research-visual-widget { max-width: 36rem; }

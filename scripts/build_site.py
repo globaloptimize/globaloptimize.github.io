@@ -124,10 +124,10 @@ def validate() -> list[str]:
         if not path.exists():
             errors.append(f"Required asset missing: {path.relative_to(ROOT)}")
 
-    # Confidential reviewer copy must not be deployed.
-    confidential_names = [p.name for p in ROOT.rglob("*.pdf") if p.name.lower() in {"pdf(1).pdf", "neurips-reviewer-copy.pdf"}]
+    # Known private source documents must not be deployed.
+    confidential_names = [p.name for p in ROOT.rglob("*.pdf") if p.name.lower() in {"pdf(1).pdf", "neurips-reviewer-copy.pdf", "cv_ming_shi.pdf"}]
     if confidential_names:
-        errors.append("Confidential reviewer-copy PDF detected in deployable site: " + ", ".join(confidential_names))
+        errors.append("Private source PDF detected in deployable site: " + ", ".join(confidential_names))
 
     published = sum(p.get("status") == "published" for p in publications)
     accepted = sum(p.get("status") == "accepted" for p in publications)

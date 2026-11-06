@@ -3,11 +3,13 @@ window.PUBLICATIONS = [
     "id": "p34",
     "type": "conference",
     "title": "Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints",
-    "authors": "Ming Shi and collaborators",
-    "studentAuthors": [],
+    "authors": "Jialei Liu and Ming Shi",
+    "studentAuthors": [
+      "Jialei Liu"
+    ],
     "venue": "40th Conference on Neural Information Processing Systems (NeurIPS), 2026. Accepted.",
     "year": 2026,
-    "link": "",
+    "link": "./papers/MARL-IHC_NeurIPS2026.pdf",
     "doi": "",
     "badge": "NeurIPS 2026 · Accepted",
     "status": "accepted",
@@ -24,9 +26,8 @@ window.PUBLICATIONS = [
     "featured": true,
     "award": false,
     "spotlight": false,
-    "summary": "Studies cooperative Markov games in which every joint action must satisfy coupled hard constraints, combining conservative graph-structured safety certification with optimistic learning.",
-    "publicNote": "Public camera-ready link and complete citation forthcoming.",
-    "citationEnabled": false
+    "summary": "SAFE-CMG-UCB combines local safety certificates, optimistic value learning, and a known safe fallback for cooperative Markov games with unknown dynamics and coupled instantaneous hard constraints. It guarantees zero violations with high probability; sublinear regret requires safely acquired coverage, positive certification margins, and exact communication-compatible planning.",
+    "publicNote": "The distributed protocol accounts for local state acquisition, message routing, and planning complexity; limited communication can reduce the best attainable safe value."
   },
   {
     "id": "p33",
@@ -241,7 +242,7 @@ window.PUBLICATIONS = [
     "id": "p08",
     "type": "journal",
     "title": "A Queueing-Theoretic Framework for Dynamic Attack Surfaces: Data-Integrated Risk Analysis and Adaptive Defense",
-    "authors": "Jihyeon Yun, Abdullah Etcibasi, Ming Shi, and C. Emre Koksal",
+    "authors": "Jihyeon Yun, Abdullah Yasin Etcibasi, Ming Shi, and C. Emre Koksal",
     "studentAuthors": [],
     "venue": "submitted to IEEE Transactions on Information Forensics and Security, March 2026. [IEEE TIFS]",
     "year": 2026,
@@ -349,6 +350,9 @@ window.PUBLICATIONS = [
     "title": "Provably Efficient Personalized Multi-Objective Bandits with Proactive Conversational Queries",
     "authors": "Linfeng Cao, Ming Shi, and Ness B. Shroff",
     "studentAuthors": [],
+    "mentoredAuthors": [
+      "Linfeng Cao"
+    ],
     "venue": "42nd Conference on Uncertainty in Artificial Intelligence, Amsterdam, the Netherlands, August 2026. [UAI] (Acceptance rate: 30.5%.)",
     "year": 2026,
     "link": "./papers/Person-MOB-Query_UAI2026.pdf",
@@ -398,11 +402,14 @@ window.PUBLICATIONS = [
     "title": "One Model for All Preferences: Meta-Learning for Multi-Objective LLM Alignment",
     "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
     "studentAuthors": [],
-    "venue": "submitted to 43rd International Conference on Machine Learning. [ICML]",
+    "mentoredAuthors": [
+      "Fatemeh Nourzad"
+    ],
+    "venue": "Manuscript, 2026. Submitted to the International Conference on Learning Representations (ICLR); under review.",
     "year": 2026,
     "link": "./papers/Meridian_ICML2026.pdf",
     "doi": "",
-    "badge": "ICML",
+    "badge": "ICLR",
     "status": "submitted",
     "sourceOrder": 14,
     "topics": [
@@ -423,6 +430,9 @@ window.PUBLICATIONS = [
     "title": "Barriers to Pareto Steerability in Preference-Conditioned LLM Alignment",
     "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
     "studentAuthors": [],
+    "mentoredAuthors": [
+      "Fatemeh Nourzad"
+    ],
     "venue": "14th International Conference on Learning Representations (I Can't Believe It's Not Better: Challenges in Applied Deep Learning), Rio de Janeiro, Brazil, April 2026. [ICLR]",
     "year": 2026,
     "link": "./papers/ParetoSteerabilityLLM_ICLR-ICBINB2026.pdf",
@@ -448,6 +458,9 @@ window.PUBLICATIONS = [
     "title": "One Model, Many Goals: Meta-Learning Preference-Conditioned Alignment for Lifelong LLM Agents",
     "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
     "studentAuthors": [],
+    "mentoredAuthors": [
+      "Fatemeh Nourzad"
+    ],
     "venue": "14th International Conference on Learning Representations (Lifelong Agents: Learning, Aligning, Evolving), Rio de Janeiro, Brazil, April 2026. [ICLR]",
     "year": 2026,
     "link": "./papers/MetaPreferenceLLM_ICLR-LLA2026.pdf",
@@ -547,6 +560,9 @@ window.PUBLICATIONS = [
     "title": "Provably Efficient Multi-Objective Bandit Algorithms under Preference-Centric Customization",
     "authors": "Linfeng Cao, Ming Shi, and Ness B. Shroff",
     "studentAuthors": [],
+    "mentoredAuthors": [
+      "Linfeng Cao"
+    ],
     "venue": "The 40th Annual AAAI Conference on Artificial Intelligence, Singapore, January 2026. [AAAI] (Acceptance rate: 17.6%.)",
     "year": 2026,
     "link": "./papers/MOB-PreferenceCustomization_AAAI2026.pdf",
@@ -596,6 +612,10 @@ window.PUBLICATIONS = [
     "title": "Provably Efficient Reinforcement Learning for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces",
     "authors": "Amirhossein Roknilamouki, Arnob Ghosh, Ming Shi, Fatemeh Nourzad, Eylem Ekici, and Ness B. Shroff",
     "studentAuthors": [],
+    "mentoredAuthors": [
+      "Amirhossein Roknilamouki",
+      "Fatemeh Nourzad"
+    ],
     "venue": "42nd International Conference on Machine Learning, Vancouver, Canada, July 2025. [ICML] (Acceptance rate: 26.9%.)",
     "year": 2025,
     "link": "./papers/SafeRL-NonConvex_ICML2025.pdf",
@@ -695,7 +715,7 @@ window.PUBLICATIONS = [
     "id": "p26",
     "type": "conference",
     "title": "Leveraging Synergies Between AI and Networking to Build Next Generation Edge Networks",
-    "authors": "Ming Shi, Sen Lin (co-first author), Yingbin Liang, Ness Shroff, et al.",
+    "authors": "Sen Lin, Ming Shi, Anish Arora, Raef Bassily, Elisa Bertino, Constantine Caramanis, Kaushik Chowdhury, Eylem Ekici, Atilla Eryilmaz, Stratis Ioannidis, Nan Jiang, Gauri Joshi, Jim Kurose, Yingbin Liang, Zhiqiang Lin, Jia Liu, Mingyan Liu, Tommaso Melodia, Aryan Mokhtari, Rob Nowak, Sewoong Oh, Srini Parthasarathy, Chunyi Peng, Hulya Seferoglu, Ness Shroff, Sanjay Shakkottai, Kannan Srinivasan, Ameet Talwalkar, Aylin Yener, and Lei Ying",
     "studentAuthors": [],
     "venue": "8th IEEE International Conference on Collaboration and Internet Computing, virtual conference, December 2022. [IEEE CIC]",
     "year": 2022,
@@ -712,7 +732,8 @@ window.PUBLICATIONS = [
     "spotlight": false,
     "directions": [
       "Distributed & multi-agent intelligence"
-    ]
+    ],
+    "publicNote": "Sen Lin and Ming Shi contributed equally."
   },
   {
     "id": "p27",
@@ -769,7 +790,7 @@ window.PUBLICATIONS = [
     "id": "p29",
     "type": "conference",
     "title": "Competitive Online Convex Optimization with Switching Costs and Ramp Constraints",
-    "authors": "Ming Shi, Xiaojun Lin, Sonia Fahmy, and DongHoon Shin",
+    "authors": "Ming Shi, Xiaojun Lin, Sonia Fahmy, and Dong-Hoon Shin",
     "studentAuthors": [],
     "venue": "IEEE Conference on Computer Communications, Honolulu, Hawaii, USA, April 2018. [IEEE INFOCOM] (Acceptance rate: 19.2%.)",
     "year": 2018,
@@ -841,7 +862,7 @@ window.PUBLICATIONS = [
     "id": "p32",
     "type": "report",
     "title": "Competitive Online Convex Optimization with Switching Costs and Ramp Constraints",
-    "authors": "Ming Shi, Xiaojun Lin and Sonia Fahmy",
+    "authors": "Ming Shi, Xiaojun Lin, Sonia Fahmy, and Dong-Hoon Shin",
     "studentAuthors": [],
     "venue": "Technical report, April 2021.",
     "year": 2021,

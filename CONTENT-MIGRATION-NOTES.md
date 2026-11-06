@@ -38,7 +38,7 @@ The publication data supports:
 published | accepted | submitted
 ```
 
-The accepted anonymous NeurIPS manuscript is represented without its confidential PDF. The complete author list and public link remain a deployment follow-up item.
+The named NeurIPS manuscript by Jialei Liu and Ming Shi is now linked at `papers/MARL-IHC_NeurIPS2026.pdf`; its complete citation replaces the earlier anonymous placeholder. The private source CV and proposal material are excluded.
 
 ## URL continuity
 

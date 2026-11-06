@@ -1,0 +1,203 @@
+/* Original conceptual diagrams; all styles are scoped to their widget. */
+.research-visual-widget {
+  --rv-surface: #f8fbf8;
+  --rv-node: #fffefa;
+  --rv-ink: #183c50;
+  --rv-accent: #17666a;
+  --rv-link: #6b8289;
+  --rv-muted: #506a75;
+  --rv-soft: #e8f2ed;
+  --rv-amber: #946425;
+  --rv-amber-bg: #fcf2dc;
+  width: 100%;
+  max-width: 40rem;
+  min-width: 0;
+  margin: 1.4rem auto;
+  overflow: hidden;
+  border: 1px solid var(--line, #c8d7d5);
+  border-radius: 1rem;
+  background: var(--rv-surface);
+  color: var(--rv-ink);
+}
+html[data-theme="dark"] .research-visual-widget {
+  --rv-surface: #102c3a;
+  --rv-node: #173747;
+  --rv-ink: #eff4f6;
+  --rv-accent: #8cd8cd;
+  --rv-link: #91abb5;
+  --rv-muted: #bdcdd4;
+  --rv-soft: #16444c;
+  --rv-amber: #e6c27a;
+  --rv-amber-bg: #443c28;
+}
+[data-research-visual].research-visual-widget > .rv-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  color: var(--rv-accent);
+}
+.research-visual-widget .rv-diagram text {
+  fill: var(--rv-ink);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.research-visual-widget .rv-diagram .rv-heading { font-size: 20px; font-weight: 650; }
+.research-visual-widget .rv-diagram .rv-label { font-size: 17px; font-weight: 600; }
+.research-visual-widget .rv-diagram .rv-small { fill: var(--rv-muted); font-size: 14px; font-weight: 450; }
+.research-visual-widget .rv-diagram .rv-disclaimer { fill: var(--rv-muted); font-size: 12px; font-weight: 450; }
+.research-visual-widget .rv-diagram .rv-center-note { fill: var(--rv-accent); font-size: 17px; font-weight: 600; }
+.research-visual-widget .rv-diagram .rv-question { fill: var(--rv-muted); font-size: 27px; font-weight: 450; }
+.research-visual-widget :is(.rv-node, .rv-agent, .rv-device-case) {
+  fill: var(--rv-node);
+  stroke: var(--rv-accent);
+  stroke-width: 1.7;
+}
+.research-visual-widget .rv-muted-node {
+  fill: var(--rv-node);
+  stroke: var(--rv-link);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
+}
+.research-visual-widget :is(.rv-connection, .rv-feedback, .rv-coupling, .rv-uncertified) {
+  fill: none;
+  stroke: var(--rv-link);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.research-visual-widget .rv-feedback { stroke-dasharray: 3 5; }
+.research-visual-widget .rv-coupling { stroke-dasharray: 2 5; }
+.research-visual-widget .rv-uncertified { stroke-dasharray: 5 5; }
+.research-visual-widget .rv-arrow { fill: var(--rv-accent); stroke: none; }
+.research-visual-widget .rv-flow {
+  fill: none;
+  stroke: var(--rv-accent);
+  stroke-width: 3;
+  stroke-dasharray: 8 19;
+  stroke-linecap: round;
+  animation: rv-flow 3.2s linear infinite;
+  animation-play-state: paused;
+}
+.research-visual-widget .rv-symbol {
+  fill: none;
+  stroke: var(--rv-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.research-visual-widget :is(.rv-symbol-fill, .rv-clock-hand) { fill: var(--rv-accent); stroke: none; }
+.research-visual-widget .rv-device-screen { fill: var(--rv-soft); stroke: var(--rv-accent); stroke-width: 1; }
+.research-visual-widget .rv-stop { fill: none; stroke: var(--rv-amber); stroke-width: 2.3; stroke-linecap: round; }
+.research-visual-widget :is(.rv-certification, .rv-approved, .rv-edge-node, .rv-query-highlight, .rv-refresh-gate, .rv-device-model) {
+  animation: rv-certificate 8s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.research-visual-widget .rv-approved { animation-delay: .9s; }
+.research-visual-widget .rv-edge-second { animation-delay: 1.2s; }
+.research-visual-widget .rv-query-highlight {
+  fill: none;
+  stroke: var(--rv-accent);
+  stroke-width: 1.8;
+  stroke-dasharray: 5 5;
+  animation-name: rv-query;
+}
+.research-visual-widget .rv-scale { fill: var(--rv-soft); stroke: var(--rv-link); stroke-width: 1; }
+.research-visual-widget .rv-gain {
+  fill: var(--rv-accent);
+  transform: scaleX(.33);
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: rv-gain 10s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.research-visual-widget .rv-gain-marker {
+  fill: var(--rv-node);
+  stroke: var(--rv-accent);
+  stroke-width: 3;
+  animation: rv-gain-marker 10s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.research-visual-widget .rv-cost-marker { stroke: var(--rv-amber); stroke-width: 2; stroke-dasharray: 4 3; }
+.research-visual-widget .rv-diagram .rv-cost-label { fill: var(--rv-amber); }
+.research-visual-widget .rv-current-plan {
+  fill: var(--rv-soft);
+  animation: rv-current-plan 10s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.research-visual-widget .rv-alternative-plan {
+  animation: rv-alternative-plan 10s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.research-visual-widget .rv-clock-hand {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  animation: rv-clock 12s linear infinite;
+  animation-play-state: paused;
+}
+.research-visual-widget .rv-refresh-flow { animation: rv-flow 3.2s linear infinite, rv-selective-refresh 9s ease-in-out infinite; animation-play-state: paused; }
+.research-visual-widget .rv-refresh-gate { animation-name: rv-refresh-gate; animation-duration: 9s; }
+.research-visual-widget .rv-device-model { animation-name: rv-refresh-gate; animation-duration: 9s; animation-delay: 1s; }
+.research-visual-widget.rv-running :is(.rv-flow, .rv-certification, .rv-approved, .rv-edge-node, .rv-query-highlight, .rv-gain, .rv-gain-marker, .rv-current-plan, .rv-alternative-plan, .rv-clock-hand, .rv-refresh-gate, .rv-device-model) { animation-play-state: running; }
+[data-research-visual].research-visual-widget .rv-caption {
+  margin: 0;
+  padding: .35rem 1rem .7rem;
+  color: var(--rv-muted);
+  font-size: .8rem;
+  line-height: 1.6;
+  text-align: left;
+  text-wrap: pretty;
+}
+.research-visual-widget .rv-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .7rem;
+  padding: .55rem 1rem;
+  border-top: 1px solid var(--line, #c8d7d5);
+}
+.research-visual-widget .rv-concept-label { color: var(--rv-muted); font-size: .65rem; letter-spacing: .035em; }
+.research-visual-widget .rv-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem;
+  min-height: 2rem;
+  padding: .25rem .55rem;
+  border: 1px solid var(--rv-link);
+  border-radius: .35rem;
+  background: var(--rv-node);
+  color: var(--rv-ink);
+  font-family: inherit;
+  font-size: .7rem;
+  font-weight: 550;
+  line-height: 1.3;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.research-visual-widget .rv-control:hover:not(:disabled) { border-color: var(--rv-accent); background: var(--rv-soft); }
+.research-visual-widget .rv-control:focus-visible { outline: 3px solid var(--rv-accent); outline-offset: 3px; }
+.research-visual-widget .rv-control:disabled { cursor: default; }
+.research-visual-widget .rv-control-glyph { width: .8rem; font-size: .85rem; text-align: center; }
+@keyframes rv-flow { to { stroke-dashoffset: -54; } }
+@keyframes rv-certificate { 0%, 55%, 100% { fill: var(--rv-node); } 20%, 38% { fill: var(--rv-soft); } }
+@keyframes rv-query { 0%, 100% { stroke-dashoffset: 0; } 70% { stroke-dashoffset: -40; } }
+@keyframes rv-gain { 0%, 15%, 100% { transform: scaleX(.33); } 50%, 70% { transform: scaleX(.83); } }
+@keyframes rv-gain-marker { 0%, 15%, 100% { transform: translateX(0); } 50%, 70% { transform: translateX(192px); } }
+@keyframes rv-current-plan { 0%, 22%, 100% { fill: var(--rv-soft); } 45%, 78% { fill: var(--rv-node); } }
+@keyframes rv-alternative-plan { 0%, 22%, 100% { fill: var(--rv-node); } 45%, 78% { fill: var(--rv-soft); } }
+@keyframes rv-clock { to { transform: rotate(360deg); } }
+@keyframes rv-selective-refresh { 0%, 18%, 75%, 100% { opacity: .12; } 32%, 58% { opacity: 1; } }
+@keyframes rv-refresh-gate { 0%, 18%, 75%, 100% { fill: var(--rv-node); } 32%, 58% { fill: var(--rv-soft); } }
+@media (prefers-reduced-motion: reduce) {
+  .research-visual-widget *, .research-visual-widget.rv-running * { animation: none !important; }
+  .research-visual-widget .rv-refresh-flow { opacity: 1; }
+}
+@media print {
+  .research-visual-widget * { animation: none !important; }
+  .research-visual-widget .rv-controls { display: none; }
+  .research-visual-widget { break-inside: avoid; }
+}

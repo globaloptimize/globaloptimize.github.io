@@ -72,4 +72,15 @@ Full-page review confirmed that the five research directions, project atlas, tea
 
 ## Known maintenance item
 
-The accepted NeurIPS 2026 manuscript supplied for this update is anonymous. The public record therefore uses the temporary author text **“Ming Shi and collaborators”**, disables citation copying for that entry, and provides no reviewer-copy PDF. Replace the temporary text and add the public link after the camera-ready citation is available.
+Resolved by the user-supplied named manuscript: **Jialei Liu and Ming Shi**, NeurIPS 2026 (accepted). The public PDF is `papers/MARL-IHC_NeurIPS2026.pdf`, and citation copying is enabled. The private CV is not published.
+
+## Current update verification — November 5, 2026
+
+- 34 complete publication records, 16 research projects, and 31 highlights validate.
+- The supplied named NeurIPS PDF matches the uploaded file byte for byte.
+- Full author lists and both student-mentoring styles render correctly; full citation copying works.
+- All seven HTML pages and 45 local destinations respond successfully; five primary pages fit 320–1440 px widths.
+- All 22 research diagrams initialize; search/filter replacements retain their diagrams. Play/pause, actual SVG movement, reduced motion, dark mode, and static no-JavaScript fallbacks passed.
+- Public CV updates, teaching/service records, and the talk archive passed browser checks.
+- A private-source scan found no proposal-title markers in public text or the new PDF. The raw CV is outside the repository.
+- The five inline photographs are pending original file availability; no generated substitutes or broken photo paths were added.

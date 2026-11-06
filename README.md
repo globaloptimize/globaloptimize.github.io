@@ -53,9 +53,13 @@ assets/js/research-visuals.js      original conceptual diagrams with animation c
 assets/css/research-visuals.css    responsive diagram styling
 assets/css/authors.css            accessible author-role highlighting
 assets/css/motion.css             subtle motion with reduced-motion support
+assets/css/photos.css             personal gallery and outreach photo layouts
+assets/js/photos.js               keyboard-accessible photograph viewer
 assets/icons/research-icons.svg   original research/teaching/service line icons
 assets/images/research/           five research-direction illustrations
 assets/images/teaching/           course, mentoring, and outreach illustrations
+assets/images/personal/           Maomi and original landscape photographs
+assets/images/outreach/           National Grid K–12 teacher engagement photograph
 scripts/build_site.py             validation, sitemap update, cache-version bump
 ```
 
@@ -77,6 +81,7 @@ The organization draws on concise research positioning, evidence links, and clea
 
 - `assets/icons/research-icons.svg`, `assets/images/research/decision-loop.svg`, the animated research diagrams, and the service-page inline SVG are original vector drawings created for this site. They do not incorporate third-party images, logos, or artwork.
 - The portrait and existing research/teaching illustrations are retained from this repository. No additional stock photos or external fonts were introduced.
+- The five JPEG photographs in `assets/images/personal/` and `assets/images/outreach/` are the exact files supplied by Ming Shi in `Archive.zip`, with descriptive filenames and no re-encoding. The personal gallery opens under “Beyond Research”; the National Grid photograph accompanies the mentoring page's outreach record. Larger views support keyboard dismissal and focus restoration, with ordinary image links as the no-JavaScript fallback. Landscape photographs carry Ming Shi's copyright credit; the outreach photograph is credited as supplied by Ming Shi without asserting who took it.
 - Keep descriptive alternative text for figures and treat decorative icons as `aria-hidden="true"`.
 
 ## Deploy without changing the domain
@@ -211,4 +216,4 @@ See:
 
 ## Private source documents
 
-The supplied CV is an editorial source, not a public download. Only confirmed public education, appointments, mentoring, teaching, service, and publication facts are incorporated. Proposal titles, budgets, sponsors, and review details are excluded. The National Grid, Maomi, and landscape photographs were visible inline in chat but their original files were not available to the execution workspace; do not substitute generated approximations or create broken image links. Add the exact originals when supplied as files. Photographs credited to Ming Shi are not freely licensed; reuse terms are stated on the Privacy page.
+The supplied CV is an editorial source, not a public download. Only confirmed public education, appointments, mentoring, teaching, service, and publication facts are incorporated. Proposal titles, budgets, sponsors, and review details are excluded. The National Grid, Maomi, and landscape photographs are published from the exact originals subsequently supplied in `Archive.zip`; keep the source archive and macOS resource files outside the deployable repository. Photographs credited to Ming Shi are not freely licensed; reuse terms are stated on the Privacy page.

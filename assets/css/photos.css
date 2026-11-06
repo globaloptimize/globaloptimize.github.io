@@ -1,0 +1,122 @@
+/* Original photographs: quiet previews with an optional full-image dialog. */
+.refined-page .personal-gallery-v8 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-block: 1.4rem;
+}
+.refined-page .photo-card-v8 {
+  min-width: 0;
+  margin: 0;
+}
+.refined-page .photo-card-v8--wide { grid-column: 1 / -1; }
+.refined-page .photo-open-v8 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  background: var(--surface-muted);
+  color: #fff;
+  text-decoration: none;
+}
+.refined-page .photo-open-v8 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+.refined-page .photo-card-v8--wide .photo-open-v8 img { aspect-ratio: auto; }
+.refined-page .photo-open-v8::after {
+  position: absolute;
+  right: .6rem;
+  bottom: .6rem;
+  padding: .25rem .55rem;
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: .3rem;
+  background: rgba(8, 27, 39, .83);
+  color: #fff;
+  content: "View photo";
+  font-size: .7rem;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.refined-page .photo-open-v8[data-photo-enhanced]::after { content: "Enlarge photo"; }
+.refined-page .photo-open-v8:focus-visible {
+  outline: 3px solid var(--accent-v5);
+  outline-offset: 4px;
+}
+.refined-page :is(.photo-card-v8, .outreach-photo-v8) figcaption {
+  margin-top: .6rem;
+  color: var(--ink-soft);
+  font-size: .8rem;
+  line-height: 1.6;
+}
+.refined-page :is(.photo-card-v8, .outreach-photo-v8) figcaption :is(small, .photo-credit-v8) {
+  display: block;
+  color: var(--ink-faint);
+  font-size: .73rem;
+}
+.refined-page .outreach-photo-v8 { max-width: 38rem; margin: 1.2rem 0 0; }
+.refined-page .photo-dialog-v8 {
+  width: min(74rem, calc(100vw - 2rem));
+  max-width: none;
+  max-height: calc(100vh - 2rem);
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  padding: 1rem;
+  overflow: auto;
+  border: 1px solid var(--line-strong);
+  border-radius: .85rem;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, .35);
+}
+.refined-page .photo-dialog-v8::backdrop { background: rgba(4, 16, 25, .83); }
+.refined-page .photo-dialog-toolbar-v8 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: .75rem;
+}
+.refined-page .photo-dialog-close-v8 {
+  min-height: 2.75rem;
+  padding: .45rem .8rem;
+  border: 1px solid var(--line-strong);
+  border-radius: .4rem;
+  background: var(--surface-muted);
+  color: var(--ink);
+  font: inherit;
+  font-size: .83rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+.refined-page .photo-dialog-close-v8:hover { border-color: var(--accent-v5); }
+.refined-page .photo-dialog-v8 figure { margin: 0; }
+.refined-page .photo-dialog-v8 img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100vh - 12rem);
+  max-height: calc(100dvh - 12rem);
+  margin-inline: auto;
+  object-fit: contain;
+}
+.refined-page .photo-dialog-v8 figcaption {
+  margin-top: .8rem;
+  color: var(--ink-soft);
+  font-size: .87rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.refined-page .photo-dialog-credit-v8 { display: block; font-size: .76rem; }
+@media (max-width: 38rem) {
+  .refined-page .personal-gallery-v8 { grid-template-columns: minmax(0, 1fr); gap: 1.3rem; }
+  .refined-page .photo-dialog-v8 { width: calc(100vw - 1rem); padding: .7rem; }
+}
+@media (prefers-reduced-motion: no-preference) and (hover: hover) {
+  .refined-page .photo-open-v8 img { transition: transform .25s ease; }
+  .refined-page .photo-open-v8:hover img,
+  .refined-page .photo-open-v8:focus-visible img { transform: scale(1.015); }
+}

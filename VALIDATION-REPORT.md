@@ -79,8 +79,12 @@ Resolved by the user-supplied named manuscript: **Jialei Liu and Ming Shi**, Neu
 - 34 complete publication records, 16 research projects, and 31 highlights validate.
 - The supplied named NeurIPS PDF matches the uploaded file byte for byte.
 - Full author lists and both student-mentoring styles render correctly; full citation copying works.
-- All seven HTML pages and 45 local destinations respond successfully; five primary pages fit 320–1440 px widths.
+- All seven HTML pages and 50 local destinations respond successfully; five primary pages fit 320–1440 px widths.
 - All 22 research diagrams initialize; search/filter replacements retain their diagrams. Play/pause, actual SVG movement, reduced motion, dark mode, and static no-JavaScript fallbacks passed.
 - Public CV updates, teaching/service records, and the talk archive passed browser checks.
 - A private-source scan found no proposal-title markers in public text or the new PDF. The raw CV is outside the repository.
-- The five inline photographs are pending original file availability; no generated substitutes or broken photo paths were added.
+- All five photographs are published from the exact JPEG originals supplied in `Archive.zip`, verified byte for byte. The archive and macOS resource files remain outside the repository.
+- Four personal photographs appear inside the initially collapsed “Beyond Research” gallery; the National Grid photograph accompanies its outreach record. All images load successfully.
+- Photo enlargement, Tab/Shift+Tab focus containment, Escape, close-button and backdrop dismissal, focus restoration, and preservation of the previous scroll setting pass browser checks.
+- The gallery and photo viewer fit 320–1440 px widths, inherit dark mode, and respect reduced motion. Native disclosures and original-image links work with JavaScript disabled; no browser errors or failed local requests were observed.
+- The homepage education list contains only the Assistant Professor, Post-Doctoral Scholar, and Ph.D. entries; the B.Sc. entry remains removed.

@@ -27,7 +27,7 @@ window.SITE_ZH = Object.assign(window.SITE_ZH || {}, {
   "UB Engineering: preparing networks for 6G →": "UB Engineering：面向 6G 的网络准备 →",
   "Ph.D. student · Fall 2026–present": "博士生 · 2026 年秋季至今",
   "Learning under partial information and decision-aware edge intelligence.": "部分信息条件下的学习与面向决策的边缘智能。",
-  "AIoT 2026 first-author acceptance": "AIoT 2026 第一作者论文获录用",
+  "ACM MobiHoc 2026 Workshop first-author acceptance": "ACM MobiHoc 2026 Workshop 第一作者论文获录用",
   "for decision-aware model synchronization in dynamic IoT systems.": "研究动态 IoT 系统中面向决策的模型同步。",
   "M.S. and B.S.": "M.S. 与 B.S.",
   ", Jilin University (undergraduate rank: 2/90).": "（吉林大学；本科排名：2/90）。",

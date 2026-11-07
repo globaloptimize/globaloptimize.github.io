@@ -37,11 +37,11 @@ window.PUBLICATIONS = [
     "studentAuthors": [
       "Hui Wan"
     ],
-    "venue": "The Third International Workshop on the Integration between Distributed Machine Learning and the Internet of Things (AIoT ’26), Tokyo, Japan, November 2026. Accepted.",
+    "venue": "ACM MobiHoc 2026 Workshop: The Third International Workshop on the Integration between Distributed Machine Learning and the Internet of Things (AIoT ’26), Tokyo, Japan, November 2026. Accepted.",
     "year": 2026,
     "link": "./Fresh-Enough-to-Decide_AIoT2026.pdf",
     "doi": "",
-    "badge": "AIoT 2026 Workshop · Accepted",
+    "badge": "ACM MobiHoc 2026 Workshop · Accepted",
     "status": "accepted",
     "sourceOrder": 1,
     "topics": [

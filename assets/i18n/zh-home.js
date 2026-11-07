@@ -78,7 +78,7 @@ window.SITE_ZH = Object.assign(window.SITE_ZH || {}, {
   "Trees and clouds reflected in a still lake.": "树木与云朵映照在平静的湖面上。",
   "A panoramic lake reflecting green woodland, blue sky, and scattered clouds.": "湖面全景映照着绿色树林、蓝天与朵朵白云。",
   "Cooperative Markov Games · NeurIPS 2026 · Accepted": "Cooperative Markov Games · NeurIPS 2026 · 已接收",
-  "Age of Intelligence · AIoT 2026 Workshop · Accepted": "Age of Intelligence · AIoT 2026 Workshop · 已接收"
+  "Age of Intelligence · ACM MobiHoc 2026 Workshop · Accepted": "Age of Intelligence · ACM MobiHoc 2026 Workshop · 已接收"
 });
 window.SITE_ZH_ATTRIBUTES = Object.assign(window.SITE_ZH_ATTRIBUTES || {}, {
   "Ming Shi | Learning & Optimization for Autonomous Intelligent Networked Systems": "石鸣 | 面向自主智能网络系统的学习与优化",

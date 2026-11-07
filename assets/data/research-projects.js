@@ -25,7 +25,7 @@ window.RESEARCH_PROJECTS = [
   {
     "id": "r02",
     "title": "Fresh Enough to Decide: Age of Intelligence",
-    "status": "AIoT 2026 Workshop · Accepted",
+    "status": "ACM MobiHoc 2026 Workshop · Accepted",
     "kind": "Workshop paper",
     "year": 2026,
     "directions": [

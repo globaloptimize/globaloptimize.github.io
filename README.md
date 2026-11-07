@@ -33,7 +33,7 @@ A project may belong to several directions. This is implemented through `assets/
 ## New accepted work represented in this version
 
 - **NeurIPS 2026:** *Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints*.
-- **ACM MobiHoc AIoT 2026:** *Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems*.
+- **ACM MobiHoc 2026 Workshop:** *Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems*.
 
 The named NeurIPS 2026 manuscript by **Jialei Liu and Ming Shi** is available at `papers/MARL-IHC_NeurIPS2026.pdf`. The November 6 revision is the exact 700,270-byte file supplied by the author; current download links include a revision query to refresh cached copies. Title, authors, and acceptance status are unchanged. Keep confidential reviewer copies and the source CV containing private proposal material outside the deployable repository.
 

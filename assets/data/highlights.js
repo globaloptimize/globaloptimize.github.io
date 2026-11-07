@@ -8,7 +8,7 @@ window.HIGHLIGHTS = [
   },
   {
     "id": "h00b",
-    "text": "“Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems” accepted at the ACM MobiHoc AIoT 2026 workshop in Tokyo.",
+    "text": "“Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems” accepted at the ACM MobiHoc 2026 workshop in Tokyo.",
     "year": 2026,
     "type": "honor",
     "link": "./Fresh-Enough-to-Decide_AIoT2026.pdf"

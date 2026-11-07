@@ -10,7 +10,7 @@ The site connects theory, algorithms, systems, teaching, mentoring, service, and
 
 ## Main pages
 
-- **`index.html`** — research identity, four visible news/recognition highlights, three contribution summaries with expandable paper evidence, a compact background list, vision, and contact.
+- **`index.html`** — research statement and section navigation alongside the portrait and affiliation; news/awards first, a two-part research overview and vision, employment/Ph.D. education, compact expandable teaching/outreach/service summaries, and the personal gallery last.
 - **`research.html`** — a visual research overview, five expandable directions, a searchable project atlas, and a compact mathematical toolkit.
 - **`publications.html`** — compact searchable publication records; full citations and research details expand on click, with advanced filters available separately.
 - **`studentsandteaching.html`** — Ph.D. students, mentoring philosophy, illustrated courses, undergraduate/graduate learning pathways, completed outreach, and outreach in development.
@@ -35,7 +35,7 @@ A project may belong to several directions. This is implemented through `assets/
 - **NeurIPS 2026:** *Zero-Violation Regret for Cooperative Markov Games with Coupled Instantaneous Hard Constraints*.
 - **ACM MobiHoc AIoT 2026:** *Fresh Enough to Decide: Age of Intelligence for Cost-Aware Model Synchronization in Dynamic IoT Systems*.
 
-The named NeurIPS 2026 manuscript by **Jialei Liu and Ming Shi** is available at `papers/MARL-IHC_NeurIPS2026.pdf`. Its public citation and download link replace the earlier anonymous placeholder. Keep confidential reviewer copies and the source CV containing private proposal material outside the deployable repository.
+The named NeurIPS 2026 manuscript by **Jialei Liu and Ming Shi** is available at `papers/MARL-IHC_NeurIPS2026.pdf`. The November 6 revision is the exact 700,270-byte file supplied by the author; current download links include a revision query to refresh cached copies. Title, authors, and acceptance status are unchanged. Keep confidential reviewer copies and the source CV containing private proposal material outside the deployable repository.
 
 ## Important files
 
@@ -48,6 +48,7 @@ assets/js/research.js             research-atlas search and filters
 assets/js/publications.js         publication search, filters, and citations
 assets/css/styles.css             full visual system and responsive layout
 assets/css/experience.css         shared visual design and disclosure layouts
+assets/css/home.css               homepage research hierarchy and compact section navigation
 assets/js/experience.js           deep links and progressive motion enhancement
 assets/js/research-visuals.js      original conceptual diagrams with animation controls
 assets/css/research-visuals.css    responsive diagram styling
@@ -67,7 +68,9 @@ The site has no framework, database, package manager, or external font dependenc
 
 ## Homepage editorial approach
 
-The homepage leads with learning and optimization for autonomous intelligent networked systems. Four visible highlights link to the NeurIPS and AoInt papers, ICLR Spotlight, and WiOpt Best Paper Award Runner-Up; dates and acceptance/recognition labels remain explicit. Three research questions offer supporting evidence on click. Academic background is a compact list identifying Xiaojun Lin as the Ph.D. advisor and Ness B. Shroff and Yingbin Liang as postdoctoral hosts, with full department names and links to the institutions and faculty homepages. Advisor URLs are sourced from the original biography in Git history (particularly `index.html` at `4dcd768`); direct live verification of university sites is restricted in the cloud environment.
+The homepage leads with learning and optimization for autonomous intelligent networked systems. Ming Shi's name, appointment, full affiliation, research keywords, and contact links sit beneath the portrait; seven section links replace the large hero buttons. Below the introduction, four visible highlights link to the NeurIPS and AoInt papers, ICLR Spotlight, and WiOpt Best Paper Award Runner-Up. “Explore My Research” brings together two parts: a big-picture overview through three research questions with expandable evidence, then a vision/impact panel with the controlled animated decision loop. Application goals remain distinguished from mathematical and numerical evidence.
+
+Employment and Ph.D. education follow the research section, identifying Xiaojun Lin as the Ph.D. advisor and Ness B. Shroff and Yingbin Liang as postdoctoral hosts, with full department names and institutional/faculty links. The B.Sc. entry is omitted. Teaching/mentoring, outreach/K–12 education, and service each use a concise, initially closed disclosure linking to their full pages. “Beyond Research” and the personal gallery come last. Advisor URLs are sourced from the original biography in Git history (particularly `index.html` at `4dcd768`); direct live verification of university sites is restricted in the cloud environment.
 
 Native HTML `details`/`summary` controls keep technical evidence, research summaries, teaching history, and review records available without overwhelming the initial view. They support mouse, keyboard, and touch; core content and disclosures work without JavaScript. `experience.js` opens enclosing disclosures for fragment links, including existing research and prospective-student anchors. Gentle one-time entrance animations and hover/focus feedback respect reduced-motion preferences; content remains visible when JavaScript or motion APIs are unavailable. Research visualizations use original conceptual diagrams with explicit Play/Pause controls, reduced-motion support, and static fallbacks. Full publication author lists are always shown; bold text identifies Ming Shi, strong solid underlining identifies directly advised students, and subtle dotted underlining identifies additionally mentored students.
 

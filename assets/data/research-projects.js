@@ -20,7 +20,7 @@ window.RESEARCH_PROJECTS = [
     ],
     "summary": "Learns cooperative policies under unknown rewards, dynamics, and coupled instantaneous hard constraints, while retaining a known safe fallback and guaranteeing zero violations with high probability.",
     "insight": "Reusing local safety certificates can certify untried joint actions. Sublinear regret requires informative safe observations, positive certification margins, and exact implementable planning; communication limits can still reduce attainable safe value.",
-    "link": "./papers/MARL-IHC_NeurIPS2026.pdf"
+    "link": "./papers/MARL-IHC_NeurIPS2026.pdf?v=20261106"
   },
   {
     "id": "r02",

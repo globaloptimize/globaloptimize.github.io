@@ -9,7 +9,7 @@ window.PUBLICATIONS = [
     ],
     "venue": "40th Conference on Neural Information Processing Systems (NeurIPS), 2026. Accepted.",
     "year": 2026,
-    "link": "./papers/MARL-IHC_NeurIPS2026.pdf",
+    "link": "./papers/MARL-IHC_NeurIPS2026.pdf?v=20261106",
     "doi": "",
     "badge": "NeurIPS 2026 · Accepted",
     "status": "accepted",
@@ -26,8 +26,8 @@ window.PUBLICATIONS = [
     "featured": true,
     "award": false,
     "spotlight": false,
-    "summary": "SAFE-CMG-UCB combines local safety certificates, optimistic value learning, and a known safe fallback for cooperative Markov games with unknown dynamics and coupled instantaneous hard constraints. It guarantees zero violations with high probability; sublinear regret requires safely acquired coverage, positive certification margins, and exact communication-compatible planning.",
-    "publicNote": "The distributed protocol accounts for local state acquisition, message routing, and planning complexity; limited communication can reduce the best attainable safe value."
+    "summary": "SAFE-CMG-UCB combines known and learned local safety certificates with optimistic Bellman planning while retaining a fallback safe at every modeled state. For cooperative Markov games with unknown linear reward and constraint models and linear-mixture transitions, it proves high-probability zero violation; sublinear regret against the optimal admissible safe protocol requires the stated safety-margin and safe-information coverage conditions and exact communication-compatible planning.",
+    "publicNote": "Local certificate recombination can certify untried joint actions, while a safe fallback alone need not enable sublinear regret. The distributed protocol accounts for local state acquisition, routed communication, and planning complexity; insufficient communication can reduce the best attainable safe value."
   },
   {
     "id": "p33",

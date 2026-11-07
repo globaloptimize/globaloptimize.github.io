@@ -99,6 +99,7 @@
       .replace(/\s*\([^)]*\)/g, '')
       .replace(/\s*·\s*Accepted/gi, '')
       .replace(/\b(?:19|20)\d{2}\b/g, '')
+      .replace(/\s+/g, ' ')
       .trim();
     return badge || typeLabels[publication.type] || publication.type;
   }
@@ -115,9 +116,9 @@
     const title = primaryLink
       ? `<a href="${escapeHTML(primaryLink)}" target="_blank" rel="noopener" data-track="publication_title" data-track-label="${escapeHTML(publication.title)}">${escapeHTML(publication.title)}</a>`
       : escapeHTML(publication.title);
-    const linkLabel = primaryLink && /\.pdf(?:$|[?#])/i.test(primaryLink) ? 'PDF' : 'Source';
+    const linkLabel = primaryLink && /\.pdf(?:$|[?#])/i.test(primaryLink) ? 'Read PDF' : 'Source';
     const sourceAction = primaryLink
-      ? `<a class="paper-action" href="${escapeHTML(primaryLink)}" target="_blank" rel="noopener" aria-label="Open ${linkLabel} for ${escapeHTML(publication.title)}" data-track="publication_download" data-track-label="${escapeHTML(publication.title)}">${linkLabel} →</a>`
+      ? `<a class="paper-action" href="${escapeHTML(primaryLink)}" target="_blank" rel="noopener" aria-label="${linkLabel} for ${escapeHTML(publication.title)}" data-track="publication_download" data-track-label="${escapeHTML(publication.title)}">${linkLabel} →</a>`
       : '';
     const doiAction = publication.doi
       ? `<a class="paper-action" href="https://doi.org/${escapeHTML(publication.doi)}" target="_blank" rel="noopener" aria-label="DOI for ${escapeHTML(publication.title)}" data-track="doi_click" data-track-label="${escapeHTML(publication.title)}">DOI</a>`
@@ -133,7 +134,7 @@
         <p class="publication-meta-v5">${authorsHTML(publication)}</p>
         <div class="publication-actions-v5">${sourceAction}${doiAction}${citationAction}</div>
         <details class="disclosure-v5 publication-details-v5">
-          <summary aria-label="Full citation and research topics for ${escapeHTML(publication.title)}"><span>Citation &amp; research details</span></summary>
+          <summary aria-label="Full citation and research topics for ${escapeHTML(publication.title)}"><span>Citation &amp; Research Details</span></summary>
           <div class="detail-body-v5">
             <p class="paper-authors">${authorsHTML(publication)}</p>
             <p class="paper-venue">${escapeHTML(publication.venue)}</p>

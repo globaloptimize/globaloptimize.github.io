@@ -79,7 +79,7 @@ Resolved by the user-supplied named manuscript: **Jialei Liu and Ming Shi**, Neu
 - 34 complete publication records, 16 research projects, and 31 highlights validate.
 - The 56-page named NeurIPS revision matches the latest uploaded file byte for byte (700,270 bytes). Its title, authors, and acceptance status are unchanged; the summary states the revised model and regret assumptions. Versioned download links refresh cached copies.
 - Full author lists and both student-mentoring styles render correctly; full citation copying works.
-- All seven HTML pages and 51 local destinations respond successfully; five primary pages fit 320–1440 px widths.
+- All seven HTML pages and 50 local destinations respond successfully; five primary pages fit 320–1440 px widths.
 - All 22 research diagrams initialize; search/filter replacements retain their diagrams. Play/pause, actual SVG movement, reduced motion, dark mode, and static no-JavaScript fallbacks passed.
 - Public CV updates, teaching/service records, and the talk archive passed browser checks.
 - A private-source scan found no proposal-title markers in public text or the new PDF. The raw CV is outside the repository.
@@ -91,3 +91,13 @@ Resolved by the user-supplied named manuscript: **Jialei Liu and Ming Shi**, Neu
 - The annotated hero layout places name, appointment, full affiliation, research keywords, and contact links beneath the portrait. Seven section links replace the two large buttons, and the summary includes “practical intelligent networked systems.”
 - Homepage order is news/recognition, research overview and vision/impact, employment/education, teaching/mentoring, outreach/K–12 education, service, and Beyond Research. Research is grouped under one heading with two numbered parts.
 - All seven homepage navigation targets and linked HTML fragments exist. The teaching, outreach, and service disclosures begin closed, support keyboard interaction, open through their navigation links, and work without JavaScript. The redesigned homepage fits 320–1920 px widths with these disclosures both open and closed.
+
+## Consistency review — November 6, 2026
+
+- Page names, header/footer navigation, and document/social titles agree across all seven pages; homepage section links match their destination headings.
+- Structural headings use Title Case; descriptive headlines and explanatory subtitles retain sentence case. Formal paper titles and author-name spellings are preserved.
+- Research directions use the same names in research disclosures, project tags, and publication tags. Power-of-2-Arms is described as selecting two arms per round; it is distinguished from Probe-then-Commit probing.
+- NeurIPS terminology and assumptions agree across the homepage, research page, project atlas, and publication record. Every download reference uses the current revision query.
+- ICLR workshops and the AIoT workshop are labeled explicitly. WiOpt casing and recognition labels agree; the confirmed ICLR Spotlight distinction replaces ambiguous percentage descriptions.
+- All 34 formal paper titles, author names and order, and publication statuses are preserved. Four author lists gained a final conjunction without changing authorship.
+- A reusable wording guide is recorded in HEADINGS-AND-MESSAGING.md.

@@ -4,7 +4,7 @@ window.HIGHLIGHTS = [
     "text": "Accepted at NeurIPS 2026: zero-violation learning in cooperative Markov games with coupled instantaneous hard constraints, connecting local safety certification with distributed coordination.",
     "year": 2026,
     "type": "honor",
-    "link": "./papers/MARL-IHC_NeurIPS2026.pdf"
+    "link": "./papers/MARL-IHC_NeurIPS2026.pdf?v=20261106"
   },
   {
     "id": "h00b",
@@ -141,7 +141,7 @@ window.HIGHLIGHTS = [
   },
   {
     "id": "h17",
-    "text": "Spotlight paper (notable top 25%), International Conference on Learning Representations, January 2023.",
+    "text": "Spotlight paper, International Conference on Learning Representations (ICLR), January 2023.",
     "year": 2023,
     "type": "honor",
     "link": ""

@@ -1,7 +1,7 @@
 {
   "name": "Ming Shi \u2014 Academic Homepage",
   "short_name": "Ming Shi",
-  "description": "Learning and optimization for reliable networked intelligence: safe learning, online optimization, partial information, and multi-agent systems.",
+  "description": "Learning and optimization for autonomous intelligent networked systems: safe learning, online optimization, partial information, and multi-agent systems.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8fafc",

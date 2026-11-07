@@ -13,11 +13,11 @@
   let query = '';
 
   const labels = {
-    safety: 'Safe & verifiable learning',
-    adaptation: 'Prediction & costly adaptation',
-    information: 'Partial & human information',
-    distributed: 'Distributed & multi-agent intelligence',
-    robust: 'Dynamic, secure & robust AI'
+    safety: 'Safe & Verifiable Learning',
+    adaptation: 'Prediction & Costly Adaptation',
+    information: 'Partial & Human Information',
+    distributed: 'Distributed & Multi-Agent Intelligence',
+    robust: 'Dynamic, Secure & Robust AI'
   };
 
   const escapeHTML = (value = '') => String(value)
@@ -60,7 +60,7 @@
     const methodTags = (project.methods || []).map((item) => `<span class="tag">${escapeHTML(item)}</span>`).join('');
     const systemTags = (project.systems || []).map((item) => `<span class="tag">${escapeHTML(item)}</span>`).join('');
     const link = project.link
-      ? `<a class="project-link" href="${escapeHTML(project.link)}" ${project.link.startsWith('http') || project.link.endsWith('.pdf') ? 'target="_blank" rel="noopener"' : ''}>Related work <span aria-hidden="true">→</span></a>`
+      ? `<a class="project-link" href="${escapeHTML(project.link)}" ${project.link.startsWith('http') || /\.pdf(?:$|[?#])/i.test(project.link) ? 'target="_blank" rel="noopener"' : ''}>${/\.pdf(?:$|[?#])/i.test(project.link) ? 'Read PDF' : 'Related Work'} <span aria-hidden="true">→</span></a>`
       : '';
     return `
       <article class="project-record-v5" data-project-id="${escapeHTML(project.id)}">
@@ -69,11 +69,11 @@
           <div class="detail-body-v5">
             <p>${escapeHTML(project.summary)}</p>
             <div class="research-diagram-v7" data-research-visual="${visualKind}" aria-label="Conceptual illustration for ${escapeHTML(project.title)}"><p class="muted text-small">The illustration is conceptual; see the linked work for models, assumptions, and results.</p></div>
-            <p><strong>Core idea.</strong> ${escapeHTML(project.insight)}</p>
+            <p><strong>Core idea:</strong> ${escapeHTML(project.insight)}</p>
             <div class="tag-row">${directionTags}</div>
             <div class="split-v5">
               <div><h4>Methods</h4><div class="tag-row">${methodTags}</div></div>
-              <div><h4>Application context</h4><div class="tag-row">${systemTags}</div></div>
+              <div><h4>Application Context</h4><div class="tag-row">${systemTags}</div></div>
             </div>
             ${link}
           </div>

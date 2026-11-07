@@ -20,8 +20,8 @@ window.PUBLICATIONS = [
       "Instantaneous hard constraints"
     ],
     "directions": [
-      "Safe & verifiable learning",
-      "Distributed & multi-agent intelligence"
+      "Safe & Verifiable Learning",
+      "Distributed & Multi-Agent Intelligence"
     ],
     "featured": true,
     "award": false,
@@ -41,7 +41,7 @@ window.PUBLICATIONS = [
     "year": 2026,
     "link": "./Fresh-Enough-to-Decide_AIoT2026.pdf",
     "doi": "",
-    "badge": "AIoT 2026 · Accepted",
+    "badge": "AIoT 2026 Workshop · Accepted",
     "status": "accepted",
     "sourceOrder": 1,
     "topics": [
@@ -51,9 +51,9 @@ window.PUBLICATIONS = [
       "Nonstationary learning"
     ],
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence",
-      "Dynamic, secure & robust AI"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence",
+      "Dynamic, Secure & Robust AI"
     ],
     "featured": true,
     "award": false,
@@ -81,8 +81,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Partial & human information"
+      "Prediction & Costly Adaptation",
+      "Partial & Human Information"
     ]
   },
   {
@@ -107,9 +107,9 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Safe & verifiable learning",
-      "Distributed & multi-agent intelligence",
-      "Dynamic, secure & robust AI"
+      "Safe & Verifiable Learning",
+      "Distributed & Multi-Agent Intelligence",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
@@ -133,7 +133,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information"
+      "Partial & Human Information"
     ]
   },
   {
@@ -158,9 +158,9 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence",
-      "Dynamic, secure & robust AI"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
@@ -184,8 +184,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -209,8 +209,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -235,7 +235,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information"
+      "Partial & Human Information"
     ]
   },
   {
@@ -259,9 +259,9 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Safe & verifiable learning",
-      "Distributed & multi-agent intelligence",
-      "Dynamic, secure & robust AI"
+      "Safe & Verifiable Learning",
+      "Distributed & Multi-Agent Intelligence",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
@@ -286,8 +286,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -298,11 +298,11 @@ window.PUBLICATIONS = [
     "studentAuthors": [
       "Jialei Liu"
     ],
-    "venue": "24th International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks, Columbus, Ohio, USA, June 2026. [WiOPT Best Paper Award Runner-Up]",
+    "venue": "24th International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks, Columbus, Ohio, USA, June 2026. [WiOpt Best Paper Award Runner-Up]",
     "year": 2026,
     "link": "./papers/Bi-Level Opt-Lrn_WiOPT2026.pdf",
     "doi": "",
-    "badge": "WiOPT Best Paper Award Runner-Up",
+    "badge": "WiOpt Best Paper Award Runner-Up",
     "status": "published",
     "sourceOrder": 10,
     "topics": [
@@ -313,8 +313,8 @@ window.PUBLICATIONS = [
     "award": true,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -323,11 +323,11 @@ window.PUBLICATIONS = [
     "title": "Probe-then-Commit Multi-Objective Bandits: Theoretical Benefits of Limited Multi-Arm Feedback",
     "authors": "Ming Shi",
     "studentAuthors": [],
-    "venue": "24th International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks, Columbus, Ohio, USA, June 2026. [WiOPT]",
+    "venue": "24th International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks, Columbus, Ohio, USA, June 2026. [WiOpt]",
     "year": 2026,
     "link": "./papers/PtC-Multi-Arm-Feedback_WiOPT2026.pdf",
     "doi": "",
-    "badge": "WiOPT",
+    "badge": "WiOpt",
     "status": "published",
     "sourceOrder": 11,
     "topics": [
@@ -340,8 +340,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information",
-      "Distributed & multi-agent intelligence"
+      "Partial & Human Information",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -368,7 +368,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information"
+      "Partial & Human Information"
     ]
   },
   {
@@ -392,15 +392,15 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Safe & verifiable learning",
-      "Dynamic, secure & robust AI"
+      "Safe & Verifiable Learning",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
     "id": "p14",
     "type": "conference",
     "title": "One Model for All Preferences: Meta-Learning for Multi-Objective LLM Alignment",
-    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
+    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, and Ness Shroff",
     "studentAuthors": [],
     "mentoredAuthors": [
       "Fatemeh Nourzad"
@@ -420,24 +420,24 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information",
-      "Dynamic, secure & robust AI"
+      "Partial & Human Information",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
     "id": "p15",
     "type": "conference",
     "title": "Barriers to Pareto Steerability in Preference-Conditioned LLM Alignment",
-    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
+    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, and Ness Shroff",
     "studentAuthors": [],
     "mentoredAuthors": [
       "Fatemeh Nourzad"
     ],
-    "venue": "14th International Conference on Learning Representations (I Can't Believe It's Not Better: Challenges in Applied Deep Learning), Rio de Janeiro, Brazil, April 2026. [ICLR]",
+    "venue": "ICLR 2026 Workshop on I Can't Believe It's Not Better: Challenges in Applied Deep Learning (ICBINB), Rio de Janeiro, Brazil, April 2026.",
     "year": 2026,
     "link": "./papers/ParetoSteerabilityLLM_ICLR-ICBINB2026.pdf",
     "doi": "",
-    "badge": "ICLR",
+    "badge": "ICLR Workshop · ICBINB",
     "status": "published",
     "sourceOrder": 15,
     "topics": [
@@ -448,24 +448,24 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information",
-      "Dynamic, secure & robust AI"
+      "Partial & Human Information",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
     "id": "p16",
     "type": "conference",
     "title": "One Model, Many Goals: Meta-Learning Preference-Conditioned Alignment for Lifelong LLM Agents",
-    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, Ness Shroff",
+    "authors": "Fatemeh Nourzad, Daouda Sow, Yingbin Liang, Ming Shi, Ming Zhang, Yunxuan Li, Eylem Ekici, and Ness Shroff",
     "studentAuthors": [],
     "mentoredAuthors": [
       "Fatemeh Nourzad"
     ],
-    "venue": "14th International Conference on Learning Representations (Lifelong Agents: Learning, Aligning, Evolving), Rio de Janeiro, Brazil, April 2026. [ICLR]",
+    "venue": "ICLR 2026 Workshop on Lifelong Agents: Learning, Aligning, Evolving (LLA), Rio de Janeiro, Brazil, April 2026.",
     "year": 2026,
     "link": "./papers/MetaPreferenceLLM_ICLR-LLA2026.pdf",
     "doi": "",
-    "badge": "ICLR",
+    "badge": "ICLR Workshop · LLA",
     "status": "published",
     "sourceOrder": 16,
     "topics": [
@@ -476,15 +476,15 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information",
-      "Dynamic, secure & robust AI"
+      "Partial & Human Information",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
     "id": "p17",
     "type": "conference",
     "title": "Minimax Optimal Adversarial Reinforcement Learning",
-    "authors": "Yudan Wang, Kaiyi Ji, Ming Shi, Shaofeng Zou",
+    "authors": "Yudan Wang, Kaiyi Ji, Ming Shi, and Shaofeng Zou",
     "studentAuthors": [],
     "venue": "14th International Conference on Learning Representations, Rio de Janeiro, Brazil, April 2026. [ICLR] (Acceptance rate: 28%.)",
     "year": 2026,
@@ -501,8 +501,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Safe & verifiable learning",
-      "Dynamic, secure & robust AI"
+      "Safe & Verifiable Learning",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
@@ -527,8 +527,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information",
-      "Distributed & multi-agent intelligence"
+      "Partial & Human Information",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -551,7 +551,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Dynamic, secure & robust AI"
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
@@ -578,7 +578,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information"
+      "Partial & Human Information"
     ]
   },
   {
@@ -602,8 +602,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -631,7 +631,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Safe & verifiable learning"
+      "Safe & Verifiable Learning"
     ]
   },
   {
@@ -656,8 +656,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Partial & human information",
-      "Distributed & multi-agent intelligence"
+      "Partial & Human Information",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -681,7 +681,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Safe & verifiable learning"
+      "Safe & Verifiable Learning"
     ]
   },
   {
@@ -690,11 +690,11 @@ window.PUBLICATIONS = [
     "title": "Near-Optimal Adversarial Reinforcement Learning with Switching Costs",
     "authors": "Ming Shi, Yingbin Liang, and Ness Shroff",
     "studentAuthors": [],
-    "venue": "11th International Conference on Learning Representations, Kigali, Rwanda, May 2023. [ICLR] (Spotlight, with acceptance rate 8.0%.)",
+    "venue": "11th International Conference on Learning Representations, Kigali, Rwanda, May 2023. [ICLR] Spotlight.",
     "year": 2023,
     "link": "./papers/Spotlight-First-AdversarialRL-work-Switchingcost_ICLR2023.pdf",
     "doi": "",
-    "badge": "ICLR (Spotlight, with acceptance rate 8.0%.)",
+    "badge": "ICLR",
     "status": "published",
     "sourceOrder": 25,
     "topics": [
@@ -706,9 +706,9 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": true,
     "directions": [
-      "Safe & verifiable learning",
-      "Prediction & costly adaptation",
-      "Dynamic, secure & robust AI"
+      "Safe & Verifiable Learning",
+      "Prediction & Costly Adaptation",
+      "Dynamic, Secure & Robust AI"
     ]
   },
   {
@@ -731,7 +731,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Distributed & multi-agent intelligence"
+      "Distributed & Multi-Agent Intelligence"
     ],
     "publicNote": "Sen Lin and Ming Shi contributed equally."
   },
@@ -757,8 +757,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -782,8 +782,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -807,8 +807,8 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation",
-      "Distributed & multi-agent intelligence"
+      "Prediction & Costly Adaptation",
+      "Distributed & Multi-Agent Intelligence"
     ]
   },
   {
@@ -832,7 +832,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation"
+      "Prediction & Costly Adaptation"
     ]
   },
   {
@@ -855,7 +855,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation"
+      "Prediction & Costly Adaptation"
     ]
   },
   {
@@ -878,7 +878,7 @@ window.PUBLICATIONS = [
     "award": false,
     "spotlight": false,
     "directions": [
-      "Prediction & costly adaptation"
+      "Prediction & Costly Adaptation"
     ]
   }
 ];

@@ -4,7 +4,7 @@ A responsive, static academic website for **Ming Shi**, Assistant Professor of E
 
 The site is organized around one coherent research program:
 
-> **Mathematical foundations for reliable networked intelligence.**
+> **Learning & Optimization for Autonomous Intelligent Networked Systems.**
 
 The site connects theory, algorithms, systems, teaching, mentoring, service, and outreach without reducing the research portfolio to a flat list of topics.
 
@@ -13,7 +13,7 @@ The site connects theory, algorithms, systems, teaching, mentoring, service, and
 - **`index.html`** — research statement and section navigation alongside the portrait and affiliation; news/awards first, a two-part research overview and vision, employment/Ph.D. education, compact expandable teaching/outreach/service summaries, and the personal gallery last.
 - **`research.html`** — a visual research overview, five expandable directions, a searchable project atlas, and a compact mathematical toolkit.
 - **`publications.html`** — compact searchable publication records; full citations and research details expand on click, with advanced filters available separately.
-- **`studentsandteaching.html`** — Ph.D. students, mentoring philosophy, illustrated courses, undergraduate/graduate learning pathways, completed outreach, and outreach in development.
+- **`studentsandteaching.html`** — Ph.D. students, mentoring philosophy, illustrated courses, undergraduate/graduate learning pathways, completed educational outreach.
 - **`service.html`** — university governance, conference leadership, technical program committees, and comprehensive review records.
 - **`privacy.html`** — analytics and visitor-privacy disclosure.
 - **`404.html`** — custom missing-page screen.
@@ -22,11 +22,11 @@ The site connects theory, algorithms, systems, teaching, mentoring, service, and
 
 The site presents five mutually connected directions:
 
-1. **Safe and verifiable learning** — instantaneous hard constraints, safe RL, non-convex safety, viability, coupled multi-agent safety, and zero-violation guarantees.
-2. **Prediction and costly adaptation** — online convex optimization, switching and ramp costs, lookahead, competitive analysis, forecast-robust RL, provisioning, scheduling, and reconfiguration.
-3. **Partial and human information** — POMDPs, partial online state information, active probing, multi-objective learning, preference feedback, RLHF, and certified experience sharing.
-4. **Distributed and multi-agent intelligence** — graph-structured coordination, cloud–edge–device learning, communication/computation control, selective observation, and foundation models under concept drift.
-5. **Dynamic, secure, and robust AI** — adversarial/nonstationary RL, Age of Intelligence, dynamic attack surfaces, LLM security, stale-model control, and robustness limits.
+1. **Safe & Verifiable Learning** — instantaneous hard constraints, safe RL, non-convex safety, viability, coupled multi-agent safety, and zero-violation guarantees.
+2. **Prediction & Costly Adaptation** — online convex optimization, switching and ramp costs, lookahead, competitive analysis, forecast-robust RL, provisioning, scheduling, and reconfiguration.
+3. **Partial & Human Information** — POMDPs, partial online state information, active probing, multi-objective learning, preference feedback, RLHF, and certified experience sharing.
+4. **Distributed & Multi-Agent Intelligence** — graph-structured coordination, cloud–edge–device learning, communication/computation control, selective observation, and foundation models under concept drift.
+5. **Dynamic, Secure & Robust AI** — adversarial/nonstationary RL, Age of Intelligence, dynamic attack surfaces, LLM security, stale-model control, and robustness limits.
 
 A project may belong to several directions. This is implemented through `assets/data/research-projects.js` and the filterable research atlas on `research.html`.
 
@@ -64,7 +64,7 @@ assets/images/outreach/           National Grid K–12 teacher engagement photog
 scripts/build_site.py             validation, sitemap update, cache-version bump
 ```
 
-The site has no framework, database, package manager, or external font dependency.
+The site has no framework, database, package manager, or external font dependency. Canonical page names, heading styles, technical terms, and publication-label conventions are documented in [HEADINGS-AND-MESSAGING.md](HEADINGS-AND-MESSAGING.md).
 
 ## Homepage editorial approach
 

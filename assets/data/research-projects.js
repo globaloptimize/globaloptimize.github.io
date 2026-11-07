@@ -2,8 +2,8 @@ window.RESEARCH_PROJECTS = [
   {
     "id": "r01",
     "title": "Zero-Violation Regret for Cooperative Markov Games",
-    "status": "Accepted · NeurIPS 2026",
-    "kind": "Accepted paper",
+    "status": "NeurIPS 2026 · Accepted",
+    "kind": "Conference paper",
     "year": 2026,
     "directions": [
       "safety",
@@ -11,22 +11,22 @@ window.RESEARCH_PROJECTS = [
     ],
     "methods": [
       "Composable local safety certificates",
-      "Optimistic value learning",
+      "Optimistic Bellman planning",
       "Communication-compatible planning"
     ],
     "systems": [
       "Multi-robot coordination",
       "Wireless resource allocation"
     ],
-    "summary": "Learns cooperative policies under unknown rewards, dynamics, and coupled instantaneous hard constraints, while retaining a known safe fallback and guaranteeing zero violations with high probability.",
-    "insight": "Reusing local safety certificates can certify untried joint actions. Sublinear regret requires informative safe observations, positive certification margins, and exact implementable planning; communication limits can still reduce attainable safe value.",
+    "summary": "Learns cooperative policies under unknown linear reward and constraint models and linear-mixture transitions, while retaining a known safe fallback and guaranteeing zero violations with high probability.",
+    "insight": "Local certificate recombination can certify untried joint actions. A safe fallback alone need not enable sublinear regret; the regret guarantee requires the stated safety-margin and safe-information coverage conditions and exact communication-compatible planning. Communication limits can reduce the best attainable safe value.",
     "link": "./papers/MARL-IHC_NeurIPS2026.pdf?v=20261106"
   },
   {
     "id": "r02",
     "title": "Fresh Enough to Decide: Age of Intelligence",
-    "status": "Accepted · AIoT 2026",
-    "kind": "Accepted paper",
+    "status": "AIoT 2026 Workshop · Accepted",
+    "kind": "Workshop paper",
     "year": 2026,
     "directions": [
       "adaptation",
@@ -119,7 +119,7 @@ window.RESEARCH_PROJECTS = [
   },
   {
     "id": "r06",
-    "title": "Power-of-2 and Probe-then-Commit Learning",
+    "title": "Power-of-2-Arms and Probe-then-Commit Learning",
     "status": "IEEE/ACM ToN 2025 · WiOpt 2026",
     "kind": "Research line",
     "year": 2026,
@@ -136,8 +136,8 @@ window.RESEARCH_PROJECTS = [
       "Online services",
       "Resource selection"
     ],
-    "summary": "Studies how a small, carefully structured amount of extra choice or feedback can sharply improve learning under adaptation costs.",
-    "insight": "Probe informative alternatives before committing, or restrict switching to a structured power-of-two schedule, to trade information gain against operational churn.",
+    "summary": "Studies how limited additional arm selections or observations improve regret guarantees in bandit learning.",
+    "insight": "In the switching-cost model, selecting two arms per round improves the time-horizon dependence of regret. Probe-then-Commit observes a limited set of candidate arms before executing one, exposing the value of multi-arm feedback for multi-objective learning.",
     "link": "publications.html?q=Power-of-2"
   },
   {
@@ -234,7 +234,7 @@ window.RESEARCH_PROJECTS = [
   },
   {
     "id": "r11",
-    "title": "Cross-Cloud/Edge/Device Multi-Task Foundation Models under Concept Drift",
+    "title": "Cloud–Edge–Device Multi-Task Foundation Models under Concept Drift",
     "status": "Active research direction",
     "kind": "Current project",
     "year": 2026,

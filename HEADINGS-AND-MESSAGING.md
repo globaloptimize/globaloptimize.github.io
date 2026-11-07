@@ -52,3 +52,9 @@ Use these exact display names in the research page, project atlas, and publicati
 ## Evidence and scope
 
 Distinguish published/accepted work, submitted manuscripts, active research directions, completed outreach, and planned activities. State application goals separately from demonstrated mathematical, numerical, or deployment evidence. Do not add confidential proposal material from the source CV.
+
+## Simplified Chinese
+
+English is the default; Chinese is an explicit visitor choice. Use **石鸣** for the site owner's Chinese name in biography and navigation, while preserving **Ming Shi** in authentic publication author lists and copied citations. Keep advisor/coauthor names, formal paper titles, conference names, and useful technical terms in English.
+
+Shared Chinese labels include **研究**, **论文与成果**, **教学与指导**, **学术服务**, **新闻与荣誉**, **任职与教育经历**, **科普与 K–12 教育**, and **研究之外**. Publication statuses are **已接收**, **已发表**, and **已投稿稿件**. Retain the distinction between Spotlight and Best Paper Award Runner-Up. Use **局部安全性证书** consistently for local safety certificates; preserve the probability qualifiers and model assumptions of the English explanations. The Chinese research heading reads **面向自主智能网络系统的学习与优化**.

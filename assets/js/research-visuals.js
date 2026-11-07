@@ -211,15 +211,23 @@
     element.classList.toggle('rv-running', running);
     button.disabled = reduced;
     button.setAttribute('aria-pressed', String(instance.enabled && !reduced));
-    button.setAttribute('aria-label', reduced
+    const ariaLabel = reduced
       ? `Animation disabled by reduced-motion preference: ${diagram.title}`
-      : `${instance.enabled ? 'Pause' : 'Play'} animation: ${diagram.title}`);
-    button.title = reduced ? 'Your reduced-motion preference keeps this illustration still.' : '';
+      : `${instance.enabled ? 'Pause' : 'Play'} animation: ${diagram.title}`;
+    const title = reduced ? 'Your reduced-motion preference keeps this illustration still.' : '';
+    if (window.SiteI18n) {
+      window.SiteI18n.setAttribute(button, 'aria-label', ariaLabel);
+      window.SiteI18n.setAttribute(button, 'title', title);
+    } else {
+      button.setAttribute('aria-label', ariaLabel);
+      button.title = title;
+    }
     const label = button.querySelector('.rv-control-label');
     const glyph = button.querySelector('.rv-control-glyph');
     const labelText = reduced ? 'Reduced motion' : instance.enabled ? 'Pause' : 'Play';
     const glyphText = reduced ? '—' : instance.enabled ? 'Ⅱ' : '▷';
-    if (label.textContent !== labelText) label.textContent = labelText;
+    if (window.SiteI18n) window.SiteI18n.setText(label, labelText);
+    else if (label.textContent !== labelText) label.textContent = labelText;
     if (glyph.textContent !== glyphText) glyph.textContent = glyphText;
   }
 
@@ -306,6 +314,7 @@
   }).observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['open', 'hidden'] });
 
   document.addEventListener('toggle', scheduleSync, true);
+  document.addEventListener('site:languagechange', scheduleSync);
   document.addEventListener('visibilitychange', synchronizeAll);
   if (motionPreference.addEventListener) motionPreference.addEventListener('change', synchronizeAll);
   else motionPreference.addListener(synchronizeAll);

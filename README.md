@@ -56,6 +56,9 @@ assets/css/authors.css            accessible author-role highlighting
 assets/css/motion.css             subtle motion with reduced-motion support
 assets/css/photos.css             personal gallery and outreach photo layouts
 assets/js/photos.js               keyboard-accessible photograph viewer
+assets/js/i18n.js                 explicit language choice and reversible translations
+assets/css/i18n.css               language control and Chinese typography
+assets/i18n/zh-*.js               Simplified Chinese text and accessibility catalogs
 assets/icons/research-icons.svg   original research/teaching/service line icons
 assets/images/research/           five research-direction illustrations
 assets/images/teaching/           course, mentoring, and outreach illustrations
@@ -65,6 +68,14 @@ scripts/build_site.py             validation, sitemap update, cache-version bump
 ```
 
 The site has no framework, database, package manager, or external font dependency. Canonical page names, heading styles, technical terms, and publication-label conventions are documented in [HEADINGS-AND-MESSAGING.md](HEADINGS-AND-MESSAGING.md).
+
+## English and Simplified Chinese
+
+English is the default, including for visitors whose browser language is Chinese. The header's **简体中文** button selects Simplified Chinese; **English** switches back. The explicit choice is stored under `ming-shi-site-language` when browser storage is available. Shareable `?lang=zh-CN` links and internal navigation also carry the choice, so Chinese navigation works without local storage. An explicit `?lang=en` overrides a remembered Chinese preference.
+
+Ming Shi's Chinese name is **石鸣**. The Chinese version translates navigation, explanatory prose, controls, accessibility labels, and research summaries. Formal paper titles, full author lists, venue references, advisor/coauthor names, selected technical terms, and copied citations retain their authentic English. Chinese and English queries work in the research and publication explorers; filter values and the underlying scholarly data remain English.
+
+Each page loads the common catalog plus its own page catalog before `i18n.js`. Catalog keys are normalized English text nodes; `SITE_ZH_ATTRIBUTES` can add attribute translations. Add or update translations alongside English wording changes, keeping shared labels consistent. The runtime restores the original source text when switching back, preserves open disclosures and filter state, and translates dynamically inserted records. Keep protected citation selectors intact and use the source-aware text/attribute helpers for controls that update themselves. No external translation API is used. Without JavaScript, the original English pages remain available and the language control stays hidden.
 
 ## Homepage editorial approach
 

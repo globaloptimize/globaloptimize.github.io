@@ -101,3 +101,13 @@ Resolved by the user-supplied named manuscript: **Jialei Liu and Ming Shi**, Neu
 - ICLR workshops and the AIoT workshop are labeled explicitly. WiOpt casing and recognition labels agree; the confirmed ICLR Spotlight distinction replaces ambiguous percentage descriptions.
 - All 34 formal paper titles, author names and order, and publication statuses are preserved. Four author lists gained a final conjunction without changing authorship.
 - A reusable wording guide is recorded in HEADINGS-AND-MESSAGING.md.
+
+## Bilingual verification — November 6, 2026
+
+- All seven pages default to English, including with a Chinese browser locale. The header offers 简体中文; the selected Chinese version uses 石鸣 and provides an English switch.
+- Explicit language choice persists across navigation and reloads. Shared `?lang=zh-CN` URLs work; `?lang=en` overrides a remembered Chinese choice. Chinese navigation also works when browser storage is blocked.
+- English/Chinese switching restores source text and metadata without changing open disclosures, underlying filter values, or scholarly data. Both languages fit 320–1440 px widths; Chinese light/dark layouts were visually reviewed.
+- All 34 complete publication titles and author lists remain in English. Citation copying retains the original English source, including when language changes during copy feedback.
+- Chinese keyword searches and searches for 石鸣 work. Shared Chinese search URLs, publication filters, dynamically replaced project diagrams, and all 31 service highlights render correctly.
+- Animation controls keep their selected state across language changes and respect reduced motion. No translation/diagram mutation loop, browser error, or failed local request was observed.
+- The original English no-JavaScript fallback remains available; its inactive language button is hidden. The existing full English regression check, JavaScript syntax validation, exact NeurIPS PDF check, and confidential-source scan passed.

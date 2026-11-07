@@ -97,7 +97,7 @@
 
   // Buffalo clock: automatically handles EST/EDT through IANA time-zone data.
   const clockTargets = document.querySelectorAll('[data-buffalo-time]');
-  const clockFormatter = new Intl.DateTimeFormat('en-US', {
+  const clockOptions = {
     timeZone: 'America/New_York',
     weekday: 'short',
     month: 'short',
@@ -107,12 +107,16 @@
     minute: '2-digit',
     second: '2-digit',
     timeZoneName: 'short'
-  });
+  };
+  const clockFormatters = {
+    en: new Intl.DateTimeFormat('en-US', clockOptions),
+    'zh-CN': new Intl.DateTimeFormat('zh-CN', clockOptions)
+  };
 
   function updateClock() {
     if (!clockTargets.length) return;
     const now = new Date();
-    const label = clockFormatter.format(now);
+    const label = (clockFormatters[window.SiteI18n?.language] || clockFormatters.en).format(now);
     clockTargets.forEach((target) => {
       target.textContent = label;
       target.setAttribute('datetime', now.toISOString());
@@ -121,6 +125,7 @@
 
   updateClock();
   window.setInterval(updateClock, 1000);
+  document.addEventListener('site:languagechange', updateClock);
 
   document.querySelectorAll('[data-current-year]').forEach((target) => {
     target.textContent = String(new Date().getFullYear());

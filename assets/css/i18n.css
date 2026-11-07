@@ -1,0 +1,39 @@
+/* Language choice is explicit; the original HTML remains English. */
+.language-button {
+  min-width: 4.5rem;
+  min-height: 2.55rem;
+  padding: .4rem .6rem;
+  border: 1px solid var(--line);
+  border-radius: .6rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: .8rem;
+  font-weight: 650;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.language-button:hover { border-color: var(--accent-v5); }
+[data-language-toggle][hidden], [data-lang-only][hidden] { display: none !important; }
+html[lang="zh-CN"] body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  line-break: strict;
+}
+html[lang="zh-CN"] .refined-page .home-thesis-v5 {
+  font-family: "Noto Serif CJK SC", "Songti SC", STSong, serif;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  letter-spacing: -.015em;
+  line-height: 1.5;
+}
+html[lang="zh-CN"] .refined-page :is(.eyebrow, .brand-role) { letter-spacing: .04em; text-transform: none; }
+html[lang="zh-CN"] .refined-page :is(h1, h2, h3, h4) { word-break: normal; }
+html[lang="zh-CN"] .refined-page .photo-open-v8::after { content: "查看照片"; }
+html[lang="zh-CN"] .refined-page .photo-open-v8[data-photo-enhanced]::after { content: "放大照片"; }
+@media (max-width: 38rem) {
+  .site-header .nav-wrap { gap: .6rem; }
+  .site-header .brand { gap: .6rem; }
+  .site-header .nav-actions { gap: .35rem; }
+  .language-button { padding-inline: .45rem; font-size: .75rem; }
+  html[lang="zh-CN"] .refined-page .home-thesis-v5 { font-size: clamp(1.85rem, 7.8vw, 2.4rem); }
+}
+@media print { .language-button { display: none; } }

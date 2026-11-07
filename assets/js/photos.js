@@ -64,8 +64,9 @@
       if (!source || !thumbnail || dialog.open) return;
 
       photograph.src = source;
-      photograph.alt = thumbnail.alt;
-      captionText.textContent = link.dataset.photoCaption || thumbnail.alt;
+      const originalAlt = window.SiteI18n?.sourceAttribute(thumbnail, 'alt') || thumbnail.alt;
+      photograph.alt = originalAlt;
+      captionText.textContent = link.dataset.photoCaption || originalAlt;
       credit.textContent = link.dataset.photoCredit || '';
       trigger = link;
       try {

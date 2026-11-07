@@ -46,7 +46,7 @@
         ...(project.methods || []),
         ...(project.systems || []),
         ...(project.directions || []).map((key) => labels[key] || key)
-      ].join(' '));
+      ].map((value) => window.SiteI18n?.searchText(value) || value || '').join(' '));
       return terms.every((term) => haystack.includes(term));
     }).sort((a, b) => (b.year - a.year) || a.title.localeCompare(b.title));
   }

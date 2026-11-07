@@ -163,7 +163,7 @@
           publication.publicNote,
           ...(publication.directions || []),
           ...(publication.topics || [])
-        ].join(' '));
+        ].map((value) => window.SiteI18n?.searchText(value) || value || '').join(' '));
         if (!terms.every((term) => haystack.includes(term))) return false;
       }
       return true;
@@ -176,6 +176,8 @@
 
   function updateURL() {
     const params = new URLSearchParams();
+    const language = new URLSearchParams(window.location.search).get('lang');
+    if (language === 'en' || language === 'zh-CN') params.set('lang', language);
     if (state.query) params.set('q', state.query);
     if (state.type !== 'all') params.set('type', state.type);
     if (state.topic !== 'all') params.set('topic', state.topic);
@@ -206,7 +208,7 @@
         if (!publication) return;
         try {
           await navigator.clipboard.writeText(citationText(publication));
-          const original = button.textContent;
+          const original = 'Copy citation';
           button.textContent = 'Copied';
           window.setTimeout(() => { button.textContent = original; }, 1500);
           window.trackAcademicEvent?.('copy_citation', { title: publication.title });
@@ -301,4 +303,8 @@
     if (advanced) advanced.open = true;
   }
   render();
+  // A shared Chinese search URL is first read before the language module loads.
+  document.addEventListener('site:languagechange', () => {
+    if (state.query) render();
+  }, { once: true });
 })();
